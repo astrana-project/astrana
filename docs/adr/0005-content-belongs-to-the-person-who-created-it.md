@@ -1,0 +1,19 @@
+# 5. Content belongs to the person who created it
+
+Proposed.
+
+## Context
+
+Content moves between people. A post sits on its author's instance, a comment sits on someone else's, and a shared
+photograph may have been made by a third person. Something has to settle whose each piece is.
+
+## Decision
+
+Content belongs to whoever created it. Authorship, not where it is stored, decides ownership. The creator keeps the
+copyright in it wherever it ends up.
+
+## Consequences
+
+- Astrana claims no rights in any content and grants none to itself. Its licence covers the software, not what people
+  write with it.
+- Astrana records what a creator declares about their rights, and cannot enforce it.
