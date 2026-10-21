@@ -1,8 +1,8 @@
 # Architecture decision records for the Astrana application
 
-Why the Astrana application is built the way it is, one decision per record. All of them rest on one premise, that
-the individual is the basic unit of society, so a person runs their own instance of Astrana and connects it directly to
-the instances of people they already know.
+Why the Astrana application is built the way it is, one decision per record. All of them rest on one premise, that the
+individual is the basic unit of society, so a person runs their own instance of Astrana and connects it directly to the
+instances of people they already know.
 
 Each record addresses one decision that could be reversed on its own. A record starts as `Proposed.` and becomes
 `Accepted on YYYY-MM-DD.` when the maintainer accepts it. Records are numbered in the order they are accepted, and a
@@ -10,11 +10,11 @@ record's number never changes once it is accepted. Records accepted together are
 first. While a record is proposed, its number may change.
 
 A record is never edited into a different decision. Corrections that keep the decision the same are made in place. A
-decision that changes gets a new record, and the old record's status becomes `Superseded by record N on YYYY-MM-DD.`
-The old record is the history of why things were as they were.
+decision that changes gets a new record, and the old record's status becomes `Superseded by record N on YYYY-MM-DD.` The
+old record is the history of why things were as they were.
 
-The records below are grouped by topic. The "Derives from" column names the records each record rests on, whether or
-not its text cites them.
+The records below are grouped by topic. The "Derives from" column names the records each record rests on, whether or not
+its text cites them.
 
 ## The instance
 
@@ -26,9 +26,11 @@ not its text cites them.
 
 ## Data
 
-| Record                                                                                        | Status   | Derives from |
-| --------------------------------------------------------------------------------------------- | -------- | ------------ |
-| [4. Times are recorded and exchanged in UTC](0004-times-are-recorded-and-exchanged-in-utc.md) | Proposed | the premise  |
+| Record                                                                                                                                    | Status   | Derives from |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| [4. Times are recorded and exchanged in UTC](0004-times-are-recorded-and-exchanged-in-utc.md)                                             | Proposed | the premise  |
+| [38. Support PostgreSQL, MySQL and SQL Server](0038-support-postgresql-mysql-and-sql-server.md)                                           | Proposed | 34           |
+| [39. Migrations run as a separate step, with their own credentials](0039-migrations-run-as-a-separate-step-with-their-own-credentials.md) | Proposed | 38           |
 
 ## Dependencies and supply chain
 
@@ -55,16 +57,44 @@ not its text cites them.
 | [16. Empty, unmet and failed are shown as three different states](0016-empty-unmet-and-failed-are-shown-as-three-different-states.md)                                        | Proposed | 2            |
 | [17. The interface stays fast on low-specification hardware](0017-the-interface-stays-fast-on-low-specification-hardware.md)                                                 | Proposed | 5            |
 
+## Architecture
+
+| Record                                                                                                                                      | Status   | Derives from |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| [28. The architecture follows named principles, not one methodology](0028-the-architecture-follows-named-principles-not-one-methodology.md) | Proposed | the premise  |
+| [29. Depend in the direction of stability](0029-depend-in-the-direction-of-stability.md)                                                    | Proposed | 28           |
+| [30. Internal and external boundaries are treated differently](0030-internal-and-external-boundaries-are-treated-differently.md)            | Proposed | 11, 28, 29   |
+| [31. The inside defines ports and the outside adapts to them](0031-the-inside-defines-ports-and-the-outside-adapts-to-them.md)              | Proposed | 28, 29       |
+| [32. The domain is modelled with domain-driven design](0032-the-domain-is-modelled-with-domain-driven-design.md)                            | Proposed | 28           |
+| [33. Code is organised by feature, for locality of behaviour](0033-code-is-organised-by-feature-for-locality-of-behaviour.md)               | Proposed | 28, 29, 32   |
+
 ## How the repository is built
 
-| Record                                                                                                                                     | Status   | Derives from |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------ |
-| [18. Develop on .NET 11 and release on .NET 12 long-term support](0018-develop-on-dotnet-11-and-release-on-dotnet-12-long-term-support.md) | Proposed | 5            |
-| [19. One repository, with a frontend and a backend](0019-one-repository-with-a-frontend-and-a-backend.md)                                  | Proposed | 2, 3, 5      |
-| [20. Tests live apart from the code they test](0020-tests-live-apart-from-the-code-they-test.md)                                           | Proposed | 19           |
-| [25. The backend is built on .NET](0025-the-backend-is-built-on-dotnet.md)                                                                 | Proposed | 5, 6         |
-| [26. The frontend is built with React, in functional style](0026-the-frontend-is-built-with-react-in-functional-style.md)                  | Proposed | 3, 5         |
-| [27. The frontend is written in TypeScript with strict checking](0027-the-frontend-is-written-in-typescript-with-strict-checking.md)       | Proposed | 11           |
+| Record                                                                                                                                     | Status   | Derives from   |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | -------- | -------------- |
+| [18. Develop on .NET 11 and release on .NET 12 long-term support](0018-develop-on-dotnet-11-and-release-on-dotnet-12-long-term-support.md) | Proposed | 5              |
+| [19. One repository, with a frontend and a backend](0019-one-repository-with-a-frontend-and-a-backend.md)                                  | Proposed | 2, 3, 5        |
+| [20. Tests live apart from the code they test](0020-tests-live-apart-from-the-code-they-test.md)                                           | Proposed | 19             |
+| [25. The backend is built on .NET](0025-the-backend-is-built-on-dotnet.md)                                                                 | Proposed | 5, 6           |
+| [26. The frontend is built with React, in functional style](0026-the-frontend-is-built-with-react-in-functional-style.md)                  | Proposed | 3, 5           |
+| [27. The frontend is written in TypeScript with strict checking](0027-the-frontend-is-written-in-typescript-with-strict-checking.md)       | Proposed | 11             |
+| [34. The domain is a project of its own in the backend](0034-the-domain-is-a-project-of-its-own-in-the-backend.md)                         | Proposed | 19, 20, 29, 33 |
+| [42. Architecture rules are checked by tests](0042-architecture-rules-are-checked-by-tests.md)                                             | Proposed | 5, 29, 33, 34  |
+
+## Running
+
+| Record                                                                                                              | Status   | Derives from   |
+| ------------------------------------------------------------------------------------------------------------------- | -------- | -------------- |
+| [35. Hosts are adapters around one application](0035-hosts-are-adapters-around-one-application.md)                  | Proposed | 25             |
+| [36. Self-contained builds for Linux, Windows and macOS](0036-self-contained-builds-for-linux-windows-and-macos.md) | Proposed | 18, 21, 25, 35 |
+| [37. Every installation runs behind a front web server](0037-every-installation-runs-behind-a-front-web-server.md)  | Proposed | 35             |
+
+## The API
+
+| Record                                                                                                                                                     | Status   | Derives from |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| [40. Minimal APIs, with separate route groups for people and peers](0040-minimal-apis-with-separate-route-groups-for-people-and-peers.md)                  | Proposed | 15, 31, 33   |
+| [41. The web app's API is described by OpenAPI, and its types are generated](0041-the-web-apps-api-is-described-by-openapi-and-its-types-are-generated.md) | Proposed | 3, 23, 40    |
 
 ## Delivery
 
