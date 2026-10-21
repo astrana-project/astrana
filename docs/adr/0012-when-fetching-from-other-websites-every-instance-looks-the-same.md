@@ -17,4 +17,4 @@ they can verify.
 
 - A website cannot tell one instance from another.
 - Changing the identifier on each request was rejected, because a value that keeps changing is a pattern of its own.
-- Deriving the identifier from each host was rejected, because it would make every instance distinctive.
+- Deriving the identifier from each host machine was rejected, because it would make every instance distinctive.

@@ -4,7 +4,7 @@ Proposed.
 
 ## Context
 
-Astrana aims to run on modest hardware ([record 69](0069-on-modest-hardware-astrana-runs-slower-and-never-stops.md)).
+Astrana aims to run on modest hardware ([record 70](0070-on-modest-hardware-astrana-runs-slower-and-never-stops.md)).
 Some modest hardware, such as older Raspberry Pi models and some network storage devices, runs 32-bit operating systems.
 Every processor architecture supported adds a self-contained build to produce and test
 ([record 165](0165-self-contained-builds-for-linux-windows-and-macos.md)).

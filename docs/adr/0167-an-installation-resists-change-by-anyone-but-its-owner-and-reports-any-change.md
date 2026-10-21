@@ -7,8 +7,9 @@ Proposed.
 An installation can be changed by accident, by someone without authority over it, or by its owner. The owner holds final
 authority over their instance and what it runs
 ([record 1](0001-each-instance-has-one-owner-who-is-its-sole-administrator.md)), and on hardware they control an
-administrator can always override a protection in the end. What an instance learns about its host is told to its owner
-([record 113](0113-what-an-instance-finds-about-its-host-is-told-to-its-owner-and-nobody-else.md)).
+administrator can always override a protection in the end. What an instance learns about its hosting environment is told
+to its owner
+([record 114](0114-what-an-instance-finds-about-its-hosting-environment-is-told-to-its-owner-and-nobody-else.md)).
 
 ## Decision
 

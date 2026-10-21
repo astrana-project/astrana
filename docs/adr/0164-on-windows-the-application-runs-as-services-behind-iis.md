@@ -21,7 +21,7 @@ starts and manages the application only on shared hosting, where nothing else is
 - The IIS configuration Astrana supplies covers only passing requests on, so it is the same kind of configuration as for
   NGINX.
 - On shared hosting the application can be recycled at any moment, and the ASP.NET Core Module that IIS needs is
-  installed and patched by the host.
+  installed and patched by the hosting provider.
 - Letting IIS host the application on every Windows installation was rejected because IIS would then own the processes'
   lifetime where a Windows service can. Bundling NGINX for Windows was rejected because its own project describes the
   Windows version as beta, and it cannot run as a Windows service.

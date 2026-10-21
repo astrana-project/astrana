@@ -5,13 +5,13 @@ Proposed.
 ## Context
 
 Owners will not change a database schema by hand, so updates have to apply schema migrations automatically and safely,
-once the owner has chosen to update ([record 108](0108-an-update-is-never-applied-without-the-owner.md)). Changing a
+once the owner has chosen to update ([record 109](0109-an-update-is-never-applied-without-the-owner.md)). Changing a
 schema needs database rights that the running application should never hold. An application that can change its own
 schema can, if compromised, plant triggers or procedures that survive the fix, or lift protections enforced in the
 database. Each supported database has its own schema migrations
-([record 67](0067-the-owner-chooses-postgresql-mysql-or-microsoft-sql-server.md)), and the application's setup handles
+([record 68](0068-the-owner-chooses-postgresql-mysql-or-microsoft-sql-server.md)), and the application's setup handles
 the database and its credentials
-([record 72](0072-the-installer-does-only-what-must-come-first-and-the-applications-setup-does-the-rest.md)).
+([record 73](0073-the-installer-does-only-what-must-come-first-and-the-applications-setup-does-the-rest.md)).
 
 ## Decision
 
@@ -30,9 +30,9 @@ serves any request.
   application gets both.
 - On shared hosting with a single database user the protection is absent, and the instance tells the owner so.
 - A failed schema migration never leaves the database half changed
-  ([record 133](0133-a-restore-either-completes-or-stops-never-half-done.md)).
+  ([record 135](0135-a-restore-either-completes-or-stops-never-half-done.md)).
 - Schema migrations only move forwards, like restores
-  ([record 134](0134-a-backup-restores-into-the-same-or-a-newer-version-never-an-older-one.md)).
+  ([record 136](0136-a-backup-restores-into-the-same-or-a-newer-version-never-an-older-one.md)).
 - Running schema migrations under the application's own credentials was rejected because it gives the running
   application schema rights permanently. Asking the owner for privileged credentials at every update was rejected
   because many owners will not have them to hand, and an update failing part way is worse than a slower one.

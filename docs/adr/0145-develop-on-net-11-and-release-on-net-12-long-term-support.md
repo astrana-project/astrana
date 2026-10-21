@@ -19,11 +19,12 @@ release to owners runs on a long-term-support runtime, so the first release requ
 
 ## Consequences
 
-- Peer transport can use X25519 from the platform from the start, with no native dependency and no later migration of
+- Peer transport can use X25519 from the platform from the start, with no native dependency and no later change of
   peers' keys.
 - The move to .NET 12 is a second runtime upgrade, which has to be made and tested before the first release. It is
   expected to be small, and .NET 11 remains supported for about a year after .NET 12 ships.
-- Staying on .NET 10 and taking Curve25519 from a native library was rejected under record 4. Using P-256 on .NET 10 was
-  rejected because the Noise specification does not define it, so the handshake could not be checked against the
-  published test vectors. Waiting for .NET 12 before building peer transport was rejected because it delays the
-  connectivity work by about a year.
+- Staying on .NET 10 and taking Curve25519 from a native library was rejected under
+  [record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md). Using P-256 on .NET 10 was rejected
+  because the Noise specification does not define it, so the handshake could not be checked against the published test
+  vectors. Waiting for .NET 12 before building peer transport was rejected because it delays the connectivity work by
+  about a year.

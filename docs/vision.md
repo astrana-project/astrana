@@ -34,8 +34,8 @@ except the home.
 
 Each of these is a decision with its own record, and each rules something out.
 
-- An instance belongs to one person, and data lives on the instance of whoever wrote it. An instance never keeps a copy
-  of what it reads from a peer.
+- An instance belongs to one person, and what someone writes lives on the instance where it was written, or, for a
+  comment, on the instance that holds what it responds to. An instance never keeps a copy of what it reads from a peer.
 - Connections are mutual and first degree only. There is no following, no groups, no direct messaging and no search
   across instances.
 - The feed is chronological, is never ranked and has an end. Counts are shown as a record of how people responded, never

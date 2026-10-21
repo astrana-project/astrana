@@ -5,10 +5,10 @@ Proposed.
 ## Context
 
 The backend's structure rests on rules that drift unless something checks them. The domain and use cases never name
-anything outside them ([record 155](0155-depend-in-the-direction-of-stability.md)). The compiler enforces this for the
-domain project ([record 161](0161-the-domain-is-a-project-of-its-own-in-the-backend.md)), but not for use cases, which
+anything outside them ([record 156](0156-depend-in-the-direction-of-stability.md)). The compiler enforces this for the
+domain project ([record 162](0162-the-domain-is-a-project-of-its-own-in-the-backend.md)), but not for use cases, which
 share a project with adapters and are told apart from them only by name
-([record 160](0160-code-is-organised-by-feature-for-locality-of-behaviour.md)).
+([record 161](0161-code-is-organised-by-feature-for-locality-of-behaviour.md)).
 
 ## Decision
 

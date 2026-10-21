@@ -21,7 +21,8 @@ Standardization (ISO) 8601 format with an explicit `Z`.
 - A time from a peer cannot be misread because of the zone its machine is set to. UTC settles which zone a time is in,
   not whether the clock that produced it was right, and an instance still depends on a roughly correct clock.
 - On databases whose date and time types carry no zone, the backend reads and writes the stored value as UTC whatever
-  the host's zone, because converting through the host's zone would shift every time on a host not set to UTC.
+  the host machine's zone, because converting through the host machine's zone would shift every time on a host machine
+  not set to UTC.
 - Showing a time to a person, in their own time zone and format, is a matter for localisation.
 - Recording local time with an offset was rejected. Every value would need converting before times could be compared or
-  ordered, and times recorded in the host's zone would change meaning when the instance moves.
+  ordered, and times recorded in the host machine's zone would change meaning when the instance moves.

@@ -7,7 +7,7 @@ Proposed.
 The web app calls the instance's application programming interface (API). TypeScript types written by hand to match it
 drift from it without anyone noticing, and the mismatch shows only at runtime. The web app is served by the instance
 ([record 19](0019-the-app-is-a-progressive-web-app-served-by-each-instance.md)) and ships with the backend as one
-version ([record 152](0152-version-numbers-say-what-an-update-means.md)), and every caller uses the same paths
+version ([record 153](0153-version-numbers-say-what-an-update-means.md)), and every caller uses the same paths
 ([record 172](0172-every-caller-uses-one-set-of-paths.md)).
 
 ## Decision

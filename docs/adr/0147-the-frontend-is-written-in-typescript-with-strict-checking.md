@@ -19,7 +19,8 @@ that fails type checking does not merge.
 - Mistakes like these are found when the code is built rather than when it runs.
 - A function's types tell a reader what it expects and what it returns.
 - Types are removed when the code is compiled, so they describe what the backend sends without checking it. The backend
-  checks what it accepts and what it sends (record 121), and the frontend relies on those checks.
+  checks what it accepts and what it sends ([record 123](0123-the-server-checks-everything-the-app-checks.md)), and the
+  frontend relies on those checks.
 - Turning a check off, such as by declaring a value as `any`, is visible in the code and reviewed like any other change.
 - The TypeScript compiler and type definitions are development tooling and are not shipped.
 - Type checking adds a step to every build.

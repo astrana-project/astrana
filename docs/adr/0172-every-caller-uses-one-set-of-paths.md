@@ -5,10 +5,10 @@ Proposed.
 ## Context
 
 An instance answers several kinds of caller: the owner and the other accounts on the instance, apps acting for the owner
-([record 106](0106-apps-acting-for-the-owner-use-a-narrow-form-of-oauth-2-1.md)), and peers
-([record 62](0062-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)). What a caller may see is
+([record 107](0107-apps-acting-for-the-owner-use-a-narrow-form-of-oauth-2-1.md)), and peers
+([record 63](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)). What a caller may see is
 decided by the instance holding the content
-([record 89](0089-access-is-enforced-by-the-instance-that-holds-the-content.md)), and an owner reading their own profile
+([record 90](0090-access-is-enforced-by-the-instance-that-holds-the-content.md)), and an owner reading their own profile
 and a peer reading it ask the same question of different instances.
 
 ## Decision
