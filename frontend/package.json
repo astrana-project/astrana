@@ -1,0 +1,12 @@
+{
+  "name": "@astrana/web",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24"
+  }
+}

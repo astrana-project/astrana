@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <!-- Every package version, transitive ones included, is pinned in each project's packages.lock.json. -->
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <!-- Continuous integration and image builds fail rather than resolve anything the lock files do not pin. -->
+    <RestoreLockedMode Condition="'$(ContinuousIntegrationBuild)' == 'true'">true</RestoreLockedMode>
+  </PropertyGroup>
+</Project>

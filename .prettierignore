@@ -1,0 +1,13 @@
+# Build output and dependencies
+node_modules/
+[Bb]in/
+[Oo]bj/
+TestResults/
+
+# Generated or tool-managed files (the tool that writes them sets their format)
+**/sbom.json
+package-lock.json
+packages.lock.json
+
+# The licence text, kept word for word
+LICENSE
