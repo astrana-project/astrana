@@ -5,6 +5,24 @@ it merges, ready to ship to owners as it stands. A pull request is not ready if 
 the documentation for later. Open a draft pull request if you want early eyes on the work, and mark it ready for review
 only when it is complete.
 
+## Keeping master releasable
+
+Versions are cut from `master`, so whatever is on `master` is what a release contains. A release has to be possible
+whenever one is needed, most urgently when a security fix must reach owners quickly, so nothing unfinished or partial
+merges to `master`, and any commit on it can be released as it stands.
+
+- A change an owner can see or use merges only when it is useful to an owner as it stands, not merely when it works.
+- A building block with nothing an owner or anyone else can reach, such as a library a later feature will use, may merge
+  on its own once it is complete, tested and documented.
+- A feature that is finished but kept back for its announcement stays on its branch until it is to be released.
+- Unfinished work is never merged behind a feature flag, because it would ship code nobody can use to every instance and
+  widen the attack surface for no benefit.
+
+A large feature can live on its branch for some time. Merge `master` into it often to keep conflicts small, and review
+and test its work as a chain of smaller pull requests into the feature's branch, which merges into `master` when the
+feature is useful. Astrana is developed in public, so keeping a feature on its branch controls when owners receive it,
+not who knows about it.
+
 ## Before you start
 
 Every change has an issue. For anything beyond a small fix, open the issue before you start work, and describe what you
@@ -40,15 +58,15 @@ commenting it out.
 Keep third-party dependencies to a minimum. Each one is part of the attack surface of every Astrana instance, and a
 vulnerability in one means a release. Use what the language, the browser and the framework already provide. Add a
 dependency only when it does something they do not, and say in the pull request why it is needed. The
-[decision record on dependencies](docs/adr/0005-third-party-components-are-used-only-when-necessary.md) gives the
+[decision record on dependencies](docs/adr/0004-astrana-depends-on-outside-components-only-where-it-must.md) gives the
 reasoning.
 
 The interface must stay accessible to the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA. Colour never
 carries meaning on its own.
 
 Astrana's look is its own. Reuse familiar interaction patterns, but never another platform's palette, artwork, icons,
-names, wording or signature interactions. Use the specification's vocabulary for interface text, such as peer rather
-than friend or connection.
+names, wording or signature interactions. Use the vocabulary in the [glossary](docs/glossary.md) for interface text,
+such as peer rather than friend or connection.
 
 These rules keep the design secure, so do not weaken them.
 
@@ -92,11 +110,11 @@ reader something they can use.
 
 ## Architecture decision records
 
-The reasons behind this implementation are in [docs/adr](docs/adr), one record per decision, read in order. The product
-itself is decided in the Astrana specification, and these records cover how this repository implements it. If your
-change makes a decision the index would have to list, or reverses one it already lists, include the record in the same
-pull request. A change that stays inside an existing decision, such as a new configuration option, a fix or a dependency
-update, needs no record.
+The decisions behind Astrana are in [docs/adr](docs/adr), one record per decision, read in order. They are the source of
+truth for what they decide, and the [vision](docs/vision.md) gives the purpose they serve. If your change makes a
+decision the index would have to list, or reverses one it already lists, include the record in the same pull request. A
+change that stays inside an existing decision, such as a new configuration option, a fix or a dependency update, needs
+no record.
 
 A decision record covers one decision that could be reversed on its own. If you find yourself writing two, split them.
 If what you are writing could not be reversed without reversing another record, it belongs in that record's

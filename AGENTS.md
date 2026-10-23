@@ -10,8 +10,9 @@ This repository holds the Astrana application: the web app in `frontend/` and th
 keeps its tests in a `test/` folder beside `src/`. The [layout](README.md#layout) in the README shows where everything
 is.
 
-The product is defined in the Astrana specification, which is authoritative over this repository's code where the two
-disagree. The decision records in `docs/adr/` cover how this repository implements it.
+The decision records in `docs/adr/` are the source of truth for how Astrana is built and why, and the
+[vision](docs/vision.md) gives the purpose they serve. Where code and an accepted record disagree, the code is wrong, or
+the record is superseded by a new one.
 
 ## Acting for someone
 

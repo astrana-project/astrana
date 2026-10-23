@@ -49,6 +49,9 @@ Each of these is a decision with its own record, and each rules something out.
 ## Principles that settle hard choices
 
 - User wellbeing wins. When principles conflict, the person's wellbeing is the tiebreaker.
+- Mistakes can be corrected. Astrana is designed so that a mistake can be put right, a social one such as something said
+  in anger as well as a practical one, for the person who made it and for the person it affected. Astrana can correct
+  its own record, but it cannot un-share, un-see or reach beyond itself, and it says so plainly.
 - Safety Third. Safety is never a substitute authority that people defer to instead of exercising their own judgement.
   As a rule about claims, Astrana never describes a protection as stronger than it is, because false comfort leaves
   people worse off than an honest gap.
