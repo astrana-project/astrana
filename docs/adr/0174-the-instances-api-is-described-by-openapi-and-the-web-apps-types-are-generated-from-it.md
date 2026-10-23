@@ -1,4 +1,4 @@
-# 174. The web app's API is described by OpenAPI, and its types are generated
+# 174. The instance's API is described by OpenAPI, and the web app's types are generated from it
 
 Proposed.
 

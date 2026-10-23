@@ -15,3 +15,5 @@ be kept. It is never written directly to a remote destination.
 ## Consequences
 
 - A half-written archive is never mistaken for a backup.
+- The instance's own machine needs free space for a whole archive, which a small shared hosting quota may not have, and
+  where there is not room for one a backup cannot be made.

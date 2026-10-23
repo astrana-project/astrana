@@ -15,3 +15,4 @@ authority.
 ## Consequences
 
 - Two parents can each have their own account, and neither needs the other's agreement to act.
+- Guardians can undo each other's choices, and the software does not settle disagreements between them.

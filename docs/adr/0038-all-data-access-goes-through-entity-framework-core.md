@@ -18,9 +18,10 @@ and the database. Astrana never depends on one database provider.
 - Astrana can support the databases owners trust most, whether free or paid.
 - If a provider stops maintaining its database or changes its licensing, moving away from it is far easier than it would
   otherwise be.
-- Support for several databases is real rather than nominal. Without a translation layer, each dialect would be kept up
-  by hand, and the extra ones would quietly break.
-
+- One translation layer keeps several databases supported without each dialect kept up by hand. Each supported database
+  still needs testing, because providers differ.
+- Astrana uses only what every supported provider can do, so a feature one database offers and the others lack goes
+  unused.
 - Entity Framework Core is itself an outside component, and is kept because it is mature and well maintained
   ([record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md)).
 - Writing for a single database was rejected because it ties every instance to that provider. Hand-writing queries for

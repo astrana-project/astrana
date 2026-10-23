@@ -14,4 +14,5 @@ An update is never applied silently. The owner decides when to take it, even whe
 ## Consequences
 
 - An owner is never surprised by a change to their own instance.
+- An instance whose owner does not act stays unpatched, and its peers bear part of that risk.
 - A mandatory update states why it is mandatory, and comes with a grace period and notice that grows more urgent.

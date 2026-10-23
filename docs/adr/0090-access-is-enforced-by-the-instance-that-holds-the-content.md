@@ -16,3 +16,7 @@ requester is never sent material and trusted to filter it.
 
 - Modified software on the other side cannot see more than its owner is entitled to, because the filtering never happens
   on its side.
+- Every view needs a live request that the holding instance answers, and the holding instance does the checking work for
+  each one. Nothing can be shown while it is unreachable.
+- Sending content encrypted to everyone and letting keys decide who can read it was rejected, because anyone who
+  received it would keep it, and a change of audience could never take back what had already been sent.

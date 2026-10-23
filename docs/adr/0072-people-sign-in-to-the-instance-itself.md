@@ -10,12 +10,12 @@ provider would let that provider see every time anyone signs in.
 
 ## Decision
 
-Owners and guests sign in to the instance itself, which keeps their accounts. No outside identity provider is involved,
-for any kind of account.
+Every account signs in to the instance itself, which keeps the accounts. No outside identity provider is involved.
 
 ## Consequences
 
 - No outside party sees when anyone signs in.
 - Signing in is part of what the owner already runs
   ([record 32](0032-every-instance-is-managed-by-its-owner-and-nobody-else-operates-it.md)).
+- Account recovery and the security of every credential fall entirely on the instance and its owner.
 - Signing in with an account from a large platform, or through a shared sign-in service, was rejected for this reason.

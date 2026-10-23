@@ -24,5 +24,7 @@ a named design token. Components do not contain those values directly.
 - The component library and the app share one set of tokens.
 - A token is named for its purpose, such as the colour of a warning, rather than its value, so a theme can change the
   value without the name becoming wrong.
+- A reader has to look up a token to learn the value a component uses.
+- Nothing stops a raw value being written into a component, so keeping them out needs review or an automated check.
 - Writing values into components and replacing them later was rejected, because by then the values are scattered across
   the components.

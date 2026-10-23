@@ -15,10 +15,10 @@ such as a rented server, a cloud platform or shared web hosting. Wherever it run
 
 ## Consequences
 
-- Astrana runs anywhere that meets its requirements, because a tool for staying in touch with people is useful only if
+- Astrana aims to run wherever its owners can run it, because a tool for staying in touch with people is useful only if
   those people can run it.
-- Shared hosting is included on purpose, because excluding it would exclude the people least able to do anything about
-  it.
-- For many owners a managed or shared hosting provider is the safer choice, kept up to date by people whose job it is.
+- Shared hosting is a goal, because excluding it would exclude the people least able to do anything about it. Whether an
+  instance can run there depends on the hosting adapter for it.
+- A managed or shared hosting provider can be the safer choice where the hosting provider keeps the system patched.
 - Spreading authority is not the same as spreading hosting. If most owners choose the same few providers, instances
   gather in a few places, and a provider is a party that can be compelled.

@@ -14,4 +14,6 @@ and every other account is created or arranged by that owner
 
 ## Consequences
 
-- There are no bots, no spam accounts and no puzzles to prove a person is human, because there is nowhere to sign up.
+- Nobody creates their own account on an instance, so there are no puzzles to prove a person is human.
+- Anyone can still install an instance and send connection requests, and those are handled by mutual approval
+  ([record 2](0002-connections-are-mutual-and-nobody-follows-anyone.md)).

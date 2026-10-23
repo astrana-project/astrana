@@ -16,3 +16,5 @@ how they learn the connection has ended.
 
 - Ending a connection needs no message, no retry and no acknowledgement.
 - The former peer's record is corrected by the refusal, and their stale belief never grants access.
+- Until it next asks, the former peer's view of the connection is out of date.
+- The instance has to remember a former peer's key, so that it can recognise them and refuse with the reason.

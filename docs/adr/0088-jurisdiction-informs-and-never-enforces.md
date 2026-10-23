@@ -15,4 +15,4 @@ refuses to run anywhere.
 ## Consequences
 
 - Astrana has no authority to enforce any country's law, and the owner stays responsible for operating lawfully.
-- The software's licence would not allow restrictions by territory in any case.
+- Restrictions by territory would conflict with the open-source freedom to use the software anywhere.

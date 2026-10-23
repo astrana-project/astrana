@@ -21,3 +21,5 @@ viewing and searching are not logged.
   to build.
 - What a search leads to, such as a deletion or a disconnection, is logged.
 - A guardian can see the security events and the outline of a child's log, not its detail.
+- The log is itself a record of who did what on the instance, and needs the same protection as anything else it holds.
+- The log grows with every material action, without end unless old entries are removed.

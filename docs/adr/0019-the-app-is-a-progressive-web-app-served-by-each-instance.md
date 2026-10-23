@@ -6,10 +6,10 @@ Proposed.
 
 The people using an instance need a way to use it from their phones and computers. A native app reaches people almost
 only through a platform's app store. A store decides what may be listed and can remove an app, links each installation
-to the person's store account, so it keeps a record of who installed the app and when, charges developers fees and
-reviews every release at its discretion. Major stores also typically require apps with user content to provide central
-moderation, which fits poorly with software that has no central operator. Some people would rather not install an app at
-all.
+to the person's store account, so it keeps a record of who installed the app and when, which can be compelled to be
+handed over, charges developers fees and reviews every release at its discretion. Major stores also typically require
+apps with user content to provide central moderation, which fits poorly with software that has no central operator. Some
+people would rather not install an app at all.
 
 ## Decision
 
@@ -22,11 +22,13 @@ browser, and can be installed on a phone or a computer from the instance itself.
   with one.
 - The app updates when the instance does.
 - Installing it needs a certificate the browser trusts for the instance's address, and in practice a domain name.
+  Without one, the instance still works in a browser behind a certificate warning, but the web app cannot be installed.
 - The browser can still observe some use, and notifications pass through its push service, which sees when a message
   arrives but not what it says. Which browser to trust is the person's choice.
-- Some capabilities depend on installation and on the platform, so the app detects what the platform supports rather
-  than assuming it, and says when something is unavailable.
+- Some capabilities depend on installation and on the platform, such as notifications on iOS, which reach only a web app
+  installed to the home screen. The app detects what the platform supports rather than assuming it, and says when
+  something is unavailable.
 - Native apps distributed through a central store were rejected, because a store would stand as a gatekeeper between an
   owner and the people using their instance.
-- A desktop app that only contains the web app was considered and is not planned. If it were pursued, it would likely
-  use a cross-platform framework such as .NET Multi-platform App UI (MAUI).
+- A desktop app that only contains the web app was rejected, because the web app can already be installed on a computer,
+  and a wrapper would be one more thing to build and keep current.

@@ -13,5 +13,5 @@ minimum amount of free space, worked out from what the instance needs to run, is
 
 ## Consequences
 
-- An instance never fills its own disk and stops.
+- Uploads cannot fill the disk and stop the instance.
 - The owner is warned at each upload while uploads still work, not by a dashboard they would have to go and check.

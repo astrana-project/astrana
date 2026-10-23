@@ -1,11 +1,11 @@
-# 40. The owner of an instance may remove anything stored on it
+# 40. The owner of an instance may remove anything stored on it, except a report about their content
 
 Proposed.
 
 ## Context
 
 Content belongs to its creator ([record 5](0005-content-belongs-to-the-person-who-created-it.md)), but it is stored
-somewhere. A peer's comment on an owner's post, or a post on an owner's profile, sits on the owner's instance
+somewhere. A peer's comment on an owner's post sits on the owner's instance
 ([record 1](0001-each-instance-has-one-owner-who-is-its-sole-administrator.md)).
 
 ## Decision

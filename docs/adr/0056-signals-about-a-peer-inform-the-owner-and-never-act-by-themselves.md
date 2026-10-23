@@ -15,5 +15,5 @@ behaving badly is the owner's call, and a private note the owner makes about a p
 ## Consequences
 
 - No automated assessment removes, limits or labels anyone.
-- The owner who approved several suspicious connections in one afternoon is the person the signal is shown to, which is
-  the right person and also the limit.
+- An owner who misjudges a peer gets no automatic protection. The signal is shown to the same owner who approved the
+  connection, and nothing acts on it unless they do.

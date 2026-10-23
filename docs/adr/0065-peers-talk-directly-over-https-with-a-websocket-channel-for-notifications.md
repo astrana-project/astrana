@@ -18,8 +18,9 @@ notifications.
 
 - An instance on cloud or web hosting can be reached directly, and a home server can reach the same position with port
   forwarding and dynamic Domain Name System (DNS) records.
+- Notifications on the WebSocket channel are encrypted end to end like every other message between peers
+  ([record 63](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)).
 - An instance on a network that blocks incoming connections, as many home and mobile networks do, cannot be reached this
-  way, and how it is reached needs a record of its own. Hole punching, and a meeting point run for each circle of peers,
-  have been explored and not adopted.
-- WebRTC, in which browsers connect to each other, was rejected, because each instance runs its own service and the
-  instances call each other directly.
+  way.
+- Web Real-Time Communication (WebRTC), in which browsers connect to each other, was rejected, because instances are
+  servers that can call each other directly and need none of the signalling or relays that WebRTC provides for browsers.

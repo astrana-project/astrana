@@ -18,12 +18,14 @@ how the processes are started, stopped and supervised, which account they run as
 connect. They never differ in what the application does.
 
 On Windows the processes run as Windows services, on Linux as systemd services, on macOS as launchd daemons, and in
-containers with exactly one replica. On shared hosting the web server starts and manages them. Wherever the environment
-allows, they run under an account of their own with the least privilege they need, never as an administrator or root.
+containers with exactly one replica. How the two processes run on shared hosting is decided separately. Wherever the
+environment allows, they run under an account of their own with the least privilege they need, never as an administrator
+or root.
 
 ## Consequences
 
-- Behaviour is the same in every environment, so it is tested once.
+- The application's behaviour is the same in every environment, so it is tested once, and each hosting adapter is tested
+  for how it starts, stops and supervises the processes.
 - Differences between environments, such as where data and keys are kept, are ports with one adapter for each platform
   ([record 159](0159-the-inside-defines-ports-and-the-outside-adapts-to-them.md)).
 - An instance runs as one copy

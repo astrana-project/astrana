@@ -14,5 +14,5 @@ content. Anyone else gets a plain refusal that reveals nothing about what is beh
 
 ## Consequences
 
-- A link can be passed around without exposing what it points to.
+- A link can be passed around without exposing what it points to, beyond whatever its address shows.
 - Sending a link is logged, because it takes a reference to content outside Astrana.

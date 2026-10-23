@@ -21,9 +21,8 @@ the session. The frontend asks the backend for the session once a page has loade
 - The backend attaches whatever credentials its own calls need, and none of them reach the browser.
 - Signing out and revoking a session take effect on the backend at once, with nothing left in the browser to reuse.
 - An injected script can act only while the page is open and cannot take the session away with it. Records
-  [102](0103-content-is-cleaned-when-it-comes-in-and-encoded-when-it-is-shown.md),
-  [121](0123-the-server-checks-everything-the-app-checks.md) and
-  [141](0142-only-the-interfaces-own-code-produces-markup.md) make injection unlikely in the first place, and
+  [103](0103-content-is-cleaned-when-it-comes-in-and-encoded-when-it-is-shown.md) and
+  [142](0142-only-the-interfaces-own-code-produces-markup.md) make injection unlikely in the first place, and
   [record 141](0141-every-page-carries-a-content-security-policy-that-allows-only-its-own-instance.md) limits what an
   injected script can reach.
 - Pages on other sites cannot make requests with the person's session, because the browser sends the cookie only with

@@ -13,3 +13,5 @@ The declared jurisdiction is never sent to peers, to the project, or in telemetr
 ## Consequences
 
 - A peer has no business knowing where an owner lives, and is never told.
+- A peer cannot adapt what it does to obligations that apply in the owner's country.
+- The project learns nothing about where its users are, so it cannot tell which jurisdictions matter most to them.

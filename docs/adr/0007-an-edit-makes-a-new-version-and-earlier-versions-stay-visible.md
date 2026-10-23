@@ -20,4 +20,6 @@ also see its earlier versions, which keep the same audience.
 - Editing cannot extend how long something lasts, because expiry counts from the first version.
 - Deleting content deletes all its versions, including when it expires. Versioning keeps the history of a change, not of
   something removed.
+- A wording someone regrets stays visible to everyone who could see it, unless they delete the whole item.
+- Every version is stored, so content that is edited often takes more space.
 - Community notes are the one exception. They cannot be edited at all, because people rated a particular text.

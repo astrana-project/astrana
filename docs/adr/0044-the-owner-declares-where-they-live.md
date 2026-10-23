@@ -18,3 +18,5 @@ request seems to come from, is never treated as where they live.
 - A traveller is not treated as living wherever they happen to be.
 - The confirmation at setup is logged, with what was declared and what was shown.
 - A declaration that does not match the language settings may prompt the owner to confirm it, and is never overridden.
+- A false declaration changes the defaults that follow from it, such as the age of majority, and so can end a guardian's
+  authority early.

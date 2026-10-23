@@ -13,9 +13,9 @@ built into the software stays wrong on every instance until that instance update
 Where a rule is likely to change, be disputed or vary from place to place, it lives in data the application reads.
 Defaults, the rules for each country, the ages in age brackets, link-safety sources, translations, the list of licences,
 content classification settings and Graphics Interchange Format (GIF) packs are all data. Three kinds of rule stay in
-code so that nobody can edit them, which are protections that must always hold, such as a child's baseline protections,
-security checks, and the core commitments of the design. Where a value has both good reasons to vary and real potential
-for abuse, it is data with a minimum fixed in code.
+code so that they cannot be changed by editing data or configuration, which are protections that must always hold, such
+as a child's baseline protections, security checks, and the core commitments of the design. Where a value has both good
+reasons to vary and real potential for abuse, it is data with a minimum fixed in code.
 
 ## Consequences
 
@@ -23,6 +23,8 @@ for abuse, it is data with a minimum fixed in code.
 - People can actually check what the rules are, because a list can be read where compiled code cannot.
 - A rule held as data has visible edges. If a value is not in a country's rules, the country does not change it.
 - A child's instance always starts with its baseline protections, because that rule is in code, not in a settings file.
-  A guardian adjusts the protections through the app.
+- The rules for each country arrive signed through the version catalogue
+  ([record 66](0066-information-about-versions-comes-from-one-central-signed-catalogue.md)), so a wrong value reaches
+  every instance that uses it at once.
 - The test for each rule is whether a reasonable owner would ever want a different value, and whether a hostile one
   would gain by changing it.

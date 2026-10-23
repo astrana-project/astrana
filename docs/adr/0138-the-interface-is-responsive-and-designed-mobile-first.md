@@ -13,15 +13,15 @@ stretched on a larger one, and reworking a desktop layout for a phone later usua
 ## Decision
 
 The interface is designed for small screens first, and its layout fits the screen it is on, with nothing for the person
-to set. It aims to work fully on as many devices as it reasonably can.
+to set.
 
 ## Consequences
 
 - If something does not fit on a small screen, it is moved rather than dropped. If it cannot reasonably work there, the
   interface says it needs a bigger screen.
 - Everything works by touch as well as with a mouse, and buttons are big enough for a finger.
-- Zooming in with the browser, or turning the device, changes the layout as a smaller or turned screen would (record
-  132).
+- Zooming in with the browser, or turning the device, changes the layout as a smaller or turned screen would
+  ([record 137](0137-the-interface-meets-wcag-2-1-at-level-aa.md)).
 - Pages do not scroll sideways, except for things that need to, such as a wide table.
 - Compact mode is a setting people choose for themselves, separate from fitting the screen.
 - Designing for big screens first and squeezing the layout onto phones afterwards was rejected, because such layouts

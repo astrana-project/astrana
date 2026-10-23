@@ -17,7 +17,7 @@ sessions ([record 143](0143-the-browser-never-holds-credentials-or-tokens.md)) a
 application programming interface (API) process holds the keys and does the work that needs them. It is reached by the
 browser-facing process only through a local socket that is never exposed to the network, and by peers through the web
 server in front of the instance ([record 92](0092-the-owner-supplies-the-web-server-in-front-of-the-instance.md)),
-because the Noise handshake needs the identity key
+because the Noise handshake uses the instance's Noise key, which the identity key signs, and the API process holds both
 ([record 63](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)).
 
 ## Consequences

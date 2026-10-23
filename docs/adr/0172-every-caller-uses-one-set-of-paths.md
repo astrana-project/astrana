@@ -21,5 +21,7 @@ path on different instances, and the answer differs only by who asked.
 - One handler makes one decision about what to show, with the owner as the caller entitled to most rather than a special
   case with routes of their own.
 - No path or parameter says whose data is wanted, so there is nothing a modified client can change to ask for more.
+- One handler has to shape its answer for every kind of caller, so a mistake in it can show one caller what was meant
+  for another.
 - Separate paths for each kind of caller were rejected, because they suggest the decision about what to show differs by
   caller, when only the identity feeding it does.

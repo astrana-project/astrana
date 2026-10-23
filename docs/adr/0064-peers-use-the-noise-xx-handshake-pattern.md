@@ -7,8 +7,8 @@ Proposed.
 Peers authenticate each other with a Noise handshake
 ([record 63](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)). The Noise protocol defines
 several handshake patterns, which differ in whether each side must already know the other's key and in which side's
-identity is exposed, and to whom, while the handshake runs. Once any of them completes, both sides are authenticated and
-the session has forward secrecy.
+identity is exposed, and to whom, while the handshake runs. The patterns that authenticate both sides all give the
+session forward secrecy once they complete.
 
 ## Decision
 

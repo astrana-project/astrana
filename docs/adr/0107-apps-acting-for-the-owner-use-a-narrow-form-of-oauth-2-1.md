@@ -16,5 +16,6 @@ its own.
 ## Consequences
 
 - Astrana needs only to issue a token and revoke it, and the rest of OAuth would add risk for no purpose.
+- A script or command-line tool without a browser cannot easily complete the authorisation code flow.
 - No app is ever given the owner's password, and no app needs a secret built into it, which anyone with a copy of the
   app could read.

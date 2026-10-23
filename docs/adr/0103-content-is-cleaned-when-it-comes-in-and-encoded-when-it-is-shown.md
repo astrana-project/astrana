@@ -27,6 +27,7 @@ person wrote.
 - Every feature that accepts content from peers follows this rule. Scalable Vector Graphics (SVG) images, which can
   carry scripts, are not accepted, and incoming tags are checked against a list of allowed characters.
 - Content stored before a cleaning rule changed can be checked again against the current rules.
-- None of this stops a peer from saying something hostile, which is a matter of moderation, not of security.
+- None of this stops a peer from saying something hostile, which is a matter for the owner's own control, such as hiding
+  or disconnecting, not of security.
 - Storing content as received and cleaning it only on the way out was rejected, because every place that later read it
   would then have to clean its output, and one that forgot would expose everything stored.

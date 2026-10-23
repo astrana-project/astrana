@@ -18,6 +18,4 @@ of task, the interface shows honest progress.
 - A file is never left unscanned because scanning was too slow.
 - Slower is acceptable only where the task allows for it. Around one second is the limit for responding to a click, and
   beyond it people experience the product as broken.
-- Every future technical choice is weighed against modest hardware, so the software does not quietly come to assume a
-  new machine.
-- What hardware meets the requirements has not yet been measured.
+- What hardware meets the requirements is found by measurement, not assumed.

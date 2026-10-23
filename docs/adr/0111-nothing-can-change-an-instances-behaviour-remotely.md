@@ -15,5 +15,7 @@ variant, and the project runs no experiments across instances.
 
 ## Consequences
 
-- An instance behaves differently only when its owner changes something or takes an update.
+- An instance's code and features change only when its owner changes something or takes an update. Signed data, such as
+  the rules for each country, can still change without a release
+  ([record 67](0067-rules-that-may-vary-live-in-data-and-fixed-rules-live-in-code.md)).
 - A feature is judged by argument, not by measuring how people respond, which is slower.

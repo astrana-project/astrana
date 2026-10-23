@@ -17,4 +17,5 @@ Nothing gathers what different instances have recorded about someone into a scor
 
 - A pattern becomes known the way patterns always have, through people who know each other talking.
 - A score would be gameable and permanent, and would stand in for the judgement of people who actually know the person.
-- Someone acting badly cannot reach the records others hold, so the more widely they act, the less they can hide.
+- Each person meets someone acting badly alone, unless people talk to each other, and a pattern spread across many
+  instances is harder to see.

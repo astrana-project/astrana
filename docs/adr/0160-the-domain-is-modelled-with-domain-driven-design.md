@@ -26,8 +26,7 @@ preferences, stay plain.
 - Aggregates give a natural unit for access checks, persistence and snapshots.
 - Domain events give a natural way to start work outside an aggregate, such as delivering a comment to the instance that
   owns the content.
-- The first code starts in one provisional bounded context. The first set of contexts is drawn once a first part of the
-  application has been built, and recorded then.
+- Bounded contexts are recorded as they are drawn.
 - Understanding the domain before writing it down slows the first features.
 - Keeping rules in services around plain data objects was rejected, because the rules scatter, and a safety rule
   enforced in one service can be bypassed through another.

@@ -24,6 +24,8 @@ the outer TLS is defence in depth that is never pinned.
 - Peer authentication works whoever ends TLS, behind any web server and on shared hosting, and certificate lifetimes
   never affect connections between peers.
 - Peers need no certificate from a certificate authority and no domain name of their own to recognise each other.
-
+- Astrana has to carry and maintain a Noise implementation
+  ([record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md)), and debugging or inspecting traffic
+  between peers goes through two layers of encryption.
 - Standard Noise uses Curve25519, so the runtime has to provide X25519 key agreement.
 - Mutual TLS was rejected because it cannot prove identity where TLS ends outside the application.

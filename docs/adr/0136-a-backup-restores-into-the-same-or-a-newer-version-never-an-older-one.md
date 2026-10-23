@@ -15,3 +15,7 @@ older version is refused. The owner is told which version a backup came from bef
 ## Consequences
 
 - The running software never has to interpret data it does not understand.
+- Every newer version has to keep the way to upgrade a backup made by any older version.
+- An owner who goes back to an older version cannot restore a backup made by a newer one.
+- Refusing any difference in version was rejected, because every update would leave the owner's earlier backups
+  unusable.

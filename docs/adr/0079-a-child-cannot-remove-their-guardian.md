@@ -14,4 +14,5 @@ A child cannot remove or revoke a guardian's account, and the design guards agai
 
 ## Consequences
 
-- A rule that could be bypassed would protect nobody, so something enforces it.
+- A rule that could be bypassed would protect nobody.
+- A child who controls the machine the instance runs on can still reinstall or alter it, which this cannot prevent.

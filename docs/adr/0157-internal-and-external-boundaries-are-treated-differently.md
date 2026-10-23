@@ -24,8 +24,7 @@ Inside the instance, types cross internal boundaries freely and change in the sa
 The domain's own record of an aggregate's state at a point in time is called a snapshot, and it crosses internal
 boundaries only.
 
-Boundaries between bounded contexts are internal, but they are treated as nearly external, so that one context never
-uses another's aggregates or snapshots directly.
+Boundaries between bounded contexts are internal, but one context never uses another's aggregates or snapshots directly.
 
 ## Consequences
 

@@ -25,6 +25,8 @@ language appears in British English. Layouts work in both left-to-right and righ
 - The project builds its own system for storing translated messages and picking the right one for each language,
   including its plural forms, rather than adopting a translation library
   ([record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md)).
+- Building and maintaining that system is the project's own work, and every message has to be kept whole and
+  translatable, which every change to the interface must respect.
 - Dates, times and numbers are formatted with the internationalisation support built into the browser and into .NET.
 - Layouts leave room for text that runs longer in translation than in British English.
 - Layouts are written in terms of start and end rather than left and right, so a right-to-left script mirrors the whole

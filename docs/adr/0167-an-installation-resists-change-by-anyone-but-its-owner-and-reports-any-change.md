@@ -23,6 +23,9 @@ detects any change to its installation and tells the owner.
 - A mistake, or a person or program without administrator rights, cannot quietly change what the instance runs.
 - An owner who changes their own installation, such as to load a module Astrana declined, can do so, and is told what
   changed.
+- The account the application runs as cannot write its own files, so applying an update needs a step run with
+  administrator rights.
+- On shared hosting, where everything runs under one account, the protection is absent.
 - Detection cannot stop an attacker who has administrator rights on the machine, and the instance does not claim it can.
 - Resisting even the owner's changes was rejected because nobody holds authority above the owner. Only detecting and
   reporting changes, without resisting any, was rejected because accidents and unprivileged changes are worth stopping

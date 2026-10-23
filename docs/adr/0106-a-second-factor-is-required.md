@@ -5,9 +5,8 @@ Proposed.
 ## Context
 
 People sign in to the instance itself ([record 72](0072-people-sign-in-to-the-instance-itself.md)). A second factor can
-lock someone out, and an owner has no support desk to call, which is why it was first made optional. Recovery codes that
-the owner keeps, and a documented command on the host machine that clears a second factor, give a way back in that
-depends on nobody else.
+lock someone out, and an owner has no support desk to call. Recovery codes that the owner keeps, and a documented
+command on the host machine that clears a second factor, give a way back in that depends on nobody else.
 
 ## Decision
 
@@ -20,8 +19,7 @@ one whenever they sign in with a password.
   details.
 - Before setup finishes, the owner is told plainly that there is no support desk, and that the recovery codes and the
   command on the host machine are the only ways back in.
-- No emergency route skips the second factor, not even a password reset.
-- An instance that is already running is given a long warning period, and is then blocked until a second factor is set
-  up.
+- The command on the host machine is the only way to clear a second factor, and it needs access to the host machine. A
+  password reset does not skip it.
 - Leaving the second factor optional was rejected, because the recovery codes and the command on the host machine answer
-  the risk of lockout that made it optional.
+  the risk of lockout.

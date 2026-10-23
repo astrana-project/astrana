@@ -16,3 +16,6 @@ connections.
 ## Consequences
 
 - A school or community network is made of individual connections, each approved by both of the people in it.
+- A network of many people needs every pair of them to connect, and there is no shared space that belongs to them all.
+- A group as a shared thing of its own was rejected, because it would have to live on someone's instance or a central
+  service, and would give whoever held it authority over what the others share there.

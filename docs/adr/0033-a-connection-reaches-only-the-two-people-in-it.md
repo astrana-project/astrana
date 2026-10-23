@@ -16,3 +16,5 @@ someone gives a way to find or reach the people they are connected to.
 
 - Nobody can be found through somebody else's connections.
 - A person's network is exactly the people they approved, and nobody else.
+- People cannot discover each other through someone they both know, so every connection starts with them finding each
+  other some other way.

@@ -16,7 +16,9 @@ whatever the owner has chosen about automatic backups. The copy is deleted once 
 
 ## Consequences
 
-- A failed update can always be undone, for every owner.
+- A failed schema migration can always be undone, for every owner.
 - The copy is not a backup, because it is kept on the same machine, and it is never presented as one.
 - An update needs enough free space for the copy, and refuses to start when there is not enough.
+- Taking the copy makes every update that changes the schema take longer.
+- While the update runs, a second copy of the owner's data, personal data included, is held on disk.
 - Relying on the owner's own backups was rejected because many owners will not have turned them on.

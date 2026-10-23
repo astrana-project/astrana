@@ -11,9 +11,11 @@ key should leave an instance weaker, not finished.
 
 ## Decision
 
-No key is derived from another, and losing one does not expose or destroy what the others protect.
+No key is derived from another, and losing one does not expose or destroy what the others protect, except that the
+backup key also protects the copies of the other keys and data that a backup holds.
 
 ## Consequences
 
 - An owner who loses their identity key keeps all their data, and rebuilds who they can reach.
-- An owner who loses the database key keeps their connections, though not everything those connections produced.
+- An owner who loses the database key keeps their identity, so peers still recognise the instance. What the database
+  held, including what the instance knows about its peers, is lost unless a backup restores it.

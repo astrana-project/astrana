@@ -16,3 +16,5 @@ stages are triggered by age. A guardian may bring a stage forward, but never pus
 
 - Independence grows gradually, not all at once at Coming of Age.
 - A feature with no particular risk for children has no stages at all.
+- A guardian who brings a stage forward cannot undo it, and cannot hold a stage back past its age, even if they later
+  judge that the child was not ready.

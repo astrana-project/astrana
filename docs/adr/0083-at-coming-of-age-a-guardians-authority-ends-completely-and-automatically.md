@@ -10,10 +10,10 @@ and a child grows up.
 
 ## Decision
 
-When a child reaches Coming of Age, every guardian's authority over their instance ends, entirely and automatically,
-with notice that grows more urgent as the day approaches.
+When a child reaches Coming of Age, every guardian's authority over their instance ends, entirely and automatically.
 
 ## Consequences
 
-- Nothing survives the transition, so turning eighteen actually changes something.
+- Nothing survives the transition, so reaching Coming of Age actually changes something.
+- Notice of the transition grows more urgent as the day approaches.
 - An adult may then choose to give a former guardian a role, but it is a new grant of their own, not a continuation.

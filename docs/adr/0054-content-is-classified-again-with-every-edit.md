@@ -4,8 +4,7 @@ Proposed.
 
 ## Context
 
-Content classification scores content for things such as sensitive material, and on a child's instance its scores decide
-what is shown. An edit creates a new version
+Content classification scores content for things such as sensitive material. An edit creates a new version
 ([record 7](0007-an-edit-makes-a-new-version-and-earlier-versions-stay-visible.md)).
 
 ## Decision

@@ -1,4 +1,4 @@
-# 144. The interface stays fast on low-specification hardware
+# 144. The frontend has a download and response budget that the build enforces
 
 Proposed.
 
@@ -17,7 +17,7 @@ until it is brought back within it.
 - The budget's figures are kept in the build configuration, where the build checks them.
 - Interaction has stricter limits than background work. A slow export is acceptable and a slow button is not.
 - The interface acknowledges an action at once, even when the work behind it takes longer.
-- Raising the budget is a change of its own, and its pull request gives the reasons.
+- Raising the budget is a reviewed change of its own.
 
 ## Consequences
 

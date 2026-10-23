@@ -9,11 +9,13 @@ photograph may have been made by a third person. Something has to settle whose e
 
 ## Decision
 
-Content belongs to whoever created it. Authorship, not where it is stored, decides ownership. The creator keeps the
-copyright in it wherever it ends up.
+Content belongs to whoever created it. Authorship, not where it is stored, decides ownership. Astrana treats the creator
+as the owner of their content wherever it ends up, and records them as such. Copyright itself follows the law where they
+live.
 
 ## Consequences
 
 - Astrana claims no rights in any content and grants none to itself. Its licence covers the software, not what people
   write with it.
 - Astrana records what a creator declares about their rights, and cannot enforce it.
+- An owner stores and serves content others created, such as their peers' comments, without gaining any rights in it.

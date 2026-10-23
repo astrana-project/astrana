@@ -1,4 +1,4 @@
-# 128. Below the age of digital consent, sending anything beyond the instance is the guardian's choice
+# 128. Below the age of digital consent, choices that send data beyond the instance on a child's behalf are the guardian's
 
 Proposed.
 
@@ -11,7 +11,7 @@ child cannot consent to that alone
 ## Decision
 
 Until a child reaches the age of digital consent in their jurisdiction, any choice that sends data beyond their instance
-on their behalf belongs to their guardian
+on their behalf is a parental control, and so belongs to their guardian
 ([record 31](0031-when-a-child-owns-an-instance-a-parent-or-guardian-holds-authority-over-its-parental-controls.md)).
 The handover is triggered by age and only moves forward.
 

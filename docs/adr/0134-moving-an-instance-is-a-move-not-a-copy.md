@@ -16,3 +16,5 @@ original standing down.
 
 - Choosing where to run an instance can be reversed, which is what makes it a real choice.
 - For a while the same identity exists in two places, and that window is named, not hidden.
+- Where a move changes the instance's address, its peers have to learn the new one.
+- An original that has been lost or cannot be reached cannot stand down.

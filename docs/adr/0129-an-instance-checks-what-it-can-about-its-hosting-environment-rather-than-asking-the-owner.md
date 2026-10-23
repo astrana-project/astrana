@@ -15,6 +15,6 @@ protected when it could not verify that.
 
 ## Consequences
 
-- A check asks nothing of the owner and cannot be misread, where a published checklist can be ticked and still give
-  false comfort.
+- A check asks nothing of the owner and does not depend on the owner's understanding, where a published checklist can be
+  ticked and still give false comfort.
 - The difference between something set up and something that could not be verified is always shown.

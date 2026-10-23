@@ -16,3 +16,5 @@ administrator, moderator or any other role.
 ## Consequences
 
 - Every account other than the owner's exists in service of, and in relation to, the owner.
+- Nobody can be given delegated administration of an instance. Administrator and moderator roles were rejected, because
+  authority over an instance never leaves its owner.

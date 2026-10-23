@@ -33,9 +33,9 @@ them.
 
 ## Consequences
 
-- A single missed step in cleaning or encoding is a bug, not an incident, because it cannot become someone running their
-  own code. This follows the same idea as stripping hidden details from photos, which is to assume the main protection
-  will sometimes fail and make that failure survivable.
+- The policy greatly limits what a single missed step in cleaning or encoding can do, so such a step is far less likely
+  to let someone run their own code.
+- The policy protects people only in a browser that enforces it, which every major browser does.
 - Code that tries to send data to an outside server, such as an analytics or tracking script bundled by mistake, has its
   requests blocked by the browser.
 - Other sites cannot show the app inside a frame, which protects people from pages that trick them into clicking

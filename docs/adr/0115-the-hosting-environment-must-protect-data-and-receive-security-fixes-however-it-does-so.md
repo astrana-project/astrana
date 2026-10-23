@@ -15,7 +15,10 @@ security fixes. How it does each is up to the platform.
 
 ## Consequences
 
-- On a personal computer the operating system's own encryption and secrets store are usually enough. On shared hosting a
-  key management service does the same job.
+- On a personal computer the operating system's own encryption and secrets store are usually enough. On shared hosting
+  that offers one, a key management service does the same job.
+- Nothing enforces the requirement. An environment that falls short, such as shared hosting with no key management
+  service, is reported to the owner and the instance keeps running
+  ([record 114](0114-what-an-instance-finds-about-its-hosting-environment-is-told-to-its-owner-and-nobody-else.md)).
 - An instance cannot claim more protection than its hosting environment provides, so what it reports depends on where it
   runs.

@@ -11,8 +11,9 @@ setting up an instance could be done by either one.
 
 Installing has two parts with a firm line between them. The installer does only what must happen before the application
 can run, which is placing the files, creating the first secrets, setting up the web server in front of it, and starting
-the service. The application's own setup then does the rest, which is the database and the credentials it is reached
-with, the owner's account, consent to usage reporting and where secrets are kept.
+the service. The application's own setup then does the rest. It creates or asks for two database credentials, one for
+reading and writing data and one for schema migrations, and runs the first schema migrations with the second. It also
+sets up the owner's account and where secrets are kept, and asks whether to install troubleshooting telemetry.
 
 ## Consequences
 

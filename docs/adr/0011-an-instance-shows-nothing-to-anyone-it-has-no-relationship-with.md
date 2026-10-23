@@ -14,6 +14,6 @@ not to index them wherever that is possible.
 
 ## Consequences
 
-- Nothing can be indexed, because nothing is served.
+- Nothing but the sign-in page and the files needed to install the app can be indexed.
 - Someone can still learn that an Astrana instance exists at an address, because the sign-in page has to be there.
 - Asking search engines not to index is a request, which well-behaved crawlers follow and others may ignore.

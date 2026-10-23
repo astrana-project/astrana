@@ -19,3 +19,5 @@ on which version and platform, and the owner can see exactly what would be sent 
   they post.
 - What is not installed cannot misbehave, which a setting that is merely switched off cannot promise.
 - The data comes only from owners who chose to send it, so it can never stand for everyone.
+- Having no telemetry at all was rejected, because maintainers would then learn of a fault only when an owner reports it
+  by hand, and many faults are never reported.

@@ -4,7 +4,7 @@ Proposed.
 
 ## Context
 
-Offering an update to a few instances first catches a bad release before it reaches everyone
+Offering an update to a few instances first can catch a bad release before it reaches everyone
 ([record 66](0066-information-about-versions-comes-from-one-central-signed-catalogue.md)).
 
 ## Decision
@@ -16,3 +16,5 @@ project does not watch or count who is in each group.
 
 - A bad release reaches a fraction of instances before all of them.
 - The project never learns which instances took part, so a rollout cannot become a way of observing them.
+- With nothing observed, a bad release comes to light only when someone reports it, which is slower than watching the
+  early group would be.

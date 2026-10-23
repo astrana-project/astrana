@@ -14,4 +14,5 @@ Astrana never presents engagement, such as how many people reacted or how far so
 ## Consequences
 
 - Nothing rewards reach, so nothing pushes people to chase it.
-- Counts of reactions and likes are still visible to everyone, as a plain record of how people responded.
+- Counts of reactions and likes are still visible to those who can see the post, as a plain record of how people
+  responded.

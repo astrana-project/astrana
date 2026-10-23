@@ -18,7 +18,7 @@ changes. No other response carries the version, whether to someone who has not s
 
 ## Consequences
 
-- A web app never runs old code against a new API for longer than one request.
+- A web app running old code against a new API reloads itself on its next successful request.
 - Strangers and peers never learn which version an instance runs. Peers decide what they can do together by the
   capabilities each supports ([record 122](0122-peers-check-what-each-other-can-do-not-which-version-they-run.md)).
 - Sending the version with every response was rejected because it would tell strangers which vulnerabilities to try.

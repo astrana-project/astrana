@@ -14,5 +14,8 @@ next choice. An emailed code may only ever be an extra, never the only second fa
 
 ## Consequences
 
-- A passkey is the hardest kind to phish, and the easiest for guests who are not confident with technology.
+- A passkey is the hardest kind to phish.
+- A passkey is bound to the instance's domain name, so an instance without a stable domain cannot rely on one, and an
+  instance that moves to a new domain loses its passkeys and needs them registered again.
+- A passkey synced between devices depends on the large platform account that syncs it.
 - Codes sent by text message are not offered, because a phone carrier would then sit in the sign-in path.

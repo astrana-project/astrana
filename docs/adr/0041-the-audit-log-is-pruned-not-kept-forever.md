@@ -16,3 +16,4 @@ less important entries go first, and entries such as content being created, chan
 
 - The log stays a size an instance can carry.
 - What is kept longest is what matters most to understanding what happened.
+- Once an entry is pruned it is gone, even if it later turns out to be the evidence someone needs.

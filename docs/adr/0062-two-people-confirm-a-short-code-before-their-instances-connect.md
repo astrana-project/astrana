@@ -18,4 +18,5 @@ channel they already trust, such as a phone call or in person, and only then is 
 - The code, not the decision to accept, is what stops someone slipping in between them.
 - When a peer's key changes, the owner sees the old and new codes side by side, and the same check is needed before the
   new key is trusted.
-- Two people need some other way to reach each other, which they have, because they already know each other.
+- Two people need some other way to reach each other, which people who already know each other usually have.
+- The protection holds only if both people actually compare the code, and nothing can check that they did.

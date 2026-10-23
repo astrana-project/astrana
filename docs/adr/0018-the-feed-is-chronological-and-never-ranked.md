@@ -16,3 +16,4 @@ The feed shows what connected peers shared, in the order they shared it. Nothing
 - Feeds from outside sources have their own place and are never mixed in, because a feed holding two kinds of thing
   invites ranking them.
 - Filters narrow the view a person chooses, and the feed does not remember them.
+- A peer who shares a lot fills more of the feed, and nothing evens it out.

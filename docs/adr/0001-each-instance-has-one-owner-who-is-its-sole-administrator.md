@@ -23,3 +23,5 @@ owner. Other people can use an instance too, but authority over it never leaves 
 - Nobody is coming to help if something breaks.
 - Where a child owns an instance, a parent or guardian's authority over its parental controls is the one bounded
   exception, and it covers nothing else.
+- Shared or delegated administration, such as a household or a couple running one instance together, was rejected,
+  because authority over the instance would then leave the person it represents.

@@ -13,7 +13,7 @@ the set has to stay small.
 ## Decision
 
 An instance runs on a relational database the owner supplies, PostgreSQL, MySQL or Microsoft SQL Server (MSSQL).
-PostgreSQL and MySQL are recommended.
+PostgreSQL and MySQL are recommended, because they are open source.
 
 ## Consequences
 

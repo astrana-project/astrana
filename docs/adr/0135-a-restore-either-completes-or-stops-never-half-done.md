@@ -16,3 +16,7 @@ starts with only part of its data.
 
 - An owner never has to guess what survived.
 - An instance that refuses to start can be recovered, where one silently missing data may not be.
+- Rolling back needs room to keep the state from before the restore until the restore completes.
+- An instance that stops stays offline until its owner acts.
+- Restoring what can be restored and reporting the rest was rejected, because an owner cannot tell from a report what is
+  missing from their data.

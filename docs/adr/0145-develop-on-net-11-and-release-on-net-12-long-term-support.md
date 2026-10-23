@@ -4,11 +4,12 @@ Proposed.
 
 ## Context
 
-The specification requires a long-term-support runtime, because instances are self-hosted and update on their owners'
-schedule, so a runtime whose support ends before an owner next updates can leave them without security patches. Peer
-transport is expected to use the standard Curve25519 form of the Noise protocol, which needs X25519 key agreement. The
-.NET 10 long-term-support release has no X25519, so using it would need a native cryptography library, which
-[record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md) discourages. .NET 11 adds a built-in
+Instances are self-hosted and updated on their owners' schedule
+([record 109](0109-an-update-is-never-applied-without-the-owner.md)), so a runtime whose support ends before an owner
+next updates can leave them without security patches. Peers use the standard Curve25519 form of the Noise protocol
+([record 63](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)), which needs X25519 key
+agreement. The .NET 10 long-term-support release has no X25519, so using it would need a native cryptography library,
+which [record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md) discourages. .NET 11 adds a built-in
 `X25519DiffieHellman`. It is a standard-term release, expected to be supported until November 2028. The first
 long-term-support release with X25519 is .NET 12, due in November 2027.
 

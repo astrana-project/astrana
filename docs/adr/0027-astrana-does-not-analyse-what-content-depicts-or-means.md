@@ -15,3 +15,5 @@ speakers. It extracts only what is already present, such as text in an image.
 
 - A capability that can tell what a picture shows can be asked which of an owner's pictures show something, and it does
   not stay pointed where it was aimed.
+- Astrana cannot generate descriptions of pictures for people who cannot see them.
+- Pictures cannot be searched by what they show.

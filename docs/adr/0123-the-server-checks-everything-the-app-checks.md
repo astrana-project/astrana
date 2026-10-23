@@ -29,5 +29,8 @@ one standard form, so that a check cannot be avoided by writing the same input a
   the processing it can cause.
 - Addresses that came from content are validated before the server fetches anything from them, so that content cannot
   direct the server to places it should not reach.
-- A backup being restored is checked like any other input.
+- A backup being restored is checked like any other input. A backup altered so that it still looks valid passes that
+  check, so backups need protection of their own against tampering.
 - Each check is tested with malformed and hostile input, not only with what it should accept.
+- Trusting content from a peer because the peer's instance had already checked it was rejected, because the peer's
+  software may have been changed, may be out of date or may have been compromised.

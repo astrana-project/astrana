@@ -10,10 +10,10 @@ and reading a child's conversations would go far beyond that.
 
 ## Decision
 
-A guardian sees an outline of the child's activity, such as who they interact with and how often. By default they cannot
-read what the child writes or receives.
+A guardian sees an outline of the child's activity, such as who they interact with and how often. They cannot read what
+the child writes or receives.
 
 ## Consequences
 
-- Reports about the child's content are the one exception, and a guardian always sees them, because they concern a
-  situation the guardian is responsible for.
+- Reports about the child's content, raised by people who see it, are the one exception, and a guardian always sees
+  them, because they concern a situation the guardian is responsible for.

@@ -9,12 +9,13 @@ content carry those two risks differently.
 
 ## Decision
 
-Content is deleted automatically after a time suited to what it is, unless the owner chooses to keep it. Posts and links
-expire by default. Albums are kept. A picture or a comment lasts as long as the post it belongs to. The owner can change
-the timings.
+Content is deleted automatically after a time suited to what it is, unless the owner chooses to keep it. Each kind of
+content has its own default, such as posts and links expiring and albums being kept, and the owner can change the
+defaults. A picture or a comment lasts as long as the post it belongs to.
 
 ## Consequences
 
 - Things can genuinely be forgotten, rather than lasting forever because nobody thought to delete them.
 - Expiry happens quietly, because a deletion that demanded acknowledgement would turn forgetting into an event.
-- Content nobody thought to keep is gone, and nothing brings it back.
+- Expiry removes content from the instance, so content nobody thought to keep is gone from it. Backups taken earlier,
+  and anything recipients have already received, may still hold it.

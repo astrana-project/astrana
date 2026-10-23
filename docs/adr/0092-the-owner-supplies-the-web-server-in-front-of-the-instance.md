@@ -30,7 +30,8 @@ is configured with.
   only to browsers.
 - A browser trusts the certificate only for a domain name. Where no public domain is available, the web server uses a
   self-signed certificate, or one the owner brings, and an instance unreachable from the internet obtains a public
-  certificate through a challenge in the Domain Name System (DNS) rather than over HTTP.
+  certificate through a challenge in the Domain Name System (DNS) rather than over the Hypertext Transfer Protocol
+  (HTTP).
 - Because every request arrives through the web server, anything that depends on where a request came from, such as the
   setup page answering only on the host machine, judges it from the trusted forwarded address.
 - Letting the application serve TLS itself was rejected because it would repeat what web servers do well and make the

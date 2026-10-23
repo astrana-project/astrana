@@ -10,10 +10,11 @@ translations in languages its maintainers do not read.
 
 ## Decision
 
-Translations can be contributed informally. Each language pack is signed, so an owner knows what they installed, and its
-quality is not reviewed.
+A language pack is data, verified by its signature, so an owner knows what they installed. Its quality is not reviewed.
 
 ## Consequences
 
-- A poor translation is a visible annoyance that can be corrected, not a security problem.
+- A poor translation is a visible annoyance that can be corrected.
+- A malicious translation can mislead, such as by swapping the meaning of buttons in a security prompt or asking for
+  recovery codes. The signature says where a pack came from, not that what it says is true.
 - Astrana does not claim a review it could not carry out.

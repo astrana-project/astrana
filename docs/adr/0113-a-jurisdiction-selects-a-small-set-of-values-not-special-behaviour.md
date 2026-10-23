@@ -16,4 +16,6 @@ digital consent. It changes nothing that is not in its profile. Profiles travel 
 ## Consequences
 
 - Anyone can read the profile for their own jurisdiction and see what Astrana concluded.
-- A profile can be corrected when a law changes, without a new release.
+- A profile can be corrected when a law changes, without a new release, so a profile can change how an instance behaves
+  without an update its owner chose.
+- The project takes on interpreting the law of each place it writes a profile for, and can get it wrong.

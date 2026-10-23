@@ -9,13 +9,14 @@ Notifications have to reach a person who is not looking at their instance, throu
 
 ## Decision
 
-Notifications are delivered by Web Push, an open standard that needs no Apple or Google account and encrypts what it
-carries. Email is an optional supplement where the owner has set it up, never the main channel. Text messages are not
-used.
+Notifications are delivered by Web Push, an open standard that encrypts what it carries. For notifications, email is an
+optional supplement where the owner has set it up, never the main channel. Text messages are not used.
 
 ## Consequences
 
-- A push service sees that a message went somewhere and when, but not who it was for or what it said.
+- A push service sees which device subscription a message goes to and when, but not what it says. On some platforms the
+  browser routes it through Apple's or Google's push service.
 - Delivery cannot be guaranteed, so what the owner sees when they next open their instance is the record they can rely
   on.
+- Two-factor codes and sign-in links are not notifications, and email may be the only way they arrive.
 - Text messages were rejected, because each one costs money and needs a commercial relationship.

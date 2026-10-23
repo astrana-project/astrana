@@ -15,7 +15,8 @@ theirs.
 Anyone entitled to an answer is told whether it is complete, and every view that shows data tells three states apart.
 
 - When something the view depends on does not exist yet, the view says what is missing, how to get it and what works in
-  the meantime. It never shows a blank, a spinner or an error instead, and it disappears once the need is met.
+  the meantime. It never shows a blank, a spinner or an error instead. It cannot be dismissed, because it describes the
+  state of the instance, and it disappears once the need is met.
 - When there is nothing to show, the view says so.
 - When loading fails or a source cannot be reached, the view says plainly what happened and where the cause lies, and
   offers a retry only where retrying could succeed.
@@ -27,7 +28,7 @@ Anyone entitled to an answer is told whether it is complete, and every view that
   failing.
 - Someone with no right to the answer is told nothing of the kind, because telling a stranger whether something exists
   is itself a disclosure.
-- Expiry is silent on purpose, because it carries out a choice the owner already made, and does not report on whether
-  something worked.
+- Expiry is silent, because it carries out a choice the owner already made, and does not report on whether something
+  worked.
 - The design and the tests of every data view cover all three states.
 - A single generic empty view was rejected, because it hides a difference the person needs to know.

@@ -27,8 +27,6 @@ repository's tooling and build files are not shipped, so they change no version.
 Every change to what ships is described in `CHANGELOG.md`, written by hand in the Keep a Changelog format. Changes are
 listed under `[Unreleased]` as they merge, and move under a dated version heading when that version is released.
 
-Peers decide what they can do together by the capabilities each supports, not by comparing versions.
-
 ## Consequences
 
 - An owner can judge an update from its number and its changelog entry, without reading the code.
@@ -37,7 +35,9 @@ Peers decide what they can do together by the capabilities each supports, not by
 - The first version is 0.0.1, the repository's scaffolding, and versions stay below 1.0.0 until the first release to
   owners. Under Semantic Versioning a `0.x` version promises no compatibility, and 1.0.0 marks the first version owners
   can rely on.
-- Generating the changelog from commit messages was rejected, because pull requests are squash-merged and a changelog
-  written by hand describes changes for the owner rather than for developers. Calendar-based versions were rejected
-  because a date says when an update was made, not what it means for the owner. Separate versions for the web app and
-  the server were rejected because they ship and update as one.
+- Peers decide what they can do together by the capabilities each supports, not by comparing versions
+  ([record 122](0122-peers-check-what-each-other-can-do-not-which-version-they-run.md)).
+- Generating the changelog from commit messages was rejected, because a changelog written by hand describes changes for
+  the owner rather than for developers. Calendar-based versions were rejected because a date says when an update was
+  made, not what it means for the owner. Separate versions for the web app and the server were rejected because they
+  ship and update as one.

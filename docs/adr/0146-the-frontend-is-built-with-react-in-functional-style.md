@@ -11,7 +11,7 @@ piece of work that a project would otherwise have to build and maintain itself.
 [Record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md) allows a third-party component where the
 project could not build and maintain something as good. Content has to reach the page only as text
 ([record 142](0142-only-the-interfaces-own-code-produces-markup.md)), and the frontend has a budget for what the browser
-downloads ([record 144](0144-the-interface-stays-fast-on-low-specification-hardware.md)).
+downloads ([record 144](0144-the-frontend-has-a-download-and-response-budget-that-the-build-enforces.md)).
 
 ## Decision
 
@@ -23,8 +23,9 @@ The frontend is built with React. Components are written as functions.
   [record 142](0142-only-the-interfaces-own-code-produces-markup.md) rules out for content.
 - A production build of React needs no inline script and no code built from text, so it runs under the Content Security
   Policy of [record 141](0141-every-page-carries-a-content-security-policy-that-allows-only-its-own-instance.md).
-- React counts against the budget of [record 144](0144-the-interface-stays-fast-on-low-specification-hardware.md), and
-  can be a large part of what the browser downloads.
+- React counts against the budget of
+  [record 144](0144-the-frontend-has-a-download-and-response-budget-that-the-build-enforces.md), and can be a large part
+  of what the browser downloads.
 - Writing every component as a function gives the frontend one idiom, so a contributor needs to learn only one way of
   writing a component.
 - React is widely used, so many contributors already know it.

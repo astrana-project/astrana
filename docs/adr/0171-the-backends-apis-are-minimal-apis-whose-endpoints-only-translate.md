@@ -21,12 +21,12 @@ validation built into minimal APIs, and rules about meaning are enforced by the 
 
 - An endpoint can be understood by reading one file, next to the use case it calls.
 - Logic growing in an endpoint is easy to spot, and shows that it belongs in a use case or the domain.
-- A refusal, a request that matched nothing and an unreachable instance look the same to the caller
-  ([record 91](0091-a-refusal-looks-the-same-as-finding-nothing-or-not-being-reached.md)), apart from a former peer, who
-  is told the connection has ended ([record 60](0060-a-former-peer-learns-of-a-disconnection-when-they-next-ask.md)), so
-  endpoints return those answers alike.
-- Someone who has not signed in reaches nothing beyond the sign-in page and what installing the app needs
-  ([record 11](0011-an-instance-shows-nothing-to-anyone-it-has-no-relationship-with.md)).
+- Answers that must look alike to the caller
+  ([record 91](0091-a-refusal-looks-the-same-as-finding-nothing-or-not-being-reached.md)) are returned through shared
+  typed results.
 - Typed results make endpoints simple to test and describe their responses accurately.
+- Rate limits are set in the application for each kind of caller
+  ([record 93](0093-the-web-server-handles-connections-and-the-application-decides-who-may-do-what.md)), so they can
+  differ between the owner, guests, apps acting for the owner and peers.
 - Controllers were rejected because their conventions and base classes add indirection without adding anything an
   adapter needs here.

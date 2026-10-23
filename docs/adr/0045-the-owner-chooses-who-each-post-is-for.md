@@ -9,9 +9,9 @@ everything is for everyone.
 
 ## Decision
 
-Every post is shared with one or more audiences, which are named groupings of peers and guests. By default a post goes
-to all connected peers, and the last audience used is remembered.
+Every post is shared with one or more audiences, which are named groupings of peers and guests.
 
 ## Consequences
 
-- A peer left out of an audience is never told, so leaving someone out never becomes a social signal.
+- Astrana does not tell a peer that they were left out of an audience.
+- A post goes to all connected peers unless the owner chooses otherwise, and the last audience used is remembered.

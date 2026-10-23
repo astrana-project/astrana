@@ -33,7 +33,7 @@ its text cites them.
 | [32. Every instance is managed by its owner, and nobody else operates it](0032-every-instance-is-managed-by-its-owner-and-nobody-else-operates-it.md)         | Proposed | 1            |
 | [43. There are four kinds of account, and no others](0043-there-are-four-kinds-of-account-and-no-others.md)                                                   | Proposed | 1            |
 | [61. An instance may run on the owner's own hardware or on hosting they rent](0061-an-instance-may-run-on-the-owners-own-hardware-or-on-hosting-they-rent.md) | Proposed | 32           |
-| [74. There is no sign-up anywhere](0074-there-is-no-sign-up-anywhere.md)                                                                                      | Proposed | 43           |
+| [74. There is no sign-up anywhere](0074-there-is-no-sign-up-anywhere.md)                                                                                      | Proposed | 2, 43        |
 | [75. An account gets only what its role needs, settled in advance](0075-an-account-gets-only-what-its-role-needs-settled-in-advance.md)                       | Proposed | 43           |
 | [112. A guest sees the owner's own content and may only comment and react](0112-a-guest-sees-the-owners-own-content-and-may-only-comment-and-react.md)        | Proposed | 75           |
 
@@ -46,15 +46,15 @@ its text cites them.
 | [34. There are no groups](0034-there-are-no-groups.md)                                                                                                                     | Proposed | 2            |
 | [35. Peers recognise each other by keys remembered when they first connect](0035-peers-recognise-each-other-by-keys-remembered-when-they-first-connect.md)                 | Proposed | 2            |
 | [46. A request to a peer is a request, never a demand](0046-a-request-to-a-peer-is-a-request-never-a-demand.md)                                                            | Proposed | 2            |
-| [55. A profile is seen only after connecting](0055-a-profile-is-seen-only-after-connecting.md)                                                                             | Proposed | 2            |
+| [55. A profile is seen only after connecting](0055-a-profile-is-seen-only-after-connecting.md)                                                                             | Proposed | 2, 35        |
 | [56. Signals about a peer inform the owner and never act by themselves](0056-signals-about-a-peer-inform-the-owner-and-never-act-by-themselves.md)                         | Proposed | 2            |
 | [59. Attestation from an organisation is always optional](0059-attestation-from-an-organisation-is-always-optional.md)                                                     | Proposed | 2            |
 | [60. A former peer learns of a disconnection when they next ask](0060-a-former-peer-learns-of-a-disconnection-when-they-next-ask.md)                                       | Proposed | 2            |
 | [62. Two people confirm a short code before their instances connect](0062-two-people-confirm-a-short-code-before-their-instances-connect.md)                               | Proposed | 35           |
-| [63. Peers authenticate each other with a Noise handshake inside HTTPS](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)                         | Proposed | 35, 62       |
+| [63. Peers authenticate each other with a Noise handshake inside HTTPS](0063-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)                         | Proposed | 4, 35, 62    |
 | [64. Peers use the Noise XX handshake pattern](0064-peers-use-the-noise-xx-handshake-pattern.md)                                                                           | Proposed | 63           |
 | [65. Peers talk directly over HTTPS, with a WebSocket channel for notifications](0065-peers-talk-directly-over-https-with-a-websocket-channel-for-notifications.md)        | Proposed | 2, 35, 63    |
-| [87. An instance tells its peers whether it is under guardianship or custodianship](0087-an-instance-tells-its-peers-whether-it-is-under-guardianship-or-custodianship.md) | Proposed | 43           |
+| [87. An instance tells its peers whether it is under guardianship or custodianship](0087-an-instance-tells-its-peers-whether-it-is-under-guardianship-or-custodianship.md) | Proposed | 43, 75, 80   |
 | [90. Access is enforced by the instance that holds the content](0090-access-is-enforced-by-the-instance-that-holds-the-content.md)                                         | Proposed | 45           |
 | [91. A refusal looks the same as finding nothing or not being reached](0091-a-refusal-looks-the-same-as-finding-nothing-or-not-being-reached.md)                           | Proposed | 46           |
 | [95. Resharing something publishes it anew, to the resharer's own audience](0095-resharing-something-publishes-it-anew-to-the-resharers-own-audience.md)                   | Proposed | 33, 45       |
@@ -67,30 +67,30 @@ its text cites them.
 
 ## Content
 
-| Record                                                                                                                                                                          | Status   | Derives from |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
-| [5. Content belongs to the person who created it](0005-content-belongs-to-the-person-who-created-it.md)                                                                         | Proposed | the premise  |
-| [6. Content expires by default](0006-content-expires-by-default.md)                                                                                                             | Proposed | the premise  |
-| [7. An edit makes a new version, and earlier versions stay visible](0007-an-edit-makes-a-new-version-and-earlier-versions-stay-visible.md)                                      | Proposed | the premise  |
-| [8. A post is a container, and what it holds shares its audience and its life](0008-a-post-is-a-container-and-what-it-holds-shares-its-audience-and-its-life.md)                | Proposed | the premise  |
-| [13. Hidden details are stripped from uploads](0013-hidden-details-are-stripped-from-uploads.md)                                                                                | Proposed | the premise  |
-| [21. Originals are kept untouched, and copies made from them are what is served](0021-originals-are-kept-untouched-and-copies-made-from-them-are-what-is-served.md)             | Proposed | the premise  |
-| [22. Media is stored as files, not in the database](0022-media-is-stored-as-files-not-in-the-database.md)                                                                       | Proposed | the premise  |
-| [23. Comments have one level of replies](0023-comments-have-one-level-of-replies.md)                                                                                            | Proposed | the premise  |
-| [27. Astrana does not analyse what content depicts or means](0027-astrana-does-not-analyse-what-content-depicts-or-means.md)                                                    | Proposed | the premise  |
-| [28. Links are checked against a list held on the instance, never by sending them out](0028-links-are-checked-against-a-list-held-on-the-instance-never-by-sending-them-out.md) | Proposed | the premise  |
-| [40. The owner of an instance may remove anything stored on it](0040-the-owner-of-an-instance-may-remove-anything-stored-on-it.md)                                              | Proposed | 1, 5         |
-| [45. The owner chooses who each post is for](0045-the-owner-chooses-who-each-post-is-for.md)                                                                                    | Proposed | 2            |
-| [50. Files may be kept with an external storage provider](0050-files-may-be-kept-with-an-external-storage-provider.md)                                                          | Proposed | 22           |
-| [51. A post that cannot save its attachments is refused, not queued](0051-a-post-that-cannot-save-its-attachments-is-refused-not-queued.md)                                     | Proposed | 8            |
-| [52. Albums exist on their own, and posts refer to them](0052-albums-exist-on-their-own-and-posts-refer-to-them.md)                                                             | Proposed | 8            |
-| [53. A location is chosen, never read from the device](0053-a-location-is-chosen-never-read-from-the-device.md)                                                                 | Proposed | 8, 13        |
-| [54. Content is classified again with every edit](0054-content-is-classified-again-with-every-edit.md)                                                                          | Proposed | 7            |
-| [58. A link warning informs, and never blocks](0058-a-link-warning-informs-and-never-blocks.md)                                                                                 | Proposed | 28           |
-| [99. Search covers one instance at a time](0099-search-covers-one-instance-at-a-time.md)                                                                                        | Proposed | 46           |
-| [102. Astrana has no direct messaging](0102-astrana-has-no-direct-messaging.md)                                                                                                 | Proposed | 66           |
-| [118. What someone searches for is not kept](0118-what-someone-searches-for-is-not-kept.md)                                                                                     | Proposed | 99           |
-| [119. A link to content grants no access](0119-a-link-to-content-grants-no-access.md)                                                                                           | Proposed | 90           |
+| Record                                                                                                                                                                                                      | Status   | Derives from |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| [5. Content belongs to the person who created it](0005-content-belongs-to-the-person-who-created-it.md)                                                                                                     | Proposed | the premise  |
+| [6. Content expires by default](0006-content-expires-by-default.md)                                                                                                                                         | Proposed | the premise  |
+| [7. An edit makes a new version, and earlier versions stay visible](0007-an-edit-makes-a-new-version-and-earlier-versions-stay-visible.md)                                                                  | Proposed | the premise  |
+| [8. A post is a container, and what it holds shares its audience and its life](0008-a-post-is-a-container-and-what-it-holds-shares-its-audience-and-its-life.md)                                            | Proposed | the premise  |
+| [13. Hidden details are stripped from uploads](0013-hidden-details-are-stripped-from-uploads.md)                                                                                                            | Proposed | the premise  |
+| [21. Originals are kept untouched, and copies made from them are what is served](0021-originals-are-kept-untouched-and-copies-made-from-them-are-what-is-served.md)                                         | Proposed | the premise  |
+| [22. Media is stored as files, not in the database](0022-media-is-stored-as-files-not-in-the-database.md)                                                                                                   | Proposed | the premise  |
+| [23. Comments have one level of replies](0023-comments-have-one-level-of-replies.md)                                                                                                                        | Proposed | the premise  |
+| [27. Astrana does not analyse what content depicts or means](0027-astrana-does-not-analyse-what-content-depicts-or-means.md)                                                                                | Proposed | the premise  |
+| [28. Links are checked against a list held on the instance, never by sending them out](0028-links-are-checked-against-a-list-held-on-the-instance-never-by-sending-them-out.md)                             | Proposed | the premise  |
+| [40. The owner of an instance may remove anything stored on it, except a report about their content](0040-the-owner-of-an-instance-may-remove-anything-stored-on-it-except-a-report-about-their-content.md) | Proposed | 1, 5         |
+| [45. The owner chooses who each post is for](0045-the-owner-chooses-who-each-post-is-for.md)                                                                                                                | Proposed | 2            |
+| [50. Files may be kept with an external storage provider](0050-files-may-be-kept-with-an-external-storage-provider.md)                                                                                      | Proposed | 22           |
+| [51. A post that cannot save its attachments is refused, not queued](0051-a-post-that-cannot-save-its-attachments-is-refused-not-queued.md)                                                                 | Proposed | 8            |
+| [52. Albums exist on their own, and posts refer to them](0052-albums-exist-on-their-own-and-posts-refer-to-them.md)                                                                                         | Proposed | 8            |
+| [53. A location is chosen, never read from the device](0053-a-location-is-chosen-never-read-from-the-device.md)                                                                                             | Proposed | 8, 13        |
+| [54. Content is classified again with every edit](0054-content-is-classified-again-with-every-edit.md)                                                                                                      | Proposed | 7            |
+| [58. A link warning informs, and never blocks](0058-a-link-warning-informs-and-never-blocks.md)                                                                                                             | Proposed | 28           |
+| [99. Search covers one instance at a time](0099-search-covers-one-instance-at-a-time.md)                                                                                                                    | Proposed | 46           |
+| [102. Astrana has no direct messaging](0102-astrana-has-no-direct-messaging.md)                                                                                                                             | Proposed | 66           |
+| [118. What someone searches for is not kept](0118-what-someone-searches-for-is-not-kept.md)                                                                                                                 | Proposed | 99           |
+| [119. A link to content grants no access](0119-a-link-to-content-grants-no-access.md)                                                                                                                       | Proposed | 90           |
 
 ## The feed and attention
 
@@ -107,34 +107,34 @@ its text cites them.
 
 ## Children and guardians
 
-| Record                                                                                                                                                                                                        | Status   | Derives from |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
-| [30. A child can own an instance, and age is declared rather than verified](0030-a-child-can-own-an-instance-and-age-is-declared-rather-than-verified.md)                                                     | Proposed | 1            |
-| [31. When a child owns an instance, a parent or guardian holds authority over its parental controls](0031-when-a-child-owns-an-instance-a-parent-or-guardian-holds-authority-over-its-parental-controls.md)   | Proposed | 1            |
-| [76. A child's instance cannot exist without a guardian](0076-a-childs-instance-cannot-exist-without-a-guardian.md)                                                                                           | Proposed | 30, 31       |
-| [77. Several guardians may hold equal authority](0077-several-guardians-may-hold-equal-authority.md)                                                                                                          | Proposed | 31           |
-| [78. A guardian signs in with an account of their own](0078-a-guardian-signs-in-with-an-account-of-their-own.md)                                                                                              | Proposed | 31           |
-| [79. A child cannot remove their guardian](0079-a-child-cannot-remove-their-guardian.md)                                                                                                                      | Proposed | 31           |
-| [80. A guardian sees who a child talks to and how often, not what they say](0080-a-guardian-sees-who-a-child-talks-to-and-how-often-not-what-they-say.md)                                                     | Proposed | 31           |
-| [81. A child can always see their guardian's oversight](0081-a-child-can-always-see-their-guardians-oversight.md)                                                                                             | Proposed | 31           |
-| [82. Guardianship is declared, not verified](0082-guardianship-is-declared-not-verified.md)                                                                                                                   | Proposed | 30, 31       |
-| [83. At Coming of Age, a guardian's authority ends completely and automatically](0083-at-coming-of-age-a-guardians-authority-ends-completely-and-automatically.md)                                            | Proposed | 31           |
-| [84. Restrictions ease in stages, and a guardian may bring a stage forward but never back](0084-restrictions-ease-in-stages-and-a-guardian-may-bring-a-stage-forward-but-never-back.md)                       | Proposed | 31           |
-| [85. A child's instance starts with protections already on](0085-a-childs-instance-starts-with-protections-already-on.md)                                                                                     | Proposed | 30, 31       |
-| [86. Parental controls apply only to children](0086-parental-controls-apply-only-to-children.md)                                                                                                              | Proposed | 31           |
-| [127. Coming of Age follows the age of majority where the owner lives](0127-coming-of-age-follows-the-age-of-majority-where-the-owner-lives.md)                                                               | Proposed | 83, 113      |
-| [128. Below the age of digital consent, sending anything beyond the instance is the guardian's choice](0128-below-the-age-of-digital-consent-sending-anything-beyond-the-instance-is-the-guardians-choice.md) | Proposed | 31, 113      |
+| Record                                                                                                                                                                                                                                               | Status   | Derives from |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| [30. A child can own an instance, and age is declared rather than verified](0030-a-child-can-own-an-instance-and-age-is-declared-rather-than-verified.md)                                                                                            | Proposed | 1            |
+| [31. When a child owns an instance, a parent or guardian holds authority over its parental controls](0031-when-a-child-owns-an-instance-a-parent-or-guardian-holds-authority-over-its-parental-controls.md)                                          | Proposed | 1            |
+| [76. A child's instance cannot exist without a guardian](0076-a-childs-instance-cannot-exist-without-a-guardian.md)                                                                                                                                  | Proposed | 30, 31       |
+| [77. Several guardians may hold equal authority](0077-several-guardians-may-hold-equal-authority.md)                                                                                                                                                 | Proposed | 31           |
+| [78. A guardian signs in with an account of their own](0078-a-guardian-signs-in-with-an-account-of-their-own.md)                                                                                                                                     | Proposed | 31           |
+| [79. A child cannot remove their guardian](0079-a-child-cannot-remove-their-guardian.md)                                                                                                                                                             | Proposed | 31           |
+| [80. A guardian sees who a child talks to and how often, not what they say](0080-a-guardian-sees-who-a-child-talks-to-and-how-often-not-what-they-say.md)                                                                                            | Proposed | 31           |
+| [81. A child can always see their guardian's oversight](0081-a-child-can-always-see-their-guardians-oversight.md)                                                                                                                                    | Proposed | 31           |
+| [82. Guardianship is declared, not verified](0082-guardianship-is-declared-not-verified.md)                                                                                                                                                          | Proposed | 30, 31       |
+| [83. At Coming of Age, a guardian's authority ends completely and automatically](0083-at-coming-of-age-a-guardians-authority-ends-completely-and-automatically.md)                                                                                   | Proposed | 31           |
+| [84. Restrictions ease in stages, and a guardian may bring a stage forward but never back](0084-restrictions-ease-in-stages-and-a-guardian-may-bring-a-stage-forward-but-never-back.md)                                                              | Proposed | 31           |
+| [85. A child's instance starts with protections already on](0085-a-childs-instance-starts-with-protections-already-on.md)                                                                                                                            | Proposed | 30, 31, 84   |
+| [86. Parental controls apply only to children](0086-parental-controls-apply-only-to-children.md)                                                                                                                                                     | Proposed | 31           |
+| [127. Coming of Age follows the age of majority where the owner lives](0127-coming-of-age-follows-the-age-of-majority-where-the-owner-lives.md)                                                                                                      | Proposed | 83, 113, 126 |
+| [128. Below the age of digital consent, choices that send data beyond the instance on a child's behalf are the guardian's](0128-below-the-age-of-digital-consent-choices-that-send-data-beyond-the-instance-on-a-childs-behalf-are-the-guardians.md) | Proposed | 31, 113      |
 
 ## Jurisdiction
 
-| Record                                                                                                                                                                                         | Status   | Derives from |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
-| [44. The owner declares where they live](0044-the-owner-declares-where-they-live.md)                                                                                                           | Proposed | 1            |
-| [88. Jurisdiction informs and never enforces](0088-jurisdiction-informs-and-never-enforces.md)                                                                                                 | Proposed | 44           |
-| [89. Jurisdiction never leaves the instance](0089-jurisdiction-never-leaves-the-instance.md)                                                                                                   | Proposed | 44           |
-| [113. A jurisdiction selects a small set of values, not special behaviour](0113-a-jurisdiction-selects-a-small-set-of-values-not-special-behaviour.md)                                         | Proposed | 44, 66, 67   |
-| [126. An owner may decline to say where they live, and then gets the most protective defaults](0126-an-owner-may-decline-to-say-where-they-live-and-then-gets-the-most-protective-defaults.md) | Proposed | 113          |
-| [130. Language changes how things are shown, not what counts as sensitive](0130-language-changes-how-things-are-shown-not-what-counts-as-sensitive.md)                                         | Proposed | 113, 121     |
+| Record                                                                                                                                                                                         | Status   | Derives from  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------- |
+| [44. The owner declares where they live](0044-the-owner-declares-where-they-live.md)                                                                                                           | Proposed | 1             |
+| [88. Jurisdiction informs and never enforces](0088-jurisdiction-informs-and-never-enforces.md)                                                                                                 | Proposed | 44            |
+| [89. Jurisdiction never leaves the instance](0089-jurisdiction-never-leaves-the-instance.md)                                                                                                   | Proposed | 44            |
+| [113. A jurisdiction selects a small set of values, not special behaviour](0113-a-jurisdiction-selects-a-small-set-of-values-not-special-behaviour.md)                                         | Proposed | 44, 66, 67    |
+| [126. An owner may decline to say where they live, and then gets the most protective defaults](0126-an-owner-may-decline-to-say-where-they-live-and-then-gets-the-most-protective-defaults.md) | Proposed | 113           |
+| [130. Language changes how things are shown, not what counts as sensitive](0130-language-changes-how-things-are-shown-not-what-counts-as-sensitive.md)                                         | Proposed | 113, 120, 121 |
 
 ## Security and privacy
 
@@ -153,7 +153,7 @@ its text cites them.
 | [104. The database is encrypted at rest](0104-the-database-is-encrypted-at-rest.md)                                                                                                          | Proposed | 68           |
 | [106. A second factor is required](0106-a-second-factor-is-required.md)                                                                                                                      | Proposed | 72           |
 | [107. Apps acting for the owner use a narrow form of OAuth 2.1](0107-apps-acting-for-the-owner-use-a-narrow-form-of-oauth-2-1.md)                                                            | Proposed | 72           |
-| [108. Until setup is finished, the setup page answers only on the host machine](0108-until-setup-is-finished-the-setup-page-answers-only-on-the-host-machine.md)                             | Proposed | 73           |
+| [108. Until setup is finished, the setup page answers only on the host machine](0108-until-setup-is-finished-the-setup-page-answers-only-on-the-host-machine.md)                             | Proposed | 73, 92       |
 | [117. A sign-in from somewhere unfamiliar is reported to the owner, as reliably as it can be](0117-a-sign-in-from-somewhere-unfamiliar-is-reported-to-the-owner-as-reliably-as-it-can-be.md) | Proposed | 48, 72       |
 | [123. The server checks everything the app checks](0123-the-server-checks-everything-the-app-checks.md)                                                                                      | Proposed | 103, 122     |
 | [124. The identity, database and backup keys are independent](0124-the-identity-database-and-backup-keys-are-independent.md)                                                                 | Proposed | 35, 104      |
@@ -170,10 +170,10 @@ its text cites them.
 | [37. The backend is built on .NET](0037-the-backend-is-built-on-net.md)                                                                                 | Proposed | 4, 36        |
 | [38. All data access goes through Entity Framework Core](0038-all-data-access-goes-through-entity-framework-core.md)                                    | Proposed | 4            |
 | [39. Entity Framework Core is configured only through its Fluent API](0039-entity-framework-core-is-configured-only-through-its-fluent-api.md)          | Proposed | 38           |
-| [67. Rules that may vary live in data, and fixed rules live in code](0067-rules-that-may-vary-live-in-data-and-fixed-rules-live-in-code.md)             | Proposed | 32           |
+| [67. Rules that may vary live in data, and fixed rules live in code](0067-rules-that-may-vary-live-in-data-and-fixed-rules-live-in-code.md)             | Proposed | 32, 66       |
 | [68. The owner chooses PostgreSQL, MySQL or Microsoft SQL Server](0068-the-owner-chooses-postgresql-mysql-or-microsoft-sql-server.md)                   | Proposed | 32, 36, 38   |
 | [69. Each database has its own schema migrations, in a project of its own](0069-each-database-has-its-own-schema-migrations-in-a-project-of-its-own.md) | Proposed | 68           |
-| [145. Develop on .NET 11 and release on .NET 12 long-term support](0145-develop-on-net-11-and-release-on-net-12-long-term-support.md)                   | Proposed | 4            |
+| [145. Develop on .NET 11 and release on .NET 12 long-term support](0145-develop-on-net-11-and-release-on-net-12-long-term-support.md)                   | Proposed | 4, 63, 109   |
 
 ## Hosting and running
 
@@ -187,7 +187,7 @@ its text cites them.
 | [92. The owner supplies the web server in front of the instance](0092-the-owner-supplies-the-web-server-in-front-of-the-instance.md)                                                                 | Proposed | 32, 63               |
 | [93. The web server handles connections, and the application decides who may do what](0093-the-web-server-handles-connections-and-the-application-decides-who-may-do-what.md)                        | Proposed | 92                   |
 | [114. What an instance finds about its hosting environment is told to its owner, and nobody else](0114-what-an-instance-finds-about-its-hosting-environment-is-told-to-its-owner-and-nobody-else.md) | Proposed | 61                   |
-| [115. The hosting environment must protect data and receive security fixes, however it does so](0115-the-hosting-environment-must-protect-data-and-receive-security-fixes-however-it-does-so.md)     | Proposed | 61                   |
+| [115. The hosting environment must protect data and receive security fixes, however it does so](0115-the-hosting-environment-must-protect-data-and-receive-security-fixes-however-it-does-so.md)     | Proposed | 61, 114              |
 | [116. Phones are not pursued as host machines](0116-phones-are-not-pursued-as-host-machines.md)                                                                                                      | Proposed | 61                   |
 | [129. An instance checks what it can about its hosting environment, rather than asking the owner](0129-an-instance-checks-what-it-can-about-its-hosting-environment-rather-than-asking-the-owner.md) | Proposed | 114                  |
 | [163. Each hosting environment is an adapter around the application](0163-each-hosting-environment-is-an-adapter-around-the-application.md)                                                          | Proposed | 20, 57, 61, 148, 159 |
@@ -197,20 +197,20 @@ its text cites them.
 
 ## Versions, updates and modules
 
-| Record                                                                                                                                                                         | Status   | Derives from          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | --------------------- |
-| [66. Information about versions comes from one central, signed catalogue](0066-information-about-versions-comes-from-one-central-signed-catalogue.md)                          | Proposed | 32                    |
-| [71. Email is sent through small, replaceable modules](0071-email-is-sent-through-small-replaceable-modules.md)                                                                | Proposed | 36                    |
-| [101. The project's primary maintainer holds the key that signs the version catalogue](0101-the-projects-primary-maintainer-holds-the-key-that-signs-the-version-catalogue.md) | Proposed | 66                    |
-| [105. Astrana builds and signs every email module it ships](0105-astrana-builds-and-signs-every-email-module-it-ships.md)                                                      | Proposed | 71                    |
-| [109. An update is never applied without the owner](0109-an-update-is-never-applied-without-the-owner.md)                                                                      | Proposed | 66                    |
-| [110. Each instance decides for itself whether it is early in a staged rollout](0110-each-instance-decides-for-itself-whether-it-is-early-in-a-staged-rollout.md)              | Proposed | 66                    |
-| [111. Nothing can change an instance's behaviour remotely](0111-nothing-can-change-an-instances-behaviour-remotely.md)                                                         | Proposed | 66                    |
-| [121. Language packs are signed, not reviewed](0121-language-packs-are-signed-not-reviewed.md)                                                                                 | Proposed | 67                    |
-| [153. Version numbers say what an update means](0153-version-numbers-say-what-an-update-means.md)                                                                              | Proposed | 149                   |
-| [168. Schema migrations run under credentials of their own](0168-schema-migrations-run-under-credentials-of-their-own.md)                                                      | Proposed | 68, 73, 109, 135, 136 |
-| [169. The application refuses to start against a newer schema](0169-the-application-refuses-to-start-against-a-newer-schema.md)                                                | Proposed | 136, 168              |
-| [170. An update that changes the schema takes a rollback copy of the database first](0170-an-update-that-changes-the-schema-takes-a-rollback-copy-of-the-database-first.md)    | Proposed | 132, 168              |
+| Record                                                                                                                                                                         | Status   | Derives from                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------------------------ |
+| [66. Information about versions comes from one central, signed catalogue](0066-information-about-versions-comes-from-one-central-signed-catalogue.md)                          | Proposed | 32                             |
+| [71. Email is sent through small, replaceable modules](0071-email-is-sent-through-small-replaceable-modules.md)                                                                | Proposed | 36                             |
+| [101. The project's primary maintainer holds the key that signs the version catalogue](0101-the-projects-primary-maintainer-holds-the-key-that-signs-the-version-catalogue.md) | Proposed | 66                             |
+| [105. Astrana builds and signs every email module it ships](0105-astrana-builds-and-signs-every-email-module-it-ships.md)                                                      | Proposed | 71                             |
+| [109. An update is never applied without the owner](0109-an-update-is-never-applied-without-the-owner.md)                                                                      | Proposed | 66                             |
+| [110. Each instance decides for itself whether it is early in a staged rollout](0110-each-instance-decides-for-itself-whether-it-is-early-in-a-staged-rollout.md)              | Proposed | 66                             |
+| [111. Nothing can change an instance's behaviour remotely](0111-nothing-can-change-an-instances-behaviour-remotely.md)                                                         | Proposed | 66, 67                         |
+| [121. Language packs are signed, not reviewed](0121-language-packs-are-signed-not-reviewed.md)                                                                                 | Proposed | 67                             |
+| [153. Version numbers say what an update means](0153-version-numbers-say-what-an-update-means.md)                                                                              | Proposed | 122, 149                       |
+| [168. Schema migrations run under credentials of their own](0168-schema-migrations-run-under-credentials-of-their-own.md)                                                      | Proposed | 68, 69, 73, 109, 114, 135, 136 |
+| [169. The application refuses to start against a newer schema](0169-the-application-refuses-to-start-against-a-newer-schema.md)                                                | Proposed | 136, 168                       |
+| [170. An update that changes the schema takes a rollback copy of the database first](0170-an-update-that-changes-the-schema-takes-a-rollback-copy-of-the-database-first.md)    | Proposed | 132, 168                       |
 
 ## Backup and moving an instance
 
@@ -229,13 +229,13 @@ its text cites them.
 | [19. The app is a progressive web app served by each instance](0019-the-app-is-a-progressive-web-app-served-by-each-instance.md)                                              | Proposed | the premise              |
 | [120. Astrana is localised, and each person chooses their locale](0120-astrana-is-localised-and-each-person-chooses-their-locale.md)                                          | Proposed | 4                        |
 | [137. The interface meets WCAG 2.1 at level AA](0137-the-interface-meets-wcag-2-1-at-level-aa.md)                                                                             | Proposed | 120                      |
-| [138. The interface is responsive and designed mobile first](0138-the-interface-is-responsive-and-designed-mobile-first.md)                                                   | Proposed | 19, 120                  |
+| [138. The interface is responsive and designed mobile first](0138-the-interface-is-responsive-and-designed-mobile-first.md)                                                   | Proposed | 19, 120, 137             |
 | [139. Colours, spacing and typography come from design tokens](0139-colours-spacing-and-typography-come-from-design-tokens.md)                                                | Proposed | 120                      |
 | [140. The frontend loads assets and dependencies only from its own instance](0140-the-frontend-loads-assets-and-dependencies-only-from-its-own-instance.md)                   | Proposed | 19, 123                  |
 | [141. Every page carries a Content Security Policy that allows only its own instance](0141-every-page-carries-a-content-security-policy-that-allows-only-its-own-instance.md) | Proposed | 103, 123, 140            |
 | [142. Only the interface's own code produces markup](0142-only-the-interfaces-own-code-produces-markup.md)                                                                    | Proposed | 103, 141                 |
 | [143. The browser never holds credentials or tokens](0143-the-browser-never-holds-credentials-or-tokens.md)                                                                   | Proposed | 103, 123, 141, 142       |
-| [144. The interface stays fast on low-specification hardware](0144-the-interface-stays-fast-on-low-specification-hardware.md)                                                 | Proposed | 4                        |
+| [144. The frontend has a download and response budget that the build enforces](0144-the-frontend-has-a-download-and-response-budget-that-the-build-enforces.md)               | Proposed | 4                        |
 | [146. The frontend is built with React, in functional style](0146-the-frontend-is-built-with-react-in-functional-style.md)                                                    | Proposed | 4, 19, 36, 141, 142, 144 |
 | [147. The frontend is written in TypeScript with strict checking](0147-the-frontend-is-written-in-typescript-with-strict-checking.md)                                         | Proposed | 123                      |
 
@@ -250,23 +250,23 @@ its text cites them.
 
 ## Architecture
 
-| Record                                                                                                                                                                | Status   | Derives from           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------------- |
-| [148. The browser-facing side and the key-holding side run as separate processes](0148-the-browser-facing-side-and-the-key-holding-side-run-as-separate-processes.md) | Proposed | 63, 92, 124, 143       |
-| [155. The architecture follows named principles, not one methodology](0155-the-architecture-follows-named-principles-not-one-methodology.md)                          | Proposed | 4                      |
-| [156. Depend in the direction of stability](0156-depend-in-the-direction-of-stability.md)                                                                             | Proposed | 122                    |
-| [157. Internal and external boundaries are treated differently](0157-internal-and-external-boundaries-are-treated-differently.md)                                     | Proposed | 38, 100, 103, 123      |
-| [158. Types that cross an external boundary are named Inbound and Outbound](0158-types-that-cross-an-external-boundary-are-named-inbound-and-outbound.md)             | Proposed | 157                    |
-| [159. The inside defines ports and the outside adapts to them](0159-the-inside-defines-ports-and-the-outside-adapts-to-them.md)                                       | Proposed | 3, 68, 124, 156        |
-| [160. The domain is modelled with domain-driven design](0160-the-domain-is-modelled-with-domain-driven-design.md)                                                     | Proposed | 67, 75, 90             |
-| [161. Code is organised by feature, for locality of behaviour](0161-code-is-organised-by-feature-for-locality-of-behaviour.md)                                        | Proposed | 156, 160               |
-| [162. The domain is a project of its own in the backend](0162-the-domain-is-a-project-of-its-own-in-the-backend.md)                                                   | Proposed | 38, 149, 150, 156, 161 |
-| [171. The backend's APIs are minimal APIs, whose endpoints only translate](0171-the-backends-apis-are-minimal-apis-whose-endpoints-only-translate.md)                 | Proposed | 11, 60, 91, 159, 161   |
-| [172. Every caller uses one set of paths](0172-every-caller-uses-one-set-of-paths.md)                                                                                 | Proposed | 63, 90, 107            |
-| [173. Each request is resolved to exactly one caller](0173-each-request-is-resolved-to-exactly-one-caller.md)                                                         | Proposed | 172                    |
-| [174. The web app's API is described by OpenAPI, and its types are generated](0174-the-web-apps-api-is-described-by-openapi-and-its-types-are-generated.md)           | Proposed | 19, 153, 172           |
-| [175. Only the signed-in web app is told the instance's version](0175-only-the-signed-in-web-app-is-told-the-instances-version.md)                                    | Proposed | 11, 19, 122            |
-| [176. Architecture rules are checked by tests](0176-architecture-rules-are-checked-by-tests.md)                                                                       | Proposed | 4, 156, 161, 162       |
+| Record                                                                                                                                                                                           | Status   | Derives from             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------------------ |
+| [148. The browser-facing side and the key-holding side run as separate processes](0148-the-browser-facing-side-and-the-key-holding-side-run-as-separate-processes.md)                            | Proposed | 63, 92, 124, 143         |
+| [155. The architecture follows named principles, not one methodology](0155-the-architecture-follows-named-principles-not-one-methodology.md)                                                     | Proposed | 4                        |
+| [156. Depend in the direction of stability](0156-depend-in-the-direction-of-stability.md)                                                                                                        | Proposed | 122                      |
+| [157. Internal and external boundaries are treated differently](0157-internal-and-external-boundaries-are-treated-differently.md)                                                                | Proposed | 38, 100, 103, 123        |
+| [158. Types that cross an external boundary are named Inbound and Outbound](0158-types-that-cross-an-external-boundary-are-named-inbound-and-outbound.md)                                        | Proposed | 157                      |
+| [159. The inside defines ports and the outside adapts to them](0159-the-inside-defines-ports-and-the-outside-adapts-to-them.md)                                                                  | Proposed | 3, 68, 124, 156          |
+| [160. The domain is modelled with domain-driven design](0160-the-domain-is-modelled-with-domain-driven-design.md)                                                                                | Proposed | 67, 75, 90               |
+| [161. Code is organised by feature, for locality of behaviour](0161-code-is-organised-by-feature-for-locality-of-behaviour.md)                                                                   | Proposed | 156, 160                 |
+| [162. The domain is a project of its own in the backend](0162-the-domain-is-a-project-of-its-own-in-the-backend.md)                                                                              | Proposed | 38, 149, 150, 156, 161   |
+| [171. The backend's APIs are minimal APIs, whose endpoints only translate](0171-the-backends-apis-are-minimal-apis-whose-endpoints-only-translate.md)                                            | Proposed | 11, 60, 91, 93, 159, 161 |
+| [172. Every caller uses one set of paths](0172-every-caller-uses-one-set-of-paths.md)                                                                                                            | Proposed | 63, 90, 107              |
+| [173. Each request is resolved to exactly one caller](0173-each-request-is-resolved-to-exactly-one-caller.md)                                                                                    | Proposed | 172                      |
+| [174. The instance's API is described by OpenAPI, and the web app's types are generated from it](0174-the-instances-api-is-described-by-openapi-and-the-web-apps-types-are-generated-from-it.md) | Proposed | 19, 153, 172             |
+| [175. Only the signed-in web app is told the instance's version](0175-only-the-signed-in-web-app-is-told-the-instances-version.md)                                                               | Proposed | 11, 19, 122              |
+| [176. Architecture rules are checked by tests](0176-architecture-rules-are-checked-by-tests.md)                                                                                                  | Proposed | 4, 156, 161, 162         |
 
 ## Delivery
 

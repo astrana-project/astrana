@@ -18,3 +18,5 @@ A location is attached only by typing it or choosing it on a map. Astrana never 
 - A location attached to a post has the post's audience
   ([record 8](0008-a-post-is-a-container-and-what-it-holds-shares-its-audience-and-its-life.md)).
 - On a child's instance, adding a location becomes available only at a late stage, and is off by default.
+- Reading the device's location with the person's permission each time was rejected, because a precise position attached
+  in one tap is easily shared by mistake, and choosing the place leaves how precise it is to the person.

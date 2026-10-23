@@ -16,4 +16,7 @@ later.
 ## Consequences
 
 - A post never exists without the pictures it was written with.
-- The person learns at once that it failed, and can try again.
+- The person learns at once that it failed, and can try again, so what they wrote has to survive the refusal.
+- When a storage provider is unreliable, the person cannot post with attachments at all until it recovers.
+- Queuing was rejected, because a queued post would appear later than it was written, and a queued attachment could fail
+  after the person had moved on, without them noticing.

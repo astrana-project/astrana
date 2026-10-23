@@ -5,9 +5,10 @@ Proposed.
 ## Context
 
 Age is declared, not verified
-([record 30](0030-a-child-can-own-an-instance-and-age-is-declared-rather-than-verified.md)), and the same is true of the
-people who act as guardians
-([record 31](0031-when-a-child-owns-an-instance-a-parent-or-guardian-holds-authority-over-its-parental-controls.md)).
+([record 30](0030-a-child-can-own-an-instance-and-age-is-declared-rather-than-verified.md)), and a parent or guardian
+holds authority over a child's instance
+([record 31](0031-when-a-child-owns-an-instance-a-parent-or-guardian-holds-authority-over-its-parental-controls.md)). A
+self-hosted instance has no means of confirming that a person is an adult or that a family relationship is real.
 
 ## Decision
 

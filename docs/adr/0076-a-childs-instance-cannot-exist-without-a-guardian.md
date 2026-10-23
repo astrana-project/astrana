@@ -16,3 +16,4 @@ representing a child never exists, even for a moment, without one.
 ## Consequences
 
 - There is no time in which a child's instance runs with nobody able to configure its protections.
+- A child cannot set up an instance without a guardian taking part.

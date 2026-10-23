@@ -11,10 +11,12 @@ differs from country to country
 
 ## Decision
 
-Coming of Age is the age of majority in the owner's declared jurisdiction. Where none is declared, it is 18.
+Coming of Age is the age of majority in the owner's declared jurisdiction. Where none is declared, the universal profile
+applies ([record 126](0126-an-owner-may-decline-to-say-where-they-live-and-then-gets-the-most-protective-defaults.md)).
 
 ## Consequences
 
-- Eighteen is the conservative side of the range, so an owner who says nothing gets the more protective treatment.
-- Where local law treats something such as parenthood as making a minor an adult, the declared jurisdiction decides.
-  Astrana does not implement that idea itself.
+- Some jurisdictions set the age of majority at 19 or 21, so an owner who declares nothing may reach Coming of Age
+  earlier than local law would have it.
+- Astrana does not support emancipation. Where local law treats something such as parenthood as making a minor an adult,
+  Coming of Age still follows the age of majority.
