@@ -29,6 +29,9 @@ headers, such as the client's address and the original scheme, only from the web
 - Caddy obtains and renews certificates itself and runs as a service on Linux, Windows and macOS, so an installer can
   set it up where IIS is unavailable and NGINX is awkward to package, such as on a Mac. Bundled with an installer, it is
   a component Astrana ships and keeps current.
+- A web server is supported only when it is widely used, mature, safe, stable and reliable, and works with the
+  application. Another, such as a different reverse proxy, is added by a record of its own once researched against the
+  same test.
 - Other web servers, such as Apache and LiteSpeed, are not supported. Ordinary Linux shared hosting, where they are most
   common, cannot run the application in any case.
 - Peers recognise each other by keys inside the connection
