@@ -4,10 +4,9 @@ Proposed.
 
 ## Context
 
-Every installation runs behind a web server
-([record 95](0095-the-owner-supplies-the-web-server-in-front-of-the-instance.md)). Many protections could be set in
-either layer, such as limits on requests, rate limits and security headers. Set in both, they drift apart, and set in
-neither, they are missing, without anyone noticing either way.
+Every installation runs behind a web server ([record 95](0095-every-installation-runs-behind-a-web-server.md)). Many
+protections could be set in either layer, such as limits on requests, rate limits and security headers. Set in both,
+they drift apart, and set in neither, they are missing, without anyone noticing either way.
 
 ## Decision
 

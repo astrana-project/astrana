@@ -105,7 +105,7 @@ its text cites them.
 | [45. The feed loads a page at a time and says when there is no more](0045-the-feed-loads-a-page-at-a-time-and-says-when-there-is-no-more.md)      | Proposed | 18           |
 | [51. Notifications travel by Web Push, with email only as a supplement](0051-notifications-travel-by-web-push-with-email-only-as-a-supplement.md) | Proposed | 19           |
 | [52. No engagement count is presented as an achievement](0052-no-engagement-count-is-presented-as-an-achievement.md)                              | Proposed | 18           |
-| [97. Every interruption counts as a cost](0097-every-interruption-counts-as-a-cost.md)                                                            | Proposed | 51           |
+| [97. Notifications are batched, and only material impact interrupts](0097-notifications-are-batched-and-only-material-impact-interrupts.md)       | Proposed | 51           |
 
 ## Children and guardians
 
@@ -130,14 +130,14 @@ its text cites them.
 
 ## Jurisdiction
 
-| Record                                                                                                                                                                                         | Status   | Derives from  |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------- |
-| [47. The owner declares where they live](0047-the-owner-declares-where-they-live.md)                                                                                                           | Proposed | 1             |
-| [91. Jurisdiction informs and never enforces](0091-jurisdiction-informs-and-never-enforces.md)                                                                                                 | Proposed | 47            |
-| [92. Jurisdiction never leaves the instance](0092-jurisdiction-never-leaves-the-instance.md)                                                                                                   | Proposed | 47            |
-| [117. A jurisdiction selects a small set of values, not special behaviour](0117-a-jurisdiction-selects-a-small-set-of-values-not-special-behaviour.md)                                         | Proposed | 47, 69, 70    |
-| [130. An owner may decline to say where they live, and then gets the most protective defaults](0130-an-owner-may-decline-to-say-where-they-live-and-then-gets-the-most-protective-defaults.md) | Proposed | 117           |
-| [134. Language changes how things are shown, not what counts as sensitive](0134-language-changes-how-things-are-shown-not-what-counts-as-sensitive.md)                                         | Proposed | 117, 124, 125 |
+| Record                                                                                                                                                                                             | Status   | Derives from  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------- |
+| [47. The owner declares where they live](0047-the-owner-declares-where-they-live.md)                                                                                                               | Proposed | 1             |
+| [91. Jurisdiction informs and never enforces](0091-jurisdiction-informs-and-never-enforces.md)                                                                                                     | Proposed | 47            |
+| [92. Jurisdiction never leaves the instance](0092-jurisdiction-never-leaves-the-instance.md)                                                                                                       | Proposed | 47            |
+| [117. A jurisdiction selects a small set of values, not special behaviour](0117-a-jurisdiction-selects-a-small-set-of-values-not-special-behaviour.md)                                             | Proposed | 47, 69, 70    |
+| [130. An owner may decline to say where they live, and then gets a universal protective profile](0130-an-owner-may-decline-to-say-where-they-live-and-then-gets-a-universal-protective-profile.md) | Proposed | 117           |
+| [134. Language changes how things are shown, not what counts as sensitive](0134-language-changes-how-things-are-shown-not-what-counts-as-sensitive.md)                                             | Proposed | 117, 124, 125 |
 
 ## Security and privacy
 
@@ -188,7 +188,7 @@ its text cites them.
 | [60. After a gap, the scheduler does what still needs doing, not everything it missed](0060-after-a-gap-the-scheduler-does-what-still-needs-doing-not-everything-it-missed.md)                       | Proposed | 28                       |
 | [73. On modest hardware Astrana runs slower and never stops](0073-on-modest-hardware-astrana-runs-slower-and-never-stops.md)                                                                         | Proposed | 35                       |
 | [76. The installer does only what must come first, and the application's setup does the rest](0076-the-installer-does-only-what-must-come-first-and-the-applications-setup-does-the-rest.md)         | Proposed | 1, 35                    |
-| [95. The owner supplies the web server in front of the instance](0095-the-owner-supplies-the-web-server-in-front-of-the-instance.md)                                                                 | Proposed | 35, 66                   |
+| [95. Every installation runs behind a web server](0095-every-installation-runs-behind-a-web-server.md)                                                                                               | Proposed | 35, 66                   |
 | [96. The web server handles connections, and the application decides who may do what](0096-the-web-server-handles-connections-and-the-application-decides-who-may-do-what.md)                        | Proposed | 95                       |
 | [118. What an instance finds about its hosting environment is told to its owner, and nobody else](0118-what-an-instance-finds-about-its-hosting-environment-is-told-to-its-owner-and-nobody-else.md) | Proposed | 64                       |
 | [119. The hosting environment must protect data and receive security fixes, however it does so](0119-the-hosting-environment-must-protect-data-and-receive-security-fixes-however-it-does-so.md)     | Proposed | 64, 118                  |

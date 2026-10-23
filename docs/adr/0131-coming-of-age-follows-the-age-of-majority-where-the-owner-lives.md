@@ -12,7 +12,8 @@ differs from country to country
 ## Decision
 
 Coming of Age is the age of majority in the owner's declared jurisdiction. Where none is declared, the universal profile
-applies ([record 130](0130-an-owner-may-decline-to-say-where-they-live-and-then-gets-the-most-protective-defaults.md)).
+applies
+([record 130](0130-an-owner-may-decline-to-say-where-they-live-and-then-gets-a-universal-protective-profile.md)).
 
 ## Consequences
 

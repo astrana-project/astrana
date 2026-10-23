@@ -6,8 +6,7 @@ Proposed.
 
 Every time two instances talk, each has to be sure the other is the instance its owner approved
 ([record 2](0002-connections-are-mutual-and-nobody-follows-anyone.md)). That assurance can come from a central authority
-that vouches for identities, or from the two parties themselves. The 2022 implementation used an access token, issued
-when a connection was accepted, refreshed on request, and stored with the peer.
+that vouches for identities, from a secret the two instances share, or from keys each instance holds for itself.
 
 ## Decision
 
@@ -18,10 +17,12 @@ authority is involved.
 ## Consequences
 
 - No central party holds a peer's identity or can take it away.
+- Peers can recognise each other without a domain name or a certificate from a certificate authority, so an instance on
+  home hardware can connect safely.
 - If a peer later presents a different key, the connection is refused outright, with no way to carry on unverified.
-- A central certificate authority for peers was rejected. Checking which software versions are safe does rely on one
-  central, signed source, because that is a different problem.
-- The access token of the 2022 implementation was rejected for three reasons. Self-hosting on home hardware should not
-  need a domain name. Peers should be able to connect safely without a certificate from a certificate authority. And
-  connections made by hole punching over private networks should be supported, though whether Astrana uses hole punching
-  is not yet decided.
+- An instance that loses or replaces its key cannot be recognised until each of its peers confirms the new key.
+- A central certificate authority for peers was rejected, because it would hold every peer's identity. Checking which
+  software versions are safe does rely on one central, signed source, because that is a different problem.
+- A shared secret, such as an access token issued when a connection is accepted, was rejected. Both instances hold it,
+  so a leak from either side lets anyone impersonate the other, where a private key never leaves the instance that owns
+  it.

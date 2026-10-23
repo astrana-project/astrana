@@ -16,8 +16,8 @@ The backend runs as two processes. The browser-facing process serves the app she
 sessions ([record 147](0147-the-browser-never-holds-credentials-or-tokens.md)) and answers every browser request. The
 application programming interface (API) process holds the keys and does the work that needs them. It is reached by the
 browser-facing process only through a local socket that is never exposed to the network, and by peers through the web
-server in front of the instance ([record 95](0095-the-owner-supplies-the-web-server-in-front-of-the-instance.md)),
-because the Noise handshake uses the instance's Noise key, which the identity key signs, and the API process holds both
+server in front of the instance ([record 95](0095-every-installation-runs-behind-a-web-server.md)), because the Noise
+handshake uses the instance's Noise key, which the identity key signs, and the API process holds both
 ([record 66](0066-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)).
 
 ## Consequences

@@ -1,4 +1,4 @@
-# 95. The owner supplies the web server in front of the instance
+# 95. Every installation runs behind a web server
 
 Proposed.
 
@@ -12,19 +12,22 @@ easier to secure, document and support than several.
 
 ## Decision
 
-Every installation runs behind a web server the owner supplies, IIS or NGINX, which passes requests on to the
-application, including on a developer's own machine. The web server holds the certificate and renews it automatically,
-by default through Let's Encrypt. The application listens only on the loopback interface, a Unix domain socket or a
-private container network shared only with the web server, and refuses to start when configured to listen anywhere else.
-It trusts forwarded headers, such as the client's address and the original scheme, only from the web server addresses it
-is configured with.
+Every installation runs behind a web server, IIS or NGINX, which passes requests on to the application, including on a
+developer's own machine. The web server holds the certificate and renews it automatically, by default through Let's
+Encrypt. The application listens only on the loopback interface, a Unix domain socket or a private container network
+shared only with the web server, and refuses to start when configured to listen anywhere else. It trusts forwarded
+headers, such as the client's address and the original scheme, only from the web server addresses it is configured with.
 
 ## Consequences
 
 - Handling certificates never touches the application itself.
-- A misconfigured application cannot be exposed directly to the internet.
-- The owner looks after the web server along with the rest of their hosting. On desktops and laptops the installer sets
-  one up, and protects its configuration from tampering like the rest of the installation.
+- The application itself cannot be made to listen publicly. The web server's own configuration remains the owner's
+  responsibility, and a misconfigured web server can still expose what it passes on.
+- On a server the owner looks after the web server along with the rest of their hosting. On desktops and laptops the
+  installer sets one up, and its configuration resists accidental and unprivileged change like the rest of the
+  installation. On shared hosting the hosting provider runs it.
+- Other web servers, such as Apache and LiteSpeed, are not supported. Ordinary Linux shared hosting, where they are most
+  common, cannot run the application in any case.
 - Peers recognise each other by keys inside the connection
   ([record 66](0066-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)), so the certificate matters
   only to browsers.

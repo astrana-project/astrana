@@ -8,7 +8,7 @@ The time before an instance is set up is the most exposed in its life, because t
 create the owner's account
 ([record 76](0076-the-installer-does-only-what-must-come-first-and-the-applications-setup-does-the-rest.md)). Every
 request arrives through the web server, so where it came from is judged from the forwarded address the web server passes
-on ([record 95](0095-the-owner-supplies-the-web-server-in-front-of-the-instance.md)).
+on ([record 95](0095-every-installation-runs-behind-a-web-server.md)).
 
 ## Decision
 
