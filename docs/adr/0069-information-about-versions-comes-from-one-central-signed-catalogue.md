@@ -22,6 +22,6 @@ whether an update is mandatory and why, and how to verify a build.
   their own.
 - A check still reveals the instance's network address, and when it checks, to whoever serves the catalogue.
 - Nothing on the network forces an update, even a mandatory one. Mandatory tells the owner how serious an update is.
-- If the signing key were lost or compromised, every instance would be affected, and while the project's server is
-  unreachable, no instance learns of new versions.
+- Whoever holds the signing keys can speak to every instance, so the keys are the most valuable thing the project holds.
+- While the project's server is unreachable, no instance learns of new versions.
 - Anything proposed for the catalogue later must pass the same test, that there is no decentralised way to provide it.

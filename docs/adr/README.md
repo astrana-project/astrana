@@ -201,20 +201,20 @@ its text cites them.
 
 ## Versions, updates and modules
 
-| Record                                                                                                                                                                         | Status   | Derives from                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------------------------ |
-| [69. Information about versions comes from one central, signed catalogue](0069-information-about-versions-comes-from-one-central-signed-catalogue.md)                          | Proposed | 35                             |
-| [74. Email is sent through small, replaceable modules](0074-email-is-sent-through-small-replaceable-modules.md)                                                                | Proposed | 39                             |
-| [105. The project's primary maintainer holds the key that signs the version catalogue](0105-the-projects-primary-maintainer-holds-the-key-that-signs-the-version-catalogue.md) | Proposed | 69                             |
-| [109. Astrana builds and signs every email module it ships](0109-astrana-builds-and-signs-every-email-module-it-ships.md)                                                      | Proposed | 74                             |
-| [113. An update is never applied without the owner](0113-an-update-is-never-applied-without-the-owner.md)                                                                      | Proposed | 69                             |
-| [114. Each instance decides for itself whether it is early in a staged rollout](0114-each-instance-decides-for-itself-whether-it-is-early-in-a-staged-rollout.md)              | Proposed | 69                             |
-| [115. Nothing can change an instance's behaviour remotely](0115-nothing-can-change-an-instances-behaviour-remotely.md)                                                         | Proposed | 69, 70                         |
-| [125. Language packs are signed, not reviewed](0125-language-packs-are-signed-not-reviewed.md)                                                                                 | Proposed | 70                             |
-| [157. Version numbers say what an update means](0157-version-numbers-say-what-an-update-means.md)                                                                              | Proposed | 126, 153                       |
-| [171. Schema migrations run under credentials of their own](0171-schema-migrations-run-under-credentials-of-their-own.md)                                                      | Proposed | 71, 72, 76, 113, 118, 139, 140 |
-| [172. The application refuses to start against a newer schema](0172-the-application-refuses-to-start-against-a-newer-schema.md)                                                | Proposed | 140, 171                       |
-| [173. An update that changes the schema takes a rollback copy of the database first](0173-an-update-that-changes-the-schema-takes-a-rollback-copy-of-the-database-first.md)    | Proposed | 136, 171                       |
+| Record                                                                                                                                                                      | Status   | Derives from                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------ |
+| [69. Information about versions comes from one central, signed catalogue](0069-information-about-versions-comes-from-one-central-signed-catalogue.md)                       | Proposed | 35                             |
+| [74. Email is sent through small, replaceable modules](0074-email-is-sent-through-small-replaceable-modules.md)                                                             | Proposed | 39                             |
+| [105. The catalogue is signed by a release key that an offline root key vouches for](0105-the-catalogue-is-signed-by-a-release-key-that-an-offline-root-key-vouches-for.md) | Proposed | 69                             |
+| [109. Astrana builds and signs every email module it ships](0109-astrana-builds-and-signs-every-email-module-it-ships.md)                                                   | Proposed | 74                             |
+| [113. An update is never applied without the owner](0113-an-update-is-never-applied-without-the-owner.md)                                                                   | Proposed | 69                             |
+| [114. Each instance decides for itself whether it is early in a staged rollout](0114-each-instance-decides-for-itself-whether-it-is-early-in-a-staged-rollout.md)           | Proposed | 69                             |
+| [115. Nothing can change an instance's behaviour remotely](0115-nothing-can-change-an-instances-behaviour-remotely.md)                                                      | Proposed | 69, 70                         |
+| [125. Language packs are signed, not reviewed](0125-language-packs-are-signed-not-reviewed.md)                                                                              | Proposed | 70                             |
+| [157. Version numbers say what an update means](0157-version-numbers-say-what-an-update-means.md)                                                                           | Proposed | 126, 153                       |
+| [171. Schema migrations run under credentials of their own](0171-schema-migrations-run-under-credentials-of-their-own.md)                                                   | Proposed | 71, 72, 76, 113, 118, 139, 140 |
+| [172. The application refuses to start against a newer schema](0172-the-application-refuses-to-start-against-a-newer-schema.md)                                             | Proposed | 140, 171                       |
+| [173. An update that changes the schema takes a rollback copy of the database first](0173-an-update-that-changes-the-schema-takes-a-rollback-copy-of-the-database-first.md) | Proposed | 136, 171                       |
 
 ## Backup and moving an instance
 
