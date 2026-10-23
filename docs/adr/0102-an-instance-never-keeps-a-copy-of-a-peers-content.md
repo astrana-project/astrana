@@ -1,4 +1,4 @@
-# 104. An instance never keeps a copy of a peer's content
+# 102. An instance never keeps a copy of a peer's content
 
 Proposed.
 

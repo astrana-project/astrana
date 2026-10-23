@@ -1,4 +1,4 @@
-# 103. Search covers one instance at a time
+# 101. Search covers one instance at a time
 
 Proposed.
 

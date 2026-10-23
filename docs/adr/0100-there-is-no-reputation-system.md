@@ -1,4 +1,4 @@
-# 102. There is no reputation system
+# 100. There is no reputation system
 
 Proposed.
 

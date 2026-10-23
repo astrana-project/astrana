@@ -21,9 +21,8 @@ validation built into minimal APIs, and rules about meaning are enforced by the 
 
 - An endpoint can be understood by reading one file, next to the use case it calls.
 - Logic growing in an endpoint is easy to spot, and shows that it belongs in a use case or the domain.
-- Answers that must look alike to the caller
-  ([record 94](0094-a-refusal-looks-the-same-as-finding-nothing-or-not-being-reached.md)) are returned through shared
-  typed results.
+- Answers that must look alike to the caller ([record 94](0094-a-refusal-looks-the-same-as-finding-nothing.md)) are
+  returned through shared typed results.
 - Typed results make endpoints simple to test and describe their responses accurately.
 - Rate limits are set in the application for each kind of caller
   ([record 96](0096-the-web-server-handles-connections-and-the-application-decides-who-may-do-what.md)), so they can

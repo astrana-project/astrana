@@ -1,12 +1,13 @@
-# 99. A reshare carries only a count of how many times it has been passed on
+# 104. A reshare carries only a count of how many times it has been passed on
 
 Proposed.
 
 ## Context
 
-A reshare is a new act of publication
-([record 98](0098-resharing-something-publishes-it-anew-to-the-resharers-own-audience.md)). A person seeing one may want
-to know how far it has travelled. The path it took would also say who passed it on, to people who may not know them.
+A reshare is a new post of the resharer's own
+([record 103](0103-a-reshare-refers-to-the-original-and-is-relayed-by-the-resharers-instance.md)). A person seeing one
+may want to know how far it has travelled. The path it took would also say who passed it on, to people who may not know
+them.
 
 ## Decision
 

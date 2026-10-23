@@ -34,7 +34,7 @@ Boundaries between bounded contexts are internal, but one context never uses ano
 - Inbound types ignore fields they do not recognise rather than rejecting them, so that peers with more capabilities
   keep working with this one.
 - Inbound types carrying a peer's content are never persisted
-  ([record 104](0104-an-instance-never-keeps-a-copy-of-a-peers-content.md)).
+  ([record 102](0102-an-instance-never-keeps-a-copy-of-a-peers-content.md)).
 - There is mapping code at every external boundary, which is repetitive but simple to test.
 - Treating every boundary as external was rejected because of the ceremony it adds within one release. Treating every
   boundary as internal was rejected because it exposes domain types to parties on other versions and to hostile input.

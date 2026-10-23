@@ -5,7 +5,7 @@ Proposed.
 ## Context
 
 A record of what someone searched for says what they were looking for, when and how often
-([record 103](0103-search-covers-one-instance-at-a-time.md)).
+([record 101](0101-search-covers-one-instance-at-a-time.md)).
 
 ## Decision
 

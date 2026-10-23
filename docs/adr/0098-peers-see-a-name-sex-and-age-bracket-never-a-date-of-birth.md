@@ -1,4 +1,4 @@
-# 100. Peers see a name, sex and age bracket, never a date of birth
+# 98. Peers see a name, sex and age bracket, never a date of birth
 
 Proposed.
 

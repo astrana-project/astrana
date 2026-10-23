@@ -8,7 +8,7 @@ Content leaves an instance whenever it is shown to someone. Some of it is also s
 comment written on someone else's post, which lives on that person's instance
 ([record 43](0043-the-owner-of-an-instance-may-remove-anything-stored-on-it-except-a-report-about-their-content.md)). An
 instance never keeps a copy of a peer's content
-([record 104](0104-an-instance-never-keeps-a-copy-of-a-peers-content.md)), but people and their devices are another
+([record 102](0102-an-instance-never-keeps-a-copy-of-a-peers-content.md)), but people and their devices are another
 matter.
 
 ## Decision

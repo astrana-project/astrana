@@ -10,11 +10,14 @@ not reliably destroy it.
 
 ## Decision
 
-The database is encrypted at rest, as a requirement rather than a recommendation.
+The database is encrypted at rest.
 
 ## Consequences
 
-- Where Astrana holds the key, destroying the key destroys the content, which deleting files cannot promise.
-- How it is done is not settled, because the three databases differ. PostgreSQL has no built-in encryption of its own,
-  and encrypting content before it reaches the database would stop search from reading it.
+- Which mechanism does the encrypting needs a record of its own, because the three databases differ. PostgreSQL has no
+  built-in encryption of its own, and encrypting content before it reaches the database stops the database's own search
+  from reading it.
+- Where Astrana holds the key, destroying the key destroys the content, which deleting files cannot promise. Whether
+  Astrana holds that key depends on the mechanism chosen.
+- An instance never presents its database as encrypted when it cannot verify that it is, and tells its owner.
 - Media is not in the database, so files on the instance's own disk and in external storage are not covered by it.

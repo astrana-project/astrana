@@ -57,15 +57,15 @@ its text cites them.
 | [68. Peers talk directly over HTTPS, with a WebSocket channel for notifications](0068-peers-talk-directly-over-https-with-a-websocket-channel-for-notifications.md)        | Proposed | 2, 38, 66    |
 | [90. An instance tells its peers whether it is under guardianship or custodianship](0090-an-instance-tells-its-peers-whether-it-is-under-guardianship-or-custodianship.md) | Proposed | 46, 78, 83   |
 | [93. Access is enforced by the instance that holds the content](0093-access-is-enforced-by-the-instance-that-holds-the-content.md)                                         | Proposed | 48           |
-| [94. A refusal looks the same as finding nothing or not being reached](0094-a-refusal-looks-the-same-as-finding-nothing-or-not-being-reached.md)                           | Proposed | 49           |
-| [98. Resharing something publishes it anew, to the resharer's own audience](0098-resharing-something-publishes-it-anew-to-the-resharers-own-audience.md)                   | Proposed | 36, 48       |
-| [99. A reshare carries only a count of how many times it has been passed on](0099-a-reshare-carries-only-a-count-of-how-many-times-it-has-been-passed-on.md)               | Proposed | 98           |
-| [100. Peers see a name, sex and age bracket, never a date of birth](0100-peers-see-a-name-sex-and-age-bracket-never-a-date-of-birth.md)                                    | Proposed | 58           |
-| [101. A report goes to the owner of the instance, never to the project](0101-a-report-goes-to-the-owner-of-the-instance-never-to-the-project.md)                           | Proposed | 43           |
-| [102. There is no reputation system](0102-there-is-no-reputation-system.md)                                                                                                | Proposed | 9, 59        |
-| [104. An instance never keeps a copy of a peer's content](0104-an-instance-never-keeps-a-copy-of-a-peers-content.md)                                                       | Proposed | 2, 68        |
+| [94. A refusal looks the same as finding nothing](0094-a-refusal-looks-the-same-as-finding-nothing.md)                                                                     | Proposed | 15, 49, 63   |
+| [98. Peers see a name, sex and age bracket, never a date of birth](0098-peers-see-a-name-sex-and-age-bracket-never-a-date-of-birth.md)                                     | Proposed | 58           |
+| [99. A report goes to the owner of the instance, never to the project](0099-a-report-goes-to-the-owner-of-the-instance-never-to-the-project.md)                            | Proposed | 43           |
+| [100. There is no reputation system](0100-there-is-no-reputation-system.md)                                                                                                | Proposed | 9, 59        |
+| [102. An instance never keeps a copy of a peer's content](0102-an-instance-never-keeps-a-copy-of-a-peers-content.md)                                                       | Proposed | 2, 68        |
+| [103. A reshare refers to the original, and is relayed by the resharer's instance](0103-a-reshare-refers-to-the-original-and-is-relayed-by-the-resharers-instance.md)      | Proposed | 36, 48, 102  |
+| [104. A reshare carries only a count of how many times it has been passed on](0104-a-reshare-carries-only-a-count-of-how-many-times-it-has-been-passed-on.md)              | Proposed | 103          |
 | [126. Peers check what each other can do, not which version they run](0126-peers-check-what-each-other-can-do-not-which-version-they-run.md)                               | Proposed | 68           |
-| [135. What leaves an instance can be kept by those who receive it](0135-what-leaves-an-instance-can-be-kept-by-those-who-receive-it.md)                                    | Proposed | 43, 104      |
+| [135. What leaves an instance can be kept by those who receive it](0135-what-leaves-an-instance-can-be-kept-by-those-who-receive-it.md)                                    | Proposed | 43, 102      |
 
 ## Content
 
@@ -90,9 +90,9 @@ its text cites them.
 | [56. A location is chosen, never read from the device](0056-a-location-is-chosen-never-read-from-the-device.md)                                                                                             | Proposed | 8, 13        |
 | [57. Content is classified again with every edit](0057-content-is-classified-again-with-every-edit.md)                                                                                                      | Proposed | 7            |
 | [61. A link warning informs, and never blocks](0061-a-link-warning-informs-and-never-blocks.md)                                                                                                             | Proposed | 30           |
-| [103. Search covers one instance at a time](0103-search-covers-one-instance-at-a-time.md)                                                                                                                   | Proposed | 49           |
+| [101. Search covers one instance at a time](0101-search-covers-one-instance-at-a-time.md)                                                                                                                   | Proposed | 49           |
 | [106. Astrana has no direct messaging](0106-astrana-has-no-direct-messaging.md)                                                                                                                             | Proposed | 69           |
-| [122. What someone searches for is not kept](0122-what-someone-searches-for-is-not-kept.md)                                                                                                                 | Proposed | 103          |
+| [122. What someone searches for is not kept](0122-what-someone-searches-for-is-not-kept.md)                                                                                                                 | Proposed | 101          |
 | [123. A link to content grants no access](0123-a-link-to-content-grants-no-access.md)                                                                                                                       | Proposed | 93           |
 
 ## The feed and attention
@@ -259,7 +259,7 @@ its text cites them.
 | [152. The browser-facing side and the key-holding side run as separate processes](0152-the-browser-facing-side-and-the-key-holding-side-run-as-separate-processes.md)                            | Proposed | 66, 95, 128, 147         |
 | [158. The architecture follows named principles, not one methodology](0158-the-architecture-follows-named-principles-not-one-methodology.md)                                                     | Proposed | 4                        |
 | [159. Depend in the direction of stability](0159-depend-in-the-direction-of-stability.md)                                                                                                        | Proposed | 126                      |
-| [160. Internal and external boundaries are treated differently](0160-internal-and-external-boundaries-are-treated-differently.md)                                                                | Proposed | 41, 104, 107, 127        |
+| [160. Internal and external boundaries are treated differently](0160-internal-and-external-boundaries-are-treated-differently.md)                                                                | Proposed | 41, 102, 107, 127        |
 | [161. Types that cross an external boundary are named Inbound and Outbound](0161-types-that-cross-an-external-boundary-are-named-inbound-and-outbound.md)                                        | Proposed | 160                      |
 | [162. The inside defines ports and the outside adapts to them](0162-the-inside-defines-ports-and-the-outside-adapts-to-them.md)                                                                  | Proposed | 3, 71, 128, 159          |
 | [163. The domain is modelled with domain-driven design](0163-the-domain-is-modelled-with-domain-driven-design.md)                                                                                | Proposed | 70, 78, 93               |
