@@ -21,5 +21,5 @@ authorisation, rate limits and security headers.
   server's limits on connections and request size are the first line against a flood.
 - Security headers are the same whichever web server an owner chooses, because the application sets them.
 - The configuration Astrana supplies for each web server covers only what the web server is responsible for.
-- Setting security headers in the web server was rejected, because they would then differ between Internet Information
-  Services (IIS) and NGINX, and an owner's own configuration could quietly remove them.
+- Setting security headers in the web server was rejected, because they would then differ between the supported web
+  servers, and an owner's own configuration could quietly remove them.

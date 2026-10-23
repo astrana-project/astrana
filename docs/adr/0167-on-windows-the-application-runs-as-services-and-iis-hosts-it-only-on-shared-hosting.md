@@ -1,4 +1,4 @@
-# 167. On Windows the application runs as services behind IIS
+# 167. On Windows the application runs as services, and IIS hosts it only on shared hosting
 
 Proposed.
 
@@ -11,15 +11,15 @@ an application that runs as a Windows service. Shared hosting on Windows offers 
 
 ## Decision
 
-On Windows the application's processes run as Windows services, behind IIS acting only as the web server in front. IIS
-starts and manages the application only on shared hosting, where nothing else is available.
+On Windows the application's processes run as Windows services, behind IIS or Caddy acting only as the web server in
+front. IIS starts and manages the application only on shared hosting, where nothing else is available.
 
 ## Consequences
 
 - The Windows service manager, not IIS, decides when the processes start, stop and restart, as on every other operating
   system.
 - The IIS configuration Astrana supplies covers only passing requests on, so it is the same kind of configuration as for
-  NGINX.
+  the other supported web servers. Caddy can stand in front instead of IIS.
 - On shared hosting the application can be recycled at any moment, and the ASP.NET Core Module that IIS needs is
   installed and patched by the hosting provider.
 - Letting IIS start and manage the application on every Windows installation was rejected because IIS would then own the

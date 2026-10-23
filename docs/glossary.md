@@ -48,7 +48,7 @@ one here, the narrower one applies.
 | Hosting provider    | A company that rents out the hosting environment an instance runs on, such as a shared hosting or cloud provider.                                                                        |
 | Web app             | The progressive web app that people use in a browser, served by their instance.                                                                                                          |
 | Backend             | The .NET processes that make up an instance, serving the web app and answering its peers.                                                                                                |
-| Web server          | The web server, such as Internet Information Services or NGINX, that every installation runs behind.                                                                                     |
+| Web server          | The web server, Internet Information Services, NGINX or Caddy, that every installation runs behind.                                                                                      |
 | Bounded context     | A part of the domain with its own model and language, kept independent of other parts.                                                                                                   |
 | Aggregate           | A cluster of domain objects changed together as one unit, which enforces its own rules.                                                                                                  |
 | Use case            | One named operation the application offers.                                                                                                                                              |

@@ -195,7 +195,7 @@ its text cites them.
 | [120. Phones are not pursued as host machines](0120-phones-are-not-pursued-as-host-machines.md)                                                                                                      | Proposed | 64                       |
 | [133. An instance checks what it can about its hosting environment, rather than asking the owner](0133-an-instance-checks-what-it-can-about-its-hosting-environment-rather-than-asking-the-owner.md) | Proposed | 118                      |
 | [166. Each hosting environment is an adapter around the application](0166-each-hosting-environment-is-an-adapter-around-the-application.md)                                                          | Proposed | 20, 21, 60, 64, 152, 162 |
-| [167. On Windows the application runs as services behind IIS](0167-on-windows-the-application-runs-as-services-behind-iis.md)                                                                        | Proposed | 166                      |
+| [167. On Windows the application runs as services, and IIS hosts it only on shared hosting](0167-on-windows-the-application-runs-as-services-and-iis-hosts-it-only-on-shared-hosting.md)             | Proposed | 166                      |
 | [168. Self-contained builds for Linux, Windows and macOS](0168-self-contained-builds-for-linux-windows-and-macos.md)                                                                                 | Proposed | 113, 149, 155            |
 | [169. Only 64-bit processors are supported](0169-only-64-bit-processors-are-supported.md)                                                                                                            | Proposed | 73, 168                  |
 

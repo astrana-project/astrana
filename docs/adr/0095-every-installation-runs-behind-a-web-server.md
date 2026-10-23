@@ -6,14 +6,14 @@ Proposed.
 
 A web app needs a web server in front of it to handle secure connections, and the owner already looks after their own
 hosting ([record 35](0035-every-instance-is-managed-by-its-owner-and-nobody-else-operates-it.md)). Web servers such as
-Internet Information Services (IIS) and NGINX already handle certificates, Transport Layer Security (TLS) and protection
-at the level of connections well, and the people who run servers know how to operate them. One layout everywhere is
-easier to secure, document and support than several.
+Internet Information Services (IIS), NGINX and Caddy already handle certificates, Transport Layer Security (TLS) and
+protection at the level of connections well, and the people who run servers know how to operate them. One layout
+everywhere is easier to secure, document and support than several.
 
 ## Decision
 
-Every installation runs behind a web server, IIS or NGINX, which passes requests on to the application, including on a
-developer's own machine. The web server holds the certificate and renews it automatically, by default through Let's
+Every installation runs behind a web server, IIS, NGINX or Caddy, which passes requests on to the application, including
+on a developer's own machine. The web server holds the certificate and renews it automatically, by default through Let's
 Encrypt. The application listens only on the loopback interface, a Unix domain socket or a private container network
 shared only with the web server, and refuses to start when configured to listen anywhere else. It trusts forwarded
 headers, such as the client's address and the original scheme, only from the web server addresses it is configured with.
@@ -26,6 +26,9 @@ headers, such as the client's address and the original scheme, only from the web
 - On a server the owner looks after the web server along with the rest of their hosting. On desktops and laptops the
   installer sets one up, and its configuration resists accidental and unprivileged change like the rest of the
   installation. On shared hosting the hosting provider runs it.
+- Caddy obtains and renews certificates itself and runs as a service on Linux, Windows and macOS, so an installer can
+  set it up where IIS is unavailable and NGINX is awkward to package, such as on a Mac. Bundled with an installer, it is
+  a component Astrana ships and keeps current.
 - Other web servers, such as Apache and LiteSpeed, are not supported. Ordinary Linux shared hosting, where they are most
   common, cannot run the application in any case.
 - Peers recognise each other by keys inside the connection
