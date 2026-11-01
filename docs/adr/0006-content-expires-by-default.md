@@ -17,5 +17,8 @@ defaults. A picture or a comment lasts as long as the post it belongs to.
 
 - Things can genuinely be forgotten, rather than lasting forever because nobody thought to delete them.
 - Expiry happens quietly, because a deletion that demanded acknowledgement would turn forgetting into an event.
-- Expiry removes content from the instance, so content nobody thought to keep is gone from it. Backups taken earlier,
-  and anything recipients have already received, may still hold it.
+- Expiry removes content from the instance, so content nobody thought to keep is gone from it. Anything recipients have
+  already received may still hold it.
+- Backups taken earlier keep expired and deleted content until they age out under their own retention, which by default
+  can be up to a year. The owner, and a guest too, is told so at the moment they delete something, because that is where
+  the information matters.

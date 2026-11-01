@@ -17,8 +17,11 @@ security fixes. How it does each is up to the platform.
 
 - On a personal computer the operating system's own encryption and secrets store are usually enough. On shared hosting
   that offers one, a key management service does the same job.
-- Nothing enforces the requirement. An environment that falls short, such as shared hosting with no key management
-  service, is reported to the owner and the instance keeps running
+- An environment that falls short, such as shared hosting with no key management service or a disk whose encryption
+  cannot be verified, is reported to the owner and the instance keeps running
   ([record 118](0118-what-an-instance-finds-about-its-hosting-environment-is-told-to-its-owner-and-nobody-else.md)).
+- Encryption in transit to a database on another machine is the exception, and an installation without it is refused. A
+  database on the same machine that cannot be reached from outside it uses encrypted transport where it can, and does
+  not need it.
 - An instance cannot claim more protection than its hosting environment provides, so what it reports depends on where it
-  runs.
+  runs. On shared hosting most of the protection is the hosting provider's rather than Astrana's.

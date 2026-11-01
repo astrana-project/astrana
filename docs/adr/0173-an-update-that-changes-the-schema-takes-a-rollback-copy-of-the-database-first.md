@@ -12,7 +12,8 @@ would otherwise have none.
 ## Decision
 
 An update that changes the database schema takes a local rollback copy of the database before its schema migrations run,
-whatever the owner has chosen about automatic backups. The copy is deleted once the update succeeds.
+whatever the owner has chosen about automatic backups. Astrana Owner Tools takes the copy as part of applying the schema
+migrations, and deletes it once the update succeeds.
 
 ## Consequences
 

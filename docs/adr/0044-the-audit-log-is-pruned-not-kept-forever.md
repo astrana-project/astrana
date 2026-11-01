@@ -17,3 +17,7 @@ less important entries go first, and entries such as content being created, chan
 - The log stays a size an instance can carry.
 - What is kept longest is what matters most to understanding what happened.
 - Once an entry is pruned it is gone, even if it later turns out to be the evidence someone needs.
+- Once a deletion's entry is pruned, a restore from a backup older than the deletion cannot apply it again, so the
+  deleted content comes back and the owner is told before the restore runs.
+- Backups keep deleted content until they age out, whatever the log still holds, and people are told so at the moment
+  they delete something.

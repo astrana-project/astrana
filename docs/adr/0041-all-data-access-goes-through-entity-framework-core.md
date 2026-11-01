@@ -24,5 +24,10 @@ and the database. Astrana never depends on one database provider.
   unused.
 - Entity Framework Core is itself an outside component, and is kept because it is mature and well maintained
   ([record 4](0004-astrana-depends-on-outside-components-only-where-it-must.md)).
+- Each database is reached through an Entity Framework Core provider, which is an outside component of its own. For
+  MySQL the original provider has no release for the Entity Framework Core version Astrana uses, and the vendor's own
+  provider lacks a column type Astrana uses and fails to produce working schema migration scripts, so a maintained fork
+  of the original is used. That fork has close to a single maintainer, which falls short of the test of maturity, and
+  Astrana moves back to the original provider once it has a current release.
 - Writing for a single database was rejected because it ties every instance to that provider. Hand-writing queries for
   each database was rejected because the extra dialects drift and break.

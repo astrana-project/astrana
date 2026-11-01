@@ -17,6 +17,8 @@ viewing and searching are not logged.
 
 - A deletion is recorded as a fact, and the deleted content is not preserved, so the log and expiry do not undo each
   other.
+- A deletion's entry names the kind of record deleted and its identifier, never its content, so that the deletion can be
+  applied again to data restored from an older backup.
 - Looking is never logged, because a record of what someone looked at is exactly the record of behaviour Astrana refuses
   to build.
 - What a search leads to, such as a deletion or a disconnection, is logged.

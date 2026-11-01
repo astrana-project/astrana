@@ -18,5 +18,7 @@ the owner which version the database needs.
 
 - The running software never has to interpret data it does not understand, as with restoring a backup
   ([record 140](0140-a-backup-restores-into-the-same-or-a-newer-version-never-an-older-one.md)).
+- Against an older schema the application never migrates it itself, and waits in maintenance until Astrana Owner Tools
+  has applied the schema migrations.
 - Going back to an earlier release after an update means restoring the data from before it as well.
 - Starting anyway and hoping the older version copes was rejected, because the damage it could do would be silent.
