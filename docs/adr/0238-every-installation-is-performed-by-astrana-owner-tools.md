@@ -23,6 +23,8 @@ with no interface.
 
 - The owner downloads Owner Tools and installs an instance through it, so the same checks run however an instance is
   installed.
+- Stores and package managers deliver Owner Tools and never an instance, so no silent path reaches an instance, and the
+  questions an instance needs answered before it exists are always asked.
 - Once the application is installed, Owner Tools is not required but is strongly recommended for most people. Each tool
   can be acquired on its own and need not be present until a task needs it.
 - An installation detects whether the host machine will sleep or hibernate and tells the owner, because an instance has

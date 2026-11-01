@@ -148,14 +148,14 @@ its text cites them.
 
 ## Jurisdiction
 
-| Record                                                                                                                                                 | Status   | Derives from  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------- |
-| [49. The owner declares where they live](0049-the-owner-declares-where-they-live.md)                                                                   | Proposed | 1             |
-| [101. Jurisdiction informs and never enforces](0101-jurisdiction-informs-and-never-enforces.md)                                                        | Proposed | 49            |
-| [102. Jurisdiction never leaves the instance](0102-jurisdiction-never-leaves-the-instance.md)                                                          | Proposed | 49            |
-| [134. A jurisdiction selects a small set of values, not special behaviour](0134-a-jurisdiction-selects-a-small-set-of-values-not-special-behaviour.md) | Proposed | 49, 73, 74    |
-| [170. When no jurisdiction is picked, the universal jurisdiction applies](0170-when-no-jurisdiction-is-picked-the-universal-jurisdiction-applies.md)   | Proposed | 134           |
-| [175. Language changes how things are shown, not what counts as sensitive](0175-language-changes-how-things-are-shown-not-what-counts-as-sensitive.md) | Proposed | 134, 141, 142 |
+| Record                                                                                                                                                                                                                                        | Status   | Derives from  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------- |
+| [49. The owner declares where they live](0049-the-owner-declares-where-they-live.md)                                                                                                                                                          | Proposed | 1             |
+| [101. Jurisdiction informs and never enforces](0101-jurisdiction-informs-and-never-enforces.md)                                                                                                                                               | Proposed | 49            |
+| [102. Jurisdiction never leaves the instance](0102-jurisdiction-never-leaves-the-instance.md)                                                                                                                                                 | Proposed | 49            |
+| [134. A jurisdiction selects a small set of values, not special behaviour](0134-a-jurisdiction-selects-a-small-set-of-values-not-special-behaviour.md)                                                                                        | Proposed | 49, 73, 74    |
+| [170. The universal jurisdiction applies when an owner declines to say where they live or their place has no profile](0170-the-universal-jurisdiction-applies-when-an-owner-declines-to-say-where-they-live-or-their-place-has-no-profile.md) | Proposed | 134           |
+| [175. Language changes how things are shown, not what counts as sensitive](0175-language-changes-how-things-are-shown-not-what-counts-as-sensitive.md)                                                                                        | Proposed | 134, 141, 142 |
 
 ## Security and privacy
 

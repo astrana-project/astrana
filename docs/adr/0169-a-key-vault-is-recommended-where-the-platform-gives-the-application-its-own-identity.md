@@ -5,8 +5,8 @@ Proposed.
 ## Context
 
 An instance holds secrets outside its database, the pepper on every password hash among them
-([Every password hash uses a pepper](0166-every-password-hash-uses-a-pepper-held-outside-the-database.md)). The hosting
-environment decides how well they can be protected
+([record 166](0166-every-password-hash-uses-a-pepper-held-outside-the-database.md)). The hosting environment decides how
+well they can be protected
 ([record 136](0136-the-hosting-environment-must-protect-data-and-receive-security-fixes-however-it-does-so.md)). A key
 vault keeps secrets off the machine, but the instance then needs a credential to reach the vault, and only the large
 clouds' own compute gives an application an identity of its own with no stored credential.
@@ -14,9 +14,10 @@ clouds' own compute gives an application an identity of its own with no stored c
 ## Decision
 
 A key vault is recommended where the platform gives the application an identity of its own, so that no vault credential
-sits on the host machine. Elsewhere it is offered with an honest explanation. It is never required. An instance that
-uses a vault and cannot reach it waits a bounded time, then refuses to start, with a clear message to the owner. Nothing
-secret is cached on the machine.
+sits on the host machine. Elsewhere it is offered with an honest explanation. It is never required, and Astrana names no
+particular vault. A vault must authenticate the application as itself, keep the key out of the application's files and
+out of any backup of them, and be reachable at start-up. An instance that uses a vault and cannot reach it waits a
+bounded time, then refuses to start, with a clear message to the owner. Nothing secret is cached on the machine.
 
 ## Consequences
 

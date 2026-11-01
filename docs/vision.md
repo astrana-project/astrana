@@ -13,6 +13,11 @@ Mainstream platforms are aligned too, with advertisers' interests, and human beh
 shapes the technology to the person instead. It is for social media, not against it. A person can use it heavily, deeply
 engaged with the people around them, without the design working against that engagement.
 
+The mission is narrower than "social media technology" makes it sound. It is about a person's closest relationships,
+meaning family, the friends they have kept for decades and the few they would telephone at three in the morning. Those
+relationships are served by continuity, quiet and a record built up together over years. Finding and reaching new people
+is a different problem, already well served elsewhere, and Astrana will never help anybody find anyone.
+
 ## Vision
 
 The part of social life that was never digitised: a personal space of your own, yours to own, built for connecting with
@@ -49,6 +54,8 @@ Each of these is a decision with its own record, and each rules something out.
   that distribute them can control what people are allowed to run.
 - Shared photos and videos cannot be saved unless the sharer allows it. This adds friction against misuse and is never
   presented as prevention.
+- Keeping is deliberate rather than automatic, so something a person chose to keep sits alongside posts that have
+  expired.
 - Deleting something removes it, with no hidden copy kept. Backups hold what was deleted until they age out, and the
   owner is told so at the moment they delete.
 - An owner can take everything with them. Their data exports to an open standard, and the backup format is published,
@@ -66,6 +73,9 @@ Each of these is a decision with its own record, and each rules something out.
 ## Principles that settle hard choices
 
 - User wellbeing wins. When principles conflict, the person's wellbeing is the tiebreaker.
+- The relationship is what is being cultivated. A feature is judged by whether it treats the relationship as something
+  two people build over time or as a surface for delivering content, and by whether it lightens or adds to the work of
+  the person who already carries most of it.
 - Mistakes can be corrected. Astrana is designed so that a mistake can be put right, a social one such as something said
   in anger as well as a practical one, for the person who made it and for the person it affected. Astrana can correct
   its own record, but it cannot un-share, un-see or reach beyond itself, and it says so plainly.

@@ -5,12 +5,12 @@ Proposed.
 ## Context
 
 An instance holds keys for different jobs. The identity key proves who the instance is to its peers
-([record 38](0038-peers-recognise-each-other-by-keys-remembered-when-they-first-connect.md)), the database key protects
-the database
-([record 124](0124-the-database-is-encrypted-at-rest-by-the-disk-and-the-database-engine-never-by-the-application.md)),
-and the backup key protects a backup. Some keys must be usable by the running instance at any hour, and others protect
-what only the owner should be able to do, such as speaking for the instance's identity. Losing a key, or having one
-stolen, should leave an instance weaker, not finished.
+([record 38](0038-peers-recognise-each-other-by-keys-remembered-when-they-first-connect.md)), and the backup key
+protects a backup. The database is encrypted by the disk and the database engine, whose keys Astrana does not hold
+([record 124](0124-the-database-is-encrypted-at-rest-by-the-disk-and-the-database-engine-never-by-the-application.md)).
+Some keys must be usable by the running instance at any hour, and others protect what only the owner should be able to
+do, such as speaking for the instance's identity. Losing a key, or having one stolen, should leave an instance weaker,
+not finished.
 
 ## Decision
 
@@ -31,5 +31,5 @@ from them for each job, so no derived key can do another's work.
   identity key again.
 - Each key derived from the recovery words can be changed on its own, and one can be released without the others, such
   as a backup key released to a custodian without the means to take over the live instance.
-- Keys under the master key are not derived from one another, so losing the database key loses what the database held,
-  unless a backup restores it, and leaves the identity untouched.
+- Keys under the master key are not derived from one another, so losing one leaves the others, and the identity,
+  untouched.

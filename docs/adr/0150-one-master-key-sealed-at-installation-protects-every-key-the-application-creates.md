@@ -13,13 +13,15 @@ and the application itself never does.
 
 ## Decision
 
-The installer creates the master key and seals it. The application creates every other key at first run, which includes
-its transport keys, its data protection keys, the password pepper and the key that protects authenticator secrets, and
-keeps each of them encrypted under the master key. The identity key is created at first run too, and sealed under the
-owner's recovery words rather than the master key.
+The installer creates the master key and seals it at the strongest level the host machine offers, in order a hardware
+security module, then the operating system's own sealing, then a passphrase, then a file with a warning. The application
+creates every other key at first run, which includes its transport keys, its data protection keys, the password pepper
+and the key that protects authenticator secrets, and keeps each of them encrypted under the master key. The identity key
+is created at first run too, and sealed under the owner's recovery words rather than the master key.
 
 ## Consequences
 
+- The owner is told which level their master key is sealed at, and the instance reports it among its health checks.
 - Installation has one elevated step, and only one key has to be sealed again when an instance moves or is restored.
 - Every key under the master key is as well protected as the sealing the hosting environment allows, and no better.
 - The application can make new keys of its own, such as an hourly transport key, without asking for elevated rights.
