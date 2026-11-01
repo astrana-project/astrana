@@ -20,5 +20,6 @@ content gives no rights in it beyond that.
   it.
 - One thing on an instance is not its owner's to delete. A report about their content stays for a fixed period whatever
   they prefer.
-- An author's own instance keeps no copy of what they posted on someone else's, so a person who wants a record of what
-  they said elsewhere has to keep it themselves.
+- An author's own instance keeps no lasting copy of what they posted on someone else's, so a person who wants a record
+  of what they said elsewhere has to keep it themselves. It holds a copy only for the few minutes it may take to deliver
+  it, and deletes that copy once the other instance has accepted it.

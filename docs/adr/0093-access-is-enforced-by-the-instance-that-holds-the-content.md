@@ -9,13 +9,16 @@ enforced somewhere.
 
 ## Decision
 
-The instance holding content checks who may see it before returning anything, for feeds and for search alike. A
-requester is never sent material and trusted to filter it.
+The instance holding content checks which peers may see it before returning anything, for feeds and for search alike. A
+requesting peer is never sent material and trusted to filter it. Which of its own accounts see what a peer returned is
+decided by the viewer's instance.
 
 ## Consequences
 
 - Modified software on the other side cannot see more than its owner is entitled to, because the filtering never happens
   on its side.
+- The holding instance cannot see which accounts sit behind a peer, whether the owner, a guardian, a custodian or a
+  guest, so it cannot decide among them. The viewer's instance can, and does.
 - Every view needs a live request that the holding instance answers, and the holding instance does the checking work for
   each one. Nothing can be shown while it is unreachable.
 - Sending content encrypted to everyone and letting keys decide who can read it was rejected, because anyone who

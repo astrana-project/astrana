@@ -15,5 +15,7 @@ behaving badly is the owner's call, and a private note the owner makes about a p
 ## Consequences
 
 - No automated assessment removes, limits or labels anyone.
+- A peer that has not been heard from is a signal like any other. The owner is told, and the connection stays until the
+  owner ends it.
 - An owner who misjudges a peer gets no automatic protection. The signal is shown to the same owner who approved the
   connection, and nothing acts on it unless they do.

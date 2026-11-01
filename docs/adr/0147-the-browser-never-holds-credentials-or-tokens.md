@@ -28,6 +28,9 @@ the session. The frontend asks the backend for the session once a page has loade
 - Pages on other sites cannot make requests with the person's session, because the browser sends the cookie only with
   requests from the same site. A site here is the registered domain, so an instance at an address under a shared domain
   shares its site with the other addresses under it, unless that domain is listed as a public suffix.
+- Video parts are requested with tokens that work once, for a few seconds and only with the session, and are decrypted
+  in the page. Neither the tokens nor the keys for those parts grant anything beyond the part they belong to, so neither
+  is a credential an injected script could take away and reuse.
 - Software acting for a person outside the frontend, such as a browser extension or a command-line tool, needs its own
   credential that can be revoked, which is a separate decision.
 - Keeping tokens in browser storage was rejected, because every script on the page can read that storage.

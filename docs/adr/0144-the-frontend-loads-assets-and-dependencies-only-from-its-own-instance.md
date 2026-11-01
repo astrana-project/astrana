@@ -35,7 +35,12 @@ makes requests of its own, such as link safety lookups, which are decided separa
   it. Where the instance runs on the person's own device or home network, the two can be the same.
 - Requests the web browser makes for itself, such as delivering notifications through its push service, belong to the
   browser rather than the frontend. A notification's content is encrypted, so the push service sees when one arrives and
-  cannot read it ([record 19](0019-the-app-is-a-progressive-web-app-served-by-each-instance.md)).
+  cannot read it ([record 19](0019-the-app-is-a-progressive-web-app-served-by-each-instance.md)). The browser itself can
+  read it, and may pass it to its vendor, so a notification says only what kind of thing happened and the details are
+  shown inside the frontend.
+- Media from a peer always travels from the sharing instance to the viewer's own instance and from there to the
+  browser, never from the sharing instance to the browser directly, which would tell the sharer the viewer's address,
+  browser and timing.
 - Loading common libraries from a content delivery network was rejected. Browsers keep a separate cache for each site,
   so it saves little speed, and it would tell an outside server about the people using Astrana. Adding integrity checks
   would stop a changed file from running, but the part of the frontend that needs it would then fail instead.

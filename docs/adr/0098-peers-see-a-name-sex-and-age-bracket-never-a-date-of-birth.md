@@ -18,3 +18,6 @@ by the instance and is never shown to peers.
 - A child's exact birth date is never disclosed to any peer.
 - Someone who does not want to disclose their sex, or whose sex a single field does not describe, cannot leave it out.
 - The age bracket tells every peer when an owner is a child.
+- The bracket informs the people who see it. An instance sharing content never acts on a peer's bracket, and
+  protections for a child who views content are applied by the child's own instance, from the date of birth it already
+  holds.

@@ -19,4 +19,6 @@ changes.
 ## Consequences
 
 - A peer learns that someone other than the owner may see something of what they send.
+- The status is shown to the people on the peer's side, and is for them to weigh. An instance sharing content never
+  acts on it, and never changes what it sends because of it.
 - It is a declaration, and a hostile instance can leave it out.
