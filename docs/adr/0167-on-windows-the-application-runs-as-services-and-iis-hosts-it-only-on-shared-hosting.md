@@ -18,8 +18,10 @@ front. IIS starts and manages the application only on shared hosting, where noth
 
 - The Windows service manager, not IIS, decides when the processes start, stop and restart, as on every other operating
   system.
-- The IIS configuration Astrana supplies covers only passing requests on, so it is the same kind of configuration as for
-  the other supported web servers. Caddy can stand in front instead of IIS.
+- The IIS configuration Astrana Owner Tools sets up covers only passing requests on, so it is the same kind of
+  configuration as for the other supported web servers. Caddy can stand in front instead of IIS.
+- Windows Server is supported, including its installation without a desktop. There, an instance is installed through
+  the parts of Owner Tools that have no interface, with an answer file, or by Owner Tools running on another computer.
 - On shared hosting the application can be recycled at any moment, and the ASP.NET Core Module that IIS needs is
   installed and patched by the hosting provider.
 - Letting IIS start and manage the application on every Windows installation was rejected because IIS would then own the

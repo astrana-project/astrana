@@ -18,4 +18,8 @@ variant, and the project runs no experiments across instances.
 - An instance's code and features change only when its owner changes something or takes an update. Signed data, such as
   the rules for each country, can still change without a release
   ([record 70](0070-rules-that-may-vary-live-in-data-and-fixed-rules-live-in-code.md)).
+- Which release channel an instance follows is the owner's choice, and pre-release channels are never assigned to it.
+- An instance that limits itself after declining a mandatory update past its grace period
+  ([record 113](0113-an-update-is-never-applied-without-the-owner.md)) does so by rules in the code it already runs. The
+  catalogue only states that the update is mandatory and how long the grace period is.
 - A feature is judged by argument, not by measuring how people respond, which is slower.

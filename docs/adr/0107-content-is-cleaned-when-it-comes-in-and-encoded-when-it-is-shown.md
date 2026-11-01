@@ -15,7 +15,8 @@ Content also arrives from outside sites, from files and imports, and from backup
 Content is cleaned of anything that could run as code, both when the instance's own users write it and when it arrives
 from a peer or anywhere else, whatever the source's reputation, and before it is stored. It is cleaned again before it
 leaves the backend, for the place it is going. It is then encoded for wherever it is shown, which is the main defence.
-Cleaning plain text removes only what is invalid, such as broken encoding or control characters, and keeps everything a
+Plain text is not cleaned by removing anything. It is checked against the characters Astrana accepts, and text holding
+one it refuses, such as broken encoding or a control character, is refused whole, so what is stored is exactly what a
 person wrote.
 
 ## Consequences

@@ -17,6 +17,7 @@ moment of approval, never as a verdict.
 ## Consequences
 
 - Nobody is ever tied to an organisation in order to use Astrana.
-- Each relationship presents its own attestation, and reveals nothing about any other.
+- Each relationship presents its own attestation, under a key used for that relationship alone, and reveals nothing
+  about any other.
 - Because the answer is live, the organisation learns that the key it vouches for is being checked, and when.
 - Nothing from an attestation is kept after a disconnection.

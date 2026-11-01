@@ -18,3 +18,6 @@ how they learn the connection has ended.
 - The former peer's record is corrected by the refusal, and their stale belief never grants access.
 - Until it next asks, the former peer's view of the connection is out of date.
 - The instance has to remember a former peer's key, so that it can recognise them and refuse with the reason.
+- Ending a connection is not ending an instance. An instance sends its peers something they did not ask for in only two
+  cases, which are the signed ending when the instance itself is closed and the revocation of a key that signs its
+  transport keys. A peer that waited to ask would go on trusting an identity that has ended or a key that has been stolen.

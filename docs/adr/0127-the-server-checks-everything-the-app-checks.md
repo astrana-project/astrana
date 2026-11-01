@@ -15,7 +15,9 @@ check made in one part of Astrana cannot be relied on by another.
 No check exists only in the app. Every input is validated wherever the server receives it, against what is allowed for
 that kind of input, including every check the app makes, such as lengths, allowed characters and required fields. Where
 the two disagree the server is right. Input that can be written in more than one form is first decoded and normalised to
-one standard form, so that a check cannot be avoided by writing the same input another way.
+one standard form, which for text is Unicode Normalization Form C (NFC), so that a check cannot be avoided by writing
+the same input another way. Input that carries a signature or an integrity tag is verified as received, before it is
+normalised.
 
 ## Consequences
 
@@ -31,6 +33,8 @@ one standard form, so that a check cannot be avoided by writing the same input a
   direct the server to places it should not reach.
 - A backup being restored is checked like any other input. A backup altered so that it still looks valid passes that
   check, so backups need protection of their own against tampering.
+- Signatures and integrity tags are computed over input as it was written, so normalising before verifying would make
+  sound input, such as an intact backup, look tampered with.
 - Each check is tested with malformed and hostile input, not only with what it should accept.
 - Trusting content from a peer because the peer's instance had already checked it was rejected, because the peer's
   software may have been changed, may be out of date or may have been compromised.

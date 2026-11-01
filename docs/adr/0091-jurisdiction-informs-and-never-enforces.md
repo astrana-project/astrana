@@ -16,3 +16,5 @@ refuses to run anywhere.
 
 - Astrana has no authority to enforce any country's law, and the owner stays responsible for operating lawfully.
 - Restrictions by territory would conflict with the open-source freedom to use the software anywhere.
+- No profile sets a minimum age for installing Astrana, because no legal basis for one has been found, and a rule that
+  looks legal without a legal source is worse than no rule.
