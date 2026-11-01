@@ -6,9 +6,10 @@ Proposed.
 
 An instance holds keys whose loss would be serious, above all the keys it uses to answer its peers as itself
 ([record 128](0128-the-identity-database-and-backup-keys-are-independent.md)). A stolen copy of them would let someone
-else answer as the instance until the owner revoked them. The part of the backend that browsers reach, serving the app, signing people in and
-answering every browser request, is the largest surface an attacker can try. A boundary between that surface and the
-keys holds only if it is a boundary the operating system enforces, which code inside one process cannot provide.
+else answer as the instance until the owner revoked them. The part of the backend that browsers reach, serving the app,
+signing people in and answering every browser request, is the largest surface an attacker can try. A boundary between
+that surface and the keys holds only if it is a boundary the operating system enforces, which code inside one process
+cannot provide.
 
 ## Decision
 
@@ -17,9 +18,9 @@ sessions ([record 147](0147-the-browser-never-holds-credentials-or-tokens.md)) a
 application programming interface (API) process holds the keys and does the work that needs them. It is reached by the
 browser-facing process only through a local socket that is never exposed to the network, and by peers through the web
 server in front of the instance ([record 95](0095-every-installation-runs-behind-a-web-server.md)), because the Noise
-handshake uses the instance's transport keys, and the API process holds them along with the rotation key that signs
-them ([record 66](0066-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)). Neither process holds
-the identity key, which is unlocked only when the owner gives their recovery words.
+handshake uses the instance's transport keys, and the API process holds them along with the rotation key that signs them
+([record 66](0066-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)). Neither process holds the
+identity key, which is unlocked only when the owner gives their recovery words.
 
 ## Consequences
 

@@ -6,8 +6,8 @@ Proposed.
 
 Peers that have approved each other ([record 2](0002-connections-are-mutual-and-nobody-follows-anyone.md)) and can
 recognise each other ([record 66](0066-peers-authenticate-each-other-with-a-noise-handshake-inside-https.md)) still need
-a way to exchange requests. Instances run on every kind of hosting the project supports, including shared hosting,
-where a hosting provider decides what kinds of connection it will carry.
+a way to exchange requests. Instances run on every kind of hosting the project supports, including shared hosting, where
+a hosting provider decides what kinds of connection it will carry.
 
 ## Decision
 
@@ -24,8 +24,8 @@ learns what has changed when it next asks.
   Astrana frames a sequence of messages within one exchange, which is how larger content such as media is carried.
 - Without a standing connection, a peer hears of something new only when it next asks, so news between peers arrives
   with a delay.
-- Real-time notifications between an instance and the browsers of the people who use it are a separate matter, and
-  this decision does not touch them.
+- Real-time notifications between an instance and the browsers of the people who use it are a separate matter, and this
+  decision does not touch them.
 - An instance on cloud or web hosting can be reached directly, and a home server can reach the same position with port
   forwarding and dynamic Domain Name System (DNS) records.
 - An instance on a network that blocks incoming connections, as many home and mobile networks do, cannot be reached this

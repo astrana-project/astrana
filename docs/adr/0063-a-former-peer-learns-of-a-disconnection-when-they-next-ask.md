@@ -20,4 +20,5 @@ how they learn the connection has ended.
 - The instance has to remember a former peer's key, so that it can recognise them and refuse with the reason.
 - Ending a connection is not ending an instance. An instance sends its peers something they did not ask for in only two
   cases, which are the signed ending when the instance itself is closed and the revocation of a key that signs its
-  transport keys. A peer that waited to ask would go on trusting an identity that has ended or a key that has been stolen.
+  transport keys. A peer that waited to ask would go on trusting an identity that has ended or a key that has been
+  stolen.

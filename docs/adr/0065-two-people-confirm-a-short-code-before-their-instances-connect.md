@@ -16,8 +16,8 @@ channel they already trust, such as a phone call or in person, and only then is 
 ## Consequences
 
 - The code, not the decision to accept, is what stops someone slipping in between them.
-- The code is worked out from the two identity keys, so the frequent change of the keys each instance uses for
-  transport never changes it.
+- The code is worked out from the two identity keys, so the frequent change of the keys each instance uses for transport
+  never changes it.
 - When a peer's identity key changes without being signed over by the key it replaces, the owner sees the old and new
   codes side by side, and the same check is needed before the new key is trusted. A change the old key signed is
   accepted without a new comparison, and the owner is told.

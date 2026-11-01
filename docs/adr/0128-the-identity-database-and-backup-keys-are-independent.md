@@ -7,9 +7,8 @@ Proposed.
 An instance holds keys for different jobs. The identity key proves who the instance is to its peers
 ([record 38](0038-peers-recognise-each-other-by-keys-remembered-when-they-first-connect.md)), the database key protects
 the database ([record 108](0108-the-database-is-encrypted-at-rest.md)), and the backup key protects a backup. Some keys
-must be usable by the running instance at any hour, and others protect what only the owner should be able to do, such
-as speaking for the instance's identity. Losing a key, or having one stolen, should leave an instance weaker, not
-finished.
+must be usable by the running instance at any hour, and others protect what only the owner should be able to do, such as
+speaking for the instance's identity. Losing a key, or having one stolen, should leave an instance weaker, not finished.
 
 ## Decision
 
@@ -20,8 +19,8 @@ from them for each job, so no derived key can do another's work.
 
 ## Consequences
 
-- Someone who takes the host machine, or the running instance, gets the keys under the master key and never the
-  identity key.
+- Someone who takes the host machine, or the running instance, gets the keys under the master key and never the identity
+  key.
 - Using the identity key, such as to authorise a new key for routine signing, to end the identity or to replace the
   identity key, needs the owner and their recovery words.
 - An owner who loses the host machine, and with it the master key, keeps their identity, because the identity key is

@@ -22,7 +22,7 @@ owner's explicit action, even when it is mandatory.
 - The compatibility update that comes with a new major version has a grace period of six months. A mandatory security
   update's grace period is set for each issue and stated in the update itself, because every day of grace is a day of
   exposure.
-- After a package manager updates the program, the instance stays in maintenance until its schema migrations are applied
-  deliberately, never at start-up.
+- After a package manager updates the program, the instance stays in maintenance until the owner has its schema
+  migrations applied, never at start-up.
 - Blocking use of the instance until the owner approves a mandatory update was rejected, because it would make the
   owner's own instance the lever.

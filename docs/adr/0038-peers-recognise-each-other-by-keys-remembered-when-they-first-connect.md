@@ -11,8 +11,8 @@ that vouches for identities, from a secret the two instances share, or from keys
 ## Decision
 
 Each instance has an identity key of its own. When two people connect, each instance remembers a fingerprint of the
-other's identity key, and from then on a connection is accepted only from an instance that proves it holds that same key,
-or a new key that the remembered one handed over to in a signed rollover. A key whose identity has been retired is
+other's identity key, and from then on a connection is accepted only from an instance that proves it holds that same
+key, or a new key that the remembered one handed over to in a signed rollover. A key whose identity has been retired is
 refused permanently. No certificate authority is involved.
 
 ## Consequences

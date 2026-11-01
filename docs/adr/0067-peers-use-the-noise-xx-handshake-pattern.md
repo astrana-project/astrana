@@ -14,8 +14,7 @@ session forward secrecy once they complete.
 
 Every connection between peers uses the Noise XX pattern over X25519. In XX neither side needs the other's key in
 advance. Each side sends its static key, which is its current transport key, encrypted during the handshake together
-with the signatures that tie it to its identity key, and each checks the other's against the identity key it
-remembered.
+with the signatures that tie it to its identity key, and each checks the other's against the identity key it remembered.
 
 ## Consequences
 

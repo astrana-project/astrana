@@ -15,14 +15,14 @@ reviews it and signs it. Modules are listed in the same signed catalogue as rele
 ([record 105](0105-the-catalogue-is-signed-by-a-release-key-that-an-offline-root-key-vouches-for.md)), signed with the
 same release key, and installed only on request.
 
-Each module declares in a manifest the hosts it may contact, and the instance's own Hypertext Transfer Protocol (HTTP)
+Each module declares in a manifest the destinations it may contact, and the instance's own Hypertext Transfer Protocol (HTTP)
 client refuses any other. A module can only send a message and read its own settings. The provider's key stays
 encrypted under the instance's master key, is passed to the module for each call, and is never written by the module.
 
 ## Consequences
 
 - If the original project is compromised, instances are not affected until Astrana refreshes its copy.
-- The list of hosts is a policy enforced by the instance's own client, not a sandbox. Modules run in the instance's own
+- The list of destinations is a policy enforced by the instance's own client, not a sandbox. Modules run in the instance's own
   process, so it limits a well-behaved module's mistakes and does not isolate a hostile one.
 - A module receives no inbound calls, such as webhooks from its provider.
 - Review cannot tell a module that sends a message from one that sends a message and a copy elsewhere. Only a module's
