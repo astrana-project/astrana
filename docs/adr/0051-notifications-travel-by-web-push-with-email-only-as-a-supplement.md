@@ -18,5 +18,6 @@ optional supplement where the owner has set it up, never the main channel. Text 
   browser routes it through Apple's or Google's push service.
 - Delivery cannot be guaranteed, so what the owner sees when they next open their instance is the record they can rely
   on.
-- Two-factor codes and sign-in links are not notifications, and email may be the only way they arrive.
+- Two-factor codes and sign-in links are not notifications. Email is never the only way to sign in, and never the only
+  channel for a security notice, which is always shown inside the instance as well.
 - Text messages were rejected, because each one costs money and needs a commercial relationship.

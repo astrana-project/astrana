@@ -16,5 +16,6 @@ it up. The record of sign-ins on the instance is what the owner can rely on.
 ## Consequences
 
 - Astrana cannot guarantee an alert arrives, and does not claim to.
+- Email is never the only channel for the alert, so an owner without working email still learns of the sign-in.
 - An alert sent by email survives an attacker who has taken over the instance, but reaches the attacker too if the
   mailbox was how they got in.
