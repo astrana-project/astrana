@@ -1,8 +1,8 @@
 # Vision
 
 What Astrana is for, the commitments it makes, and the principles that settle hard choices. The
-[decision records](adr/README.md) record how the application keeps these commitments, and the [glossary](glossary.md)
-defines the words used here.
+[decision records](adr/README.md) record how Astrana keeps these commitments, and the [glossary](glossary.md) defines
+the words used here.
 
 ## Mission
 
@@ -35,14 +35,31 @@ except the home.
 Each of these is a decision with its own record, and each rules something out.
 
 - An instance belongs to one person, and what someone writes lives on the instance where it was written, or, for a
-  comment, on the instance that holds what it responds to. An instance never keeps a copy of what it reads from a peer.
+  comment, on the instance that holds what it responds to. An instance never stores what it reads from a peer, and
+  checks with the sharer every time before showing it.
 - Connections are mutual and first degree only. There is no following, no groups, no direct messaging and no search
   across instances.
 - The feed is chronological, is never ranked and has an end. Counts are shown as a record of how people responded, never
   as an achievement.
 - An instance shows nothing to anyone it has no relationship with.
 - Telemetry exists only to help fix faults, is not part of a default installation and is off until the owner opts in.
-- Nothing about an instance can be switched remotely, and an update is never applied without its owner.
+- Apart from announcing that it has ended, or that one of its keys should no longer be trusted, an instance tells its
+  peers nothing about what it does. Peers ask for what they need, and each instance chooses what to answer.
+- People use Astrana only through the web app their own instance serves. There are no native apps, because the stores
+  that distribute them can control what people are allowed to run.
+- Shared photos and videos cannot be saved unless the sharer allows it. This adds friction against misuse and is never
+  presented as prevention.
+- Deleting something removes it, with no hidden copy kept. Backups hold what was deleted until they age out, and the
+  owner is told so at the moment they delete.
+- An owner can take everything with them. Their data exports to an open standard, and the backup format is published,
+  with a reader that opens a backup without Astrana installed.
+- Nothing about an instance can be switched remotely, and an update is never applied without its owner. An instance that
+  declines a mandatory update past its grace period limits itself, taking on no new commitments and reading no peer
+  content, and the owner's own data is never held back.
+- Releases are reproducible and signed, and updates are checked so that a compromised server can delay an update but
+  never install one.
+- Where Astrana controls the cryptography, it guards against attacks expected from future computers as well as today's,
+  always pairing new methods with proven ones and starting with backups.
 - The one central service is a signed catalogue of versions, which instances read without saying anything about
   themselves.
 
@@ -55,6 +72,10 @@ Each of these is a decision with its own record, and each rules something out.
 - Safety Third. Safety is never a substitute authority that people defer to instead of exercising their own judgement.
   As a rule about claims, Astrana never describes a protection as stronger than it is, because false comfort leaves
   people worse off than an honest gap.
+- Nothing essential rests on one thing. Losing or breaking one sign-in factor, key or channel never causes a critical
+  loss, and there is always a way back that depends on nobody else.
+- Harm reduction. People will do some things whatever they are advised, such as running an instance on cheap hosting, so
+  a safe way to do it is better than leaving them to an unsafe one.
 - Embeddedness. Social mechanisms work when the person acting is present among, known by and reachable by the people
   they act upon. Reach should never exceed the relationship carrying it.
 - No scoreboards. A count belongs to the item it is attached to, and nothing adds counts up into a standing.
@@ -69,6 +90,8 @@ The Astrana Application is the core of a small set of open-source software. It c
 to its value, security and experience.
 
 - The Astrana Application, in this repository, is what an instance runs.
+- Astrana Owner Tools, also in this repository, installs, backs up, restores, repairs and removes an instance, from the
+  machine it runs on or from the owner's own computer, and works when the instance itself does not.
 - The Astrana Trusted Attestation Server lets an organisation vouch for its relationship with a person, which a peer may
   weigh when deciding whether to connect.
 - Browser extensions let an owner share what they find while browsing with their own instance.
