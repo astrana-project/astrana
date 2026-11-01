@@ -12,8 +12,8 @@ instance for them, but an instance has to be its owner's and nobody else's
 
 Astrana is built for each instance to be managed by its owner, who installs, configures and looks after it, its database
 and its encryption keys. Astrana provides no way for anyone else to administer an instance on the owner's behalf, such
-as management by a third party or one installation serving several owners, and the project runs no hosted service and
-no central service that instances or the owner's tools depend on.
+as management by a third party or one installation serving several owners, and the project runs no hosted service and no
+central service that instances or the owner's tools depend on.
 
 ## Consequences
 

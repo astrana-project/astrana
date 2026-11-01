@@ -1,0 +1,25 @@
+# 103. Access is enforced by the instance that holds the content
+
+Proposed.
+
+## Context
+
+Who may see a post is set by its owner ([record 50](0050-the-owner-chooses-who-each-post-is-for.md)), and that has to be
+enforced somewhere.
+
+## Decision
+
+The instance holding content checks which peers may see it before returning anything, for feeds and for search alike. A
+requesting peer is never sent material and trusted to filter it. Which of its own accounts see what a peer returned is
+decided by the viewer's instance.
+
+## Consequences
+
+- Modified software on the other side cannot see more than its owner is entitled to, because the filtering never happens
+  on its side.
+- The holding instance cannot see which accounts sit behind a peer, whether the owner, a guardian, a custodian or a
+  guest, so it cannot decide among them. The viewer's instance can, and does.
+- Every view needs a live request that the holding instance answers, and the holding instance does the checking work for
+  each one. Nothing can be shown while it is unreachable.
+- Sending content encrypted to everyone and letting keys decide who can read it was rejected, because anyone who
+  received it would keep it, and a change of audience could never take back what had already been sent.
