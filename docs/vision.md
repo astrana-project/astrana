@@ -6,19 +6,21 @@ them needs a reason of its own.
 ## Mission
 
 To build social networking software that is materially healthier than what people have now, by shaping the technology to
-the whole of human nature rather than to the parts of it that can be exploited.
+the whole of human nature rather than to whichever parts of it are commercially profitable, and to the interests of the
+people using it rather than anybody else's.
 
 ## Vision
 
-A place of your own, for the people already well known to you, where relationships are tended and deepened over years
-rather than kept up with. Yours to own, seen only by the people each thing is for, and keeping only what matters.
+A place of your own, for the people already well known to you, where relationships are tended and deepened over a
+lifetime. Yours to own, never competing for your attention, seen only by the people each thing is for, and keeping only
+what matters.
 
 ## The premise
 
 The individual is the basic unit of society. Each person runs their own instance of Astrana and connects it directly to
 the instances of people they already know well, with no organisation in between.
 
-## The four commitments
+## The commitments
 
 ### For the people already well known to you
 
@@ -32,6 +34,12 @@ An instance runs on hardware or hosting its owner chooses, and the owner is its 
 suspend them.
 
 The cost is that nobody is coming to help either.
+
+### Never competing for your attention
+
+Nothing is ranked, nothing is made to bring anybody back, and the feed ends.
+
+The cost is that something worth seeing from a quiet peer can be missed, because nothing exists to surface it.
 
 ### Seen only by the people each thing is for
 
