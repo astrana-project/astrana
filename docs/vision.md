@@ -20,9 +20,7 @@ matters.
 The individual is the basic unit of society. Astrana is free and open source, and is built so that each person has an
 instance of their own. Someone who does not can be invited onto another person's instance as a guest. Instances connect
 directly to each other, with no third party required in between. A child can have an instance too, and a parent or
-guardian holds authority over that instance's parental controls. Astrana is shown in each person's own language. Some of
-its defaults follow the law where the owner lives, but it never enforces that law. Each owner sets the rules of their
-own place, so no single culture's customs are imposed on everyone.
+guardian holds authority over that instance's parental controls.
 
 ## The commitments
 
@@ -64,6 +62,14 @@ What you share disappears after a set time unless you deliberately choose to kee
 albums, stay until you remove them.
 
 The cost is that anything not kept is deleted from your instance when its time is up.
+
+### Respectful of where and how you live
+
+Astrana is shown in your own language. Some of its defaults follow the law where you live, but it never enforces that
+law. You set the rules of your own place, so no single culture's customs are imposed on anyone.
+
+The cost is that Astrana cannot make sure an instance meets every local law, because you, not Astrana, are answerable
+for your own place.
 
 ## When things conflict
 
