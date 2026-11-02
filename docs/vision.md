@@ -52,6 +52,7 @@ The cost is a small choice each time you share, which Astrana keeps light by rem
 
 ### Keeping only what matters
 
-What you share disappears after a set time unless you choose to keep it. Albums stay until you remove them.
+What you share disappears after a set time unless you choose to keep it. Things meant to last, such as albums, stay
+until you remove them.
 
 The cost is that anything you did not choose to keep is deleted when its time is up.
