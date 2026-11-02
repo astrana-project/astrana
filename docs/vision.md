@@ -48,7 +48,7 @@ to your attention again.
 
 When you share something, you choose who can see it, such as your family or a few close friends, and nobody else can.
 
-The cost is that choosing is up to you. If you do not, everyone you are connected to can see it.
+The cost is a small choice each time you share, which Astrana keeps light by remembering the last one you made.
 
 ### Keeping only what matters
 
