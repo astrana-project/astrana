@@ -17,7 +17,7 @@ keeping only what matters.
 
 ## The premise
 
-The individual is the basic unit of society. Each person runs their own instance of Astrana, which is free and open
+The individual is the basic unit of society. Each person has their own instance of Astrana, which is free and open
 source. Instances connect directly to each other, with no third party required in between. A child can have an instance
 too, with a parent or guardian holding authority over its protections.
 
@@ -32,7 +32,7 @@ with.
 
 ### Yours to own
 
-Your instance runs on hardware or hosting you choose, and no platform sits above you, so nobody can suspend you.
+Your instance runs on hardware or hosting you choose, and no platform sits above you that could suspend you.
 
 The cost is that you are responsible for your instance, and look after it yourself or have someone you trust do it for
 you.
@@ -47,7 +47,8 @@ you about it.
 
 ### Seen only by the people each thing is intended for
 
-When you share something, you choose who can see it, such as your family or a few close friends, and nobody else can.
+When you share something, you choose who can see it, such as your family or a few close friends, and Astrana shows it to
+nobody else.
 
 The cost is a small choice each time you share, which Astrana keeps light by remembering the last one you made.
 
@@ -67,7 +68,7 @@ slower, plainer or harder to build.
 Some things are never traded away:
 
 - Success is never measured by how much people use Astrana.
-- Nothing makes money from the time people spend in it.
+- Nothing in Astrana makes money from the time people spend using it.
 - Nobody's choices are taken away to protect them from every risk.
 - Astrana never claims to protect people more than it does.
 - Anything Astrana can work without stays off until the owner chooses to turn it on.
