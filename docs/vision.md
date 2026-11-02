@@ -24,22 +24,22 @@ the instances of people they already know well, with no third party required in 
 
 ### For the people already well known to you
 
-There is no discovery, no directory and no strangers. Two instances connect only when both owners agree.
+There is no discovery, no directory and no strangers. You connect with someone only when you both agree.
 
-The cost is that people reach you only through an address you give them, and nothing suggests people to connect with.
+The cost is that people reach you only through an address you give them, and Astrana never suggests anyone to connect
+with.
 
 ### Yours to own
 
-An instance runs on hardware or hosting its owner chooses, and no platform sits above the owner, so no platform can
-suspend them. The owner may have someone they trust look after it, such as a family member or a hosting provider.
+Your instance runs on hardware or hosting you choose, and no platform sits above you, so nobody can suspend you.
 
-The cost is that the owner is responsible for their own instance, and looks after it themselves or finds someone they
-trust who knows how to on their behalf.
+The cost is that you are responsible for your instance, and look after it yourself or have someone you trust do it for
+you.
 
 ### Never competing for your attention
 
-Nothing is ranked to hold attention, nothing invents a reason to come back, such as a streak or a reminder, and the feed
-stops at the end of what there is to see, rather than scrolling forever.
+Nothing is ranked to hold your attention, nothing invents a reason to come back, such as a streak or a reminder, and the
+feed stops at the end of what there is to see, rather than scrolling forever.
 
 The cost is that you can miss what someone shares unless you go back and look for it, because Astrana will not bring it
 to your attention again.
@@ -55,4 +55,4 @@ The cost is a small choice each time you share, which Astrana keeps light by rem
 What you share disappears after a set time unless you choose to keep it. Things meant to last, such as albums, stay
 until you remove them.
 
-The cost is that anything you did not choose to keep is deleted when its time is up.
+The cost is that anything not kept is deleted when its time is up.
