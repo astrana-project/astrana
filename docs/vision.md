@@ -12,8 +12,8 @@ people using it rather than anybody else's.
 ## Vision
 
 A place of your own, for the people already well known to you, where relationships are tended and deepened over a
-lifetime. Yours to own, never competing for your attention, seen only by the people each thing is for, and keeping only
-what matters.
+lifetime. Yours to own, never competing for your attention, seen only by the people each thing is intended for, and
+keeping only what matters.
 
 ## The premise
 
@@ -44,7 +44,7 @@ stops at the end of what there is to see, rather than scrolling forever.
 The cost is that you can miss what someone shares unless you go back and look for it, because Astrana will not bring it
 to your attention again.
 
-### Seen only by the people each thing is for
+### Seen only by the people each thing is intended for
 
 When you share something, you choose who can see it, such as your family or a few close friends, and nobody else can.
 
