@@ -71,7 +71,7 @@ you are subject to, such as those that decide when a child comes of age, but it 
 rules of your own place, so no single culture's customs or traditions are imposed on anyone.
 
 The cost is that Astrana cannot make sure an instance meets every local law, because you, not Astrana, are answerable
-for your own place.
+for your own place and jurisdiction.
 
 ## When things conflict
 
