@@ -21,6 +21,20 @@ The individual is the basic unit of society. Each person runs their own instance
 source, and connects it directly to the instances of people they already know well, with no third party required in
 between.
 
+## When things conflict
+
+When two good things pull in different directions, the choice that is better for the wellbeing of the people using
+Astrana wins.
+
+When a technically better design works against the mission, the mission wins, even if the result is slower, plainer or
+harder to build.
+
+Some things are never traded away:
+
+- Success is never measured by how much people use Astrana.
+- Nothing makes money from the time people spend in it.
+- Nobody is protected from every risk by having their choices taken away.
+
 ## The commitments
 
 ### For the people already well known to you
