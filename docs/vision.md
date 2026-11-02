@@ -49,8 +49,8 @@ you about it.
 ### Seen only by the people you choose
 
 When you share something, you choose who can see it, and Astrana shows it only to them and to those responsible for
-their care. Apart from the least a connection needs in order to work, nothing about you leaves your instance unless you
-choose to send it, and Astrana keeps no more about anyone than it needs.
+their care. Apart from the minimum a connection needs in order to work, nothing about you leaves your instance unless
+you choose to send it, and Astrana keeps no more about anyone than it needs.
 
 The cost is a small choice each time you share.
 
