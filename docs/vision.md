@@ -33,8 +33,9 @@ connect with.
 
 ### Yours to own
 
-Your instance runs on hardware or hosting you choose, and no platform sits above you that could suspend you. You can
-take all your data with you in an open format, and open your backups even without Astrana installed.
+Your instance runs on hardware or hosting you choose, and no platform sits above you that could suspend you. Nothing
+about your instance is changed without you, and an update is applied only when you choose. You can take all your data
+with you in an open format, and open your backups even without Astrana installed.
 
 The cost is that you are responsible for your instance, and look after it yourself or have someone you trust do it for
 you.
