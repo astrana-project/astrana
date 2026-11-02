@@ -39,7 +39,7 @@ trust who knows how to on their behalf.
 ### Never competing for your attention
 
 Nothing is ranked to hold attention, nothing invents a reason to come back, such as a streak or a reminder, and the feed
-ends.
+stops at the end of what there is to see, rather than scrolling forever.
 
 The cost is that something worth seeing from a quiet peer can be missed, because nothing exists to surface it.
 
