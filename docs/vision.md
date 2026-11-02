@@ -41,8 +41,7 @@ trust who knows how to on their behalf.
 Nothing is ranked to hold attention, nothing invents a reason to come back, such as a streak or a reminder, and the feed
 stops at the end of what there is to see, rather than scrolling forever.
 
-The cost is that a post from someone who rarely posts can be missed, because nothing brings it back to the top or
-reminds you of it.
+The cost is that you can miss what someone shares, because nothing puts it in front of you a second time.
 
 ### Seen only by the people each thing is for
 
