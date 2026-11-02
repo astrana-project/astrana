@@ -4,9 +4,8 @@ Proposed.
 
 ## Context
 
-Astrana is designed for connecting with people you already know. Whether a connection needs both people's agreement
-decides who can see what a person shares. One-way following would let a person gather an audience that never agreed to
-be one.
+Astrana is for the people already well known to its owner. Whether a connection needs both people's agreement decides
+who can see what a person shares. One-way following would let a person gather an audience that never agreed to be one.
 
 ## Decision
 

@@ -6,34 +6,54 @@ the words used here.
 
 ## Mission
 
-To align social media technology with how people naturally are, as far as is practical, so that its benefits can be
-realised without working against the people using it.
+To build social networking software that is materially healthier than what people have now, by shaping the technology to
+the whole of what people are rather than to the parts of them that can be exploited.
 
-Mainstream platforms are aligned too, with advertisers' interests, and human behaviour is what gets bent to fit. Astrana
-shapes the technology to the person instead. It is for social media, not against it. A person can use it heavily, deeply
-engaged with the people around them, without the design working against that engagement.
+The claim is about which parts of human nature the technology is built for. Mainstream platforms are shaped too, to what
+advertisers want, and human behaviour is what gets bent to fit. Infinite scroll works because attention can be held past
+the point a person wanted to stop, and engagement ranking works because outrage is more reliable than contentment. The
+difference is not understanding people better. It is declining to inflate one part of a person at the expense of the
+rest.
 
-The mission is narrower than "social media technology" makes it sound. It is about a person's closest relationships,
+Materially healthier is a comparison with what people have now, and materially means in substance rather than in
+presentation. A change that leaves an incentive in place and only describes it differently does not count.
+
+The mission is narrower than "social networking software" makes it sound. It is about a person's closest relationships,
 meaning family, the friends they have kept for decades and the few they would telephone at three in the morning. Those
 relationships are served by continuity, quiet and a record built up together over years. Finding and reaching new people
 is a different problem, already well served elsewhere, and Astrana will never help anybody find anyone.
 
+Astrana is for social media, not against it. A person can use it heavily, deeply engaged with the people around them,
+without the design working against that engagement. What the mission rules out is engagement as a measure of success,
+any revenue model in which someone benefits from people spending longer, and paternalism, which would protect people
+from everything and so override their own judgement. Where a technically elegant approach and the mission point in
+different directions, the mission wins.
+
 ## Vision
 
-The part of social life that was never digitised: a personal space of your own, yours to own, built for connecting with
-people you already know, and designed to forget.
+A place of your own, for the people already well known to you, where relationships are tended and deepened over years
+rather than kept up with. Yours to own, seen only by the people each thing is for, and keeping only what matters.
 
-Astrana is a personal space in the way a home is one. Most social services are clubs, with membership, rules and an
-administrator, or squares, open to anyone passing through. The first wave of social media digitised almost everything
-except the home.
+Astrana is a place in the way a home is one. The mainstream services are clubs, squares and standing conversations.
+Parts of the personal space were digitised, imperfectly, since group messaging took the people and close-friends
+features took a version of the boundary. What was never built is the place itself, somewhere that belongs to a person,
+that others enter on their terms, and where things are put rather than sent.
 
-## Three commitments, and what each costs
+Astrana adds that place rather than replacing the others. Societies need clubs and squares, and membership, rules,
+advertising and public visibility are appropriate in them. The objection was never to those places, only to there being
+no personal one.
 
-| Commitment                        | What it means                                                                                                    | What it costs                                         |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Yours to own                      | It runs on hardware you control or hosting you rent, there is no operator above you, and nobody can suspend you. | Nobody is coming to help either.                      |
-| Built for people you already know | There is no discovery, no directory and no strangers. Two people connect only when both approve.                 | Nobody can find you, and a new instance starts empty. |
-| Designed to forget                | Content goes away by default, rather than by a request made to a reluctant company.                              | Content you did not think to keep is gone.            |
+Tended rather than kept up with names the failure to avoid. Another channel, another format and another thing to keep up
+with all land on whoever already carries a relationship, so Astrana asks as little of anybody as it can.
+
+## Four commitments, and what each costs
+
+| Commitment                                | What it means                                                                                                    | What it costs                                                                              |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| For the people already well known to you  | There is no discovery, no directory and no strangers. Two people connect only when both approve.                 | Nobody can find you, and a new instance starts empty.                                      |
+| Yours to own                              | It runs on hardware you control or hosting you rent, there is no operator above you, and nobody can suspend you. | Nobody is coming to help either.                                                           |
+| Seen only by the people each thing is for | Every post is for one or more audiences, and nobody outside them sees it.                                        | The default audience is every connected peer, so narrowing it is something the owner does. |
+| Keeping only what matters                 | Content goes away by default, rather than by a request made to a reluctant company, and keeping is a choice.     | Content you did not think to keep is gone.                                                 |
 
 ## What follows from them
 
@@ -54,8 +74,6 @@ Each of these is a decision with its own record, and each rules something out.
   that distribute them can control what people are allowed to run.
 - Shared photos and videos cannot be saved unless the sharer allows it. This adds friction against misuse and is never
   presented as prevention.
-- Keeping is deliberate rather than automatic, so something a person chose to keep sits alongside posts that have
-  expired.
 - Deleting something removes it, with no hidden copy kept. Backups hold what was deleted until they age out, and the
   owner is told so at the moment they delete.
 - An owner can take everything with them. Their data exports to an open standard, and the backup format is published,
