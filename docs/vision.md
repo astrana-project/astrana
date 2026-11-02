@@ -5,9 +5,9 @@ them needs a reason of its own.
 
 ## Mission
 
-To build social networking software that is materially healthier than what people have now, by shaping the technology to
-the whole of human nature rather than to whichever parts of it are commercially profitable, and to the interests of the
-people using it rather than anybody else's.
+To build social networking software that is materially healthier than platforms built to capture attention, by shaping
+the technology to the whole of human nature rather than to whichever parts of it are commercially profitable, and to the
+interests of the people using it rather than anybody else's.
 
 ## Vision
 
