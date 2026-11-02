@@ -41,7 +41,7 @@ trust who knows how to on their behalf.
 Nothing is ranked to hold attention, nothing invents a reason to come back, such as a streak or a reminder, and the feed
 stops at the end of what there is to see, rather than scrolling forever.
 
-The cost is that you can miss what someone shares, because nothing puts it in front of you a second time.
+The cost is that you can miss what someone shares, because Astrana will not show it to you again or remind you about it.
 
 ### Seen only by the people each thing is for
 
