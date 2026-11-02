@@ -33,7 +33,8 @@ The cost is that people reach you only through an address you give them, and not
 An instance runs on hardware or hosting its owner chooses, and no platform sits above the owner, so no platform can
 suspend them. The owner may have someone they trust look after it, such as a family member or a hosting provider.
 
-The cost is that no platform is coming to help either.
+The cost is that the owner is responsible for their own instance, and looks after it themselves or finds someone they
+trust who knows how.
 
 ### Never competing for your attention
 
