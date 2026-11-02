@@ -75,7 +75,7 @@ Some things are never traded away:
 - Nothing in Astrana makes money from the time people spend using it.
 - No adult's choices are taken away to protect them from every risk.
 - Astrana never claims to protect people more than it does.
-- Security is never weakened to make something easier, and anything Astrana does not need is left out, because what is
-  not there cannot be attacked.
+- Security is never weakened to make something easier. Leaving something out is preferred to switching it off, because
+  what is not there cannot be attacked.
 - Anything that is not needed for people to share with and stay connected to those they know stays off until the
   instance's owner turns it on, or a guardian does for a child.
