@@ -46,9 +46,9 @@ to your attention again.
 
 ### Seen only by the people each thing is for
 
-Every post goes to one or more audiences, and nobody outside them sees it.
+When you share something, you choose who can see it, such as your family or a few close friends, and nobody else can.
 
-The cost is that a post goes to every connected peer unless the owner narrows it.
+The cost is that choosing is up to you. If you do not, everyone you are connected to can see it.
 
 ### Keeping only what matters
 
