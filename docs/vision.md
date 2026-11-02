@@ -52,6 +52,6 @@ The cost is a small choice each time you share, which Astrana keeps light by rem
 
 ### Keeping only what matters
 
-Forgetting is the default, and keeping is a choice.
+What you share disappears after a set time unless you choose to keep it. Albums stay until you remove them.
 
-The cost is that content you did not think to keep is gone.
+The cost is that anything you did not choose to keep goes when its time is up.
