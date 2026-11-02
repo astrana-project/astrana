@@ -65,9 +65,9 @@ The cost is that anything not kept is deleted from your instance when its time i
 
 ### Respectful of where and how you live
 
-Astrana is shown in your own language. As far as it reasonably can, Astrana follows the law where you live, such as the
-age at which a child comes of age, but it never enforces the law on you. You set the rules of your own place, so no
-single culture's customs are imposed on anyone.
+Astrana is shown in your own language. Astrana follows the law where you live as far as it reasonably can, for example
+in when a child comes of age. It never enforces that law on you. You set the rules of your own place, so no single
+culture's customs are imposed on anyone.
 
 The cost is that Astrana cannot make sure an instance meets every local law, because you, not Astrana, are answerable
 for your own place.
