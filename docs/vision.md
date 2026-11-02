@@ -38,7 +38,7 @@ trust who knows how to on their behalf.
 
 ### Never competing for your attention
 
-Nothing is ranked, nothing is made to bring anybody back, and the feed ends.
+Nothing is ranked to hold attention, nothing is made to bring anybody back, and the feed ends.
 
 The cost is that something worth seeing from a quiet peer can be missed, because nothing exists to surface it.
 
