@@ -30,10 +30,11 @@ The cost is that people reach you only through an address you give them, and not
 
 ### Yours to own
 
-An instance runs on hardware or hosting its owner chooses, and the owner is its only administrator, so nobody can
-suspend them.
+An instance runs on hardware or hosting its owner chooses, and no platform sits above the owner, so no platform can
+suspend them. The owner may have someone they trust look after it, such as a family member or a hosting provider, and it
+is still theirs.
 
-The cost is that nobody is coming to help either.
+The cost is that no platform is coming to help either.
 
 ### Never competing for your attention
 
