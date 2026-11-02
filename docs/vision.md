@@ -18,7 +18,8 @@ keeping only what matters.
 ## The premise
 
 The individual is the basic unit of society. Each person runs their own instance of Astrana, which is free and open
-source. Instances connect directly to each other, with no third party required in between.
+source. Instances connect directly to each other, with no third party required in between. A child can have an instance
+too, with a parent or guardian holding authority over its protections.
 
 ## The commitments
 
