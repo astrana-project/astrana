@@ -26,7 +26,7 @@ the instances of people they already know well, with no third party required in 
 
 There is no discovery, no directory and no strangers. Two instances connect only when both owners agree.
 
-The cost is that people reach you only through an address you give them, and a new instance starts with no connections.
+The cost is that people reach you only through an address you give them, and nothing suggests people to connect with.
 
 ### Yours to own
 
