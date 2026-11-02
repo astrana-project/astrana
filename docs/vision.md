@@ -69,3 +69,4 @@ Some things are never traded away:
 - Success is never measured by how much people use Astrana.
 - Nothing makes money from the time people spend in it.
 - Nobody's choices are taken away to protect them from every risk.
+- Astrana never claims to protect people more than it does.
