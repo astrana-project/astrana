@@ -1,4 +1,4 @@
-# Vision
+# Mission and vision
 
 Every [decision record](adr/README.md) rests on the mission and vision below. A record that cannot be traced back to
 them needs a reason of its own.
