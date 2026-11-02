@@ -9,51 +9,34 @@ the words used here.
 To build social networking software that is materially healthier than what people have now, by shaping the technology to
 the whole of what people are rather than to the parts of them that can be exploited.
 
-The claim is about which parts of human nature the technology is built for. Mainstream platforms are shaped too, to what
-advertisers want, and human behaviour is what gets bent to fit. Infinite scroll works because attention can be held past
-the point a person wanted to stop, and engagement ranking works because outrage is more reliable than contentment. The
-difference is not understanding people better. It is declining to inflate one part of a person at the expense of the
-rest.
+Materially means in substance rather than in presentation, so a change that leaves an incentive in place and only
+describes it differently does not count.
 
-Materially healthier is a comparison with what people have now, and materially means in substance rather than in
-presentation. A change that leaves an incentive in place and only describes it differently does not count.
+The mission is about a person's closest relationships, which are served by continuity, quiet and a record built up
+together over years. Astrana will never help anybody find anyone.
 
-The mission is narrower than "social networking software" makes it sound. It is about a person's closest relationships,
-meaning family, the friends they have kept for decades and the few they would telephone at three in the morning. Those
-relationships are served by continuity, quiet and a record built up together over years. Finding and reaching new people
-is a different problem, already well served elsewhere, and Astrana will never help anybody find anyone.
-
-Astrana is for social media, not against it. A person can use it heavily, deeply engaged with the people around them,
-without the design working against that engagement. What the mission rules out is engagement as a measure of success,
-any revenue model in which someone benefits from people spending longer, and paternalism, which would protect people
-from everything and so override their own judgement. Where a technically elegant approach and the mission point in
-different directions, the mission wins.
+Astrana is for social media, not against it, and a person can use it heavily without the design working against them.
+The mission rules out engagement as a measure of success, any revenue model in which someone benefits from people
+spending longer, and paternalism, which would protect people from everything and so override their own judgement. Where
+a technically elegant approach and the mission point in different directions, the mission wins.
 
 ## Vision
 
 A place of your own, for the people already well known to you, where relationships are tended and deepened over years
 rather than kept up with. Yours to own, seen only by the people each thing is for, and keeping only what matters.
 
-Astrana is a place in the way a home is one. The mainstream services are clubs, squares and standing conversations.
-Parts of the personal space were digitised, imperfectly, since group messaging took the people and close-friends
-features took a version of the boundary. What was never built is the place itself, somewhere that belongs to a person,
-that others enter on their terms, and where things are put rather than sent.
-
-Astrana adds that place rather than replacing the others. Societies need clubs and squares, and membership, rules,
-advertising and public visibility are appropriate in them. The objection was never to those places, only to there being
-no personal one.
-
-Tended rather than kept up with names the failure to avoid. Another channel, another format and another thing to keep up
-with all land on whoever already carries a relationship, so Astrana asks as little of anybody as it can.
+A place is meant in the sense that a home is one, somewhere that belongs to a person, that others enter on their terms,
+and where things are put rather than sent. Astrana asks as little of anybody as it can, because every extra channel or
+format lands on whoever already carries a relationship.
 
 ## Four commitments, and what each costs
 
-| Commitment                                | What it means                                                                                                    | What it costs                                                                              |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| For the people already well known to you  | There is no discovery, no directory and no strangers. Two people connect only when both approve.                 | Nobody can find you, and a new instance starts empty.                                      |
-| Yours to own                              | It runs on hardware you control or hosting you rent, there is no operator above you, and nobody can suspend you. | Nobody is coming to help either.                                                           |
-| Seen only by the people each thing is for | Every post is for one or more audiences, and nobody outside them sees it.                                        | The default audience is every connected peer, so narrowing it is something the owner does. |
-| Keeping only what matters                 | Content goes away by default, rather than by a request made to a reluctant company, and keeping is a choice.     | Content you did not think to keep is gone.                                                 |
+| Commitment                                | What it means                                                                                                     | What it costs                                                                              |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| For the people already well known to you  | There is no discovery, no directory and no strangers. Two people connect only when both approve.                  | Nobody can find you, and a new instance starts empty.                                      |
+| Yours to own                              | It runs on hardware you control or hosting you rent, there is no operator above you, and nobody can suspend you.  | Nobody is coming to help either.                                                           |
+| Seen only by the people each thing is for | Every post is for one or more audiences, each a named group of peers and guests, and nobody outside them sees it. | The default audience is every connected peer, so narrowing it is something the owner does. |
+| Keeping only what matters                 | Content goes away by default, and keeping it is a choice.                                                         | Content you did not think to keep is gone.                                                 |
 
 ## What follows from them
 
