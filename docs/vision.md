@@ -17,10 +17,10 @@ matters.
 
 ## The premise
 
-The individual is the basic unit of society. Astrana, which is free and open source, is built so that each person has an
+The individual is the basic unit of society. Astrana is free and open source, and is built so that each person has an
 instance of their own. Someone who does not can be invited onto another person's instance as a guest. Instances connect
 directly to each other, with no third party required in between. A child can have an instance too, and a parent or
-guardian holds authority over its parental controls.
+guardian holds authority over that instance's parental controls.
 
 ## The commitments
 
@@ -33,7 +33,8 @@ connect with.
 
 ### Yours to own
 
-Your instance runs on hardware or hosting you choose, and no platform sits above you that could suspend you.
+Your instance runs on hardware or hosting you choose, and no platform sits above you that could suspend you. You can
+export everything to an open format and read your backups without Astrana.
 
 The cost is that you are responsible for your instance, and look after it yourself or have someone you trust do it for
 you.
@@ -49,7 +50,9 @@ you about it.
 ### Seen only by the people you choose
 
 When you share something, you choose who can see it, such as your family or a few close friends, and Astrana shows it to
-nobody else, except that a child's guardians can see what is shared with the child.
+nobody else, except that a child's guardians can see what is shared with the child. Apart from the least a connection
+needs in order to work, nothing about you leaves your instance unless you choose to send it, and Astrana keeps no more
+about anyone than it needs.
 
 The cost is a small choice each time you share, which Astrana keeps light by remembering the last one you made.
 
@@ -72,5 +75,7 @@ Some things are never traded away:
 - Nothing in Astrana makes money from the time people spend using it.
 - No adult's choices are taken away to protect them from every risk.
 - Astrana never claims to protect people more than it does.
-- Anything that is not needed for sharing with and staying connected to the people you know stays off until the
+- Security is never weakened to make something easier, and anything Astrana does not need is left out, because what is
+  not there cannot be attacked.
+- Anything that is not needed for people to share with and stay connected to those they know stays off until the
   instance's owner turns it on, or a guardian does for a child.
