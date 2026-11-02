@@ -74,8 +74,8 @@ Each of these is a decision with its own record, and each rules something out.
   that distribute them can control what people are allowed to run.
 - Shared photos and videos cannot be saved unless the sharer allows it. This adds friction against misuse and is never
   presented as prevention.
-- Deleting something removes it, with no hidden copy kept. Backups hold what was deleted until they age out, and the
-  owner is told so at the moment they delete.
+- Deleting something removes it, with no hidden copy kept. Backups hold what was deleted until they age out, and whoever
+  deletes something is told so at the time.
 - An owner can take everything with them. Their data exports to an open standard, and the backup format is published,
   with a reader that opens a backup without Astrana installed.
 - Nothing about an instance can be switched remotely, and an update is never applied without its owner. An instance that
@@ -100,8 +100,8 @@ Each of these is a decision with its own record, and each rules something out.
 - Safety Third. Safety is never a substitute authority that people defer to instead of exercising their own judgement.
   As a rule about claims, Astrana never describes a protection as stronger than it is, because false comfort leaves
   people worse off than an honest gap.
-- Nothing essential rests on one thing. Losing or breaking one sign-in factor, key or channel never causes a critical
-  loss, and there is always a way back that depends on nobody else.
+- Nothing essential rests on one thing. Losing or breaking one sign-in factor never locks a person out for good, and an
+  owner always has a way back that depends on nobody else.
 - Harm reduction. People will do some things whatever they are advised, such as running an instance on cheap hosting, so
   a safe way to do it is better than leaving them to an unsafe one.
 - Embeddedness. Social mechanisms work when the person acting is present among, known by and reachable by the people
