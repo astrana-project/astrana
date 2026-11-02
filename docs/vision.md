@@ -82,7 +82,7 @@ slower, plainer or harder to build.
 Some things are never traded away:
 
 - Success is never measured by how much people use Astrana.
-- Nothing in Astrana makes money from the time people spend using it.
+- Nothing in Astrana makes money from the time people spend using it or the attention they give it.
 - No adult's choices are taken away to protect them from every risk.
 - Astrana never claims to protect people more than it does.
 - Security is never weakened for convenience. Where Astrana can do without something, it leaves it out rather than
