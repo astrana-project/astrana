@@ -17,8 +17,9 @@ keeping only what matters.
 
 ## The premise
 
-The individual is the basic unit of society. Each person runs their own instance of Astrana and connects it directly to
-the instances of people they already know well, with no third party required in between.
+The individual is the basic unit of society. Each person runs their own instance of Astrana, which is free and open
+source, and connects it directly to the instances of people they already know well, with no third party required in
+between.
 
 ## The commitments
 
