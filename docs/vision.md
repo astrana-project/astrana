@@ -18,22 +18,7 @@ keeping only what matters.
 ## The premise
 
 The individual is the basic unit of society. Each person runs their own instance of Astrana, which is free and open
-source, and connects it directly to the instances of people they already know well, with no third party required in
-between.
-
-## When things conflict
-
-When two good things pull in different directions, the choice that is better for the wellbeing of the people using
-Astrana wins.
-
-When a technically better design works against the mission, the mission wins, even if the result is slower, plainer or
-harder to build.
-
-Some things are never traded away:
-
-- Success is never measured by how much people use Astrana.
-- Nothing makes money from the time people spend in it.
-- Nobody is protected from every risk by having their choices taken away.
+source. Instances connect directly to each other, with no third party required in between.
 
 ## The commitments
 
@@ -53,11 +38,11 @@ you.
 
 ### Never competing for your attention
 
-Nothing is ranked to hold your attention, nothing invents a reason to come back, such as a streak or a reminder, and the
-feed stops at the end of what there is to see, rather than scrolling forever.
+Nothing is ranked to hold your attention, and nothing invents a reason to come back, such as a streak or a reminder. The
+feed stops when you reach the end, rather than scrolling forever.
 
-The cost is that you can miss what someone shares unless you go back and look for it, because Astrana will not bring it
-to your attention again.
+The cost is that you can miss what someone shares unless you go back and look for it, because Astrana will not remind
+you about it.
 
 ### Seen only by the people each thing is intended for
 
@@ -71,3 +56,15 @@ What you share disappears after a set time unless you choose to keep it. Things 
 until you remove them.
 
 The cost is that anything not kept is deleted when its time is up.
+
+## When things conflict
+
+When two good things pull in different directions, the choice that is better for the wellbeing of the people using
+Astrana wins. When a technically better design works against the mission, the mission wins, even if the result is
+slower, plainer or harder to build.
+
+Some things are never traded away:
+
+- Success is never measured by how much people use Astrana.
+- Nothing makes money from the time people spend in it.
+- Nobody's choices are taken away to protect them from every risk.
