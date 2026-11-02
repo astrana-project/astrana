@@ -7,7 +7,7 @@ the words used here.
 ## Mission
 
 To build social networking software that is materially healthier than what people have now, by shaping the technology to
-the whole of what people are rather than to the parts of them that can be exploited.
+the whole of human nature rather than to the parts of it that can be exploited.
 
 Materially means in substance rather than in presentation, so a change that leaves an incentive in place and only
 describes it differently does not count.
