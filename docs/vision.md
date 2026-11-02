@@ -67,7 +67,7 @@ The cost is that anything not kept is deleted from your instance when its time i
 
 Astrana is translated into a number of languages, and you choose which one it is shown in. It helps you follow the laws
 you are subject to, such as those that decide when a child comes of age, but it never enforces them on you. You set the
-rules of your own place, so no single culture's customs are imposed on anyone.
+rules of your own place, so no single culture's customs or traditions are imposed on anyone.
 
 The cost is that Astrana cannot make sure an instance meets every local law, because you, not Astrana, are answerable
 for your own place.
