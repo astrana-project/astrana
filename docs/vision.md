@@ -80,7 +80,7 @@ Some things are never traded away:
 - Nothing in Astrana makes money from the time people spend using it or the attention they give it.
 - No adult's choices are taken away to protect them from every risk.
 - Astrana never claims to protect people more than it does.
-- No single loss locks you out of your instance for good.
+- No single lost device, password or key locks you out of your instance for good.
 - Security is never weakened for convenience. Where Astrana can do without something, it leaves it out rather than
   switching it off, because what is not there cannot be attacked.
 - Anything that is not needed for people to share with and stay connected to those they know stays off until the
