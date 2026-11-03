@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Astrana</title>
+  <!-- Astrana mark: a stylised "A" whose counters form a person; concentric rings ripple outward. -->
+  <defs>
+    <!-- three-corner blend: blue at the apex, cyan bottom-left, green bottom-right -->
+    <radialGradient id="blue"  gradientUnits="userSpaceOnUse" cx="256" cy="40"  r="470">
+      <stop offset="0" stop-color="#0073FF"/><stop offset="1" stop-color="#0073FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyan"  gradientUnits="userSpaceOnUse" cx="30"  cy="480" r="470">
+      <stop offset="0" stop-color="#00C6F0"/><stop offset="1" stop-color="#00C6F0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="green" gradientUnits="userSpaceOnUse" cx="482" cy="480" r="470">
+      <stop offset="0" stop-color="#00FF66"/><stop offset="1" stop-color="#00FF66" stop-opacity="0"/>
+    </radialGradient>
+    <!-- clip uses the path directly (a <use> inside clipPath is unsupported in some viewers) -->
+    <clipPath id="clipTri"><path d="M208.2 49.3 A54 54 0 0 1 303.8 49.3 L500.6 418.6 A50 50 0 0 1 456.5 492 L55.5 492 A50 50 0 0 1 11.4 418.6 Z"/></clipPath>
+  </defs>
+
+  <!-- the A: corner colours layered so each corner is pure and the centre is a smooth mix -->
+  <path d="M208.2 49.3 A54 54 0 0 1 303.8 49.3 L500.6 418.6 A50 50 0 0 1 456.5 492 L55.5 492 A50 50 0 0 1 11.4 418.6 Z" fill="#00BFE4"/>
+  <path d="M208.2 49.3 A54 54 0 0 1 303.8 49.3 L500.6 418.6 A50 50 0 0 1 456.5 492 L55.5 492 A50 50 0 0 1 11.4 418.6 Z" fill="url(#cyan)"/>
+  <path d="M208.2 49.3 A54 54 0 0 1 303.8 49.3 L500.6 418.6 A50 50 0 0 1 456.5 492 L55.5 492 A50 50 0 0 1 11.4 418.6 Z" fill="url(#green)"/>
+  <path d="M208.2 49.3 A54 54 0 0 1 303.8 49.3 L500.6 418.6 A50 50 0 0 1 456.5 492 L55.5 492 A50 50 0 0 1 11.4 418.6 Z" fill="url(#blue)"/>
+
+  <!-- relationship rings: uniform offsets of the silhouette, clipped to the A -->
+  <g clip-path="url(#clipTri)" fill="#fff" stroke="#fff" stroke-linejoin="round">
+    <path d="M256 150 a60 60 0 1 1 -0.01 0 Z M142 429 C142 346 206 282 256 282 C306 282 370 340 370 429 Q370 455 344 455 H168 Q142 455 142 429 Z" stroke-width="150" opacity="0.32"/>
+    <path d="M256 150 a60 60 0 1 1 -0.01 0 Z M142 429 C142 346 206 282 256 282 C306 282 370 340 370 429 Q370 455 344 455 H168 Q142 455 142 429 Z" stroke-width="75"  opacity="0.55"/>
+  </g>
+
+  <!-- the individual -->
+  <path d="M256 150 a60 60 0 1 1 -0.01 0 Z M142 429 C142 346 206 282 256 282 C306 282 370 340 370 429 Q370 455 344 455 H168 Q142 455 142 429 Z" fill="#fff"/>
+</svg>

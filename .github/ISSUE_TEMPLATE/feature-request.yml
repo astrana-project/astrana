@@ -1,0 +1,42 @@
+name: Feature request
+description: Suggest something Astrana or Astrana Owner Tools could do.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Astrana is for keeping in touch with people you already know. It runs on your own instance, and it forgets
+        things unless you choose to keep them. The maintainer is most likely to take up ideas that fit with that.
+  - type: dropdown
+    id: application
+    attributes:
+      label: Which application?
+      options:
+        - The Astrana application
+        - Astrana Owner Tools
+        - Both, or not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what gets in the way? Describe the need rather than a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you think it could work, if you have one in mind.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you do today instead
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have searched the existing issues and this has not been suggested.
+          required: true
