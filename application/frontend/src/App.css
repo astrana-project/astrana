@@ -1,0 +1,25 @@
+/* SPDX-License-Identifier: MPL-2.0 */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.shell {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  min-height: 100dvh;
+}
+
+.shell-logo {
+  width: min(40vmin, 12rem);
+  height: auto;
+}
+
+.shell-name {
+  margin: 0;
+  font-size: clamp(2rem, 8vmin, 3rem);
+  font-weight: 600;
+}

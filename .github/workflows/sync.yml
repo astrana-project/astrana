@@ -1,0 +1,44 @@
+# Keeps develop up to date with master and the release branches. After each push to one of them, it opens a pull
+# request into develop and turns on auto-merge with a merge commit, so the merge happens as soon as the required checks
+# pass. It uses the Astrana sync GitHub App, because a pull request opened with the workflow's own token would not start
+# the checks it needs. If the merge conflicts, the pull request stays open for the maintainer to resolve.
+name: Sync into develop
+
+on:
+  push:
+    branches: [master, "release/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment: sync
+    steps:
+      - uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        id: app
+        with:
+          client-id: ${{ vars.SYNC_APP_CLIENT_ID }}
+          private-key: ${{ secrets.SYNC_APP_PRIVATE_KEY }}
+      - name: Open the pull request into develop and turn on auto-merge
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          SOURCE: ${{ github.ref_name }}
+        run: |
+          existing=$(gh pr list --repo "$GITHUB_REPOSITORY" --base develop --head "$SOURCE" --state open \
+            --json number --jq '.[0].number')
+          if [ -z "$existing" ]; then
+            if [ "$(gh api "repos/$GITHUB_REPOSITORY/compare/develop...$SOURCE" --jq .ahead_by)" = "0" ]; then
+              echo "develop already has everything on $SOURCE."
+              exit 0
+            fi
+            gh pr create --repo "$GITHUB_REPOSITORY" --base develop --head "$SOURCE" \
+              --title "Merge $SOURCE into develop" \
+              --body "Keeps develop up to date with $SOURCE. Merged automatically once the required checks pass."
+          fi
+          gh pr merge "$SOURCE" --repo "$GITHUB_REPOSITORY" --auto --merge

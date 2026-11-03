@@ -1,0 +1,73 @@
+name: Bug report
+description: Something in Astrana or Astrana Owner Tools does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If this could affect anyone's security or privacy, do not report it here. Report it privately, as SECURITY.md
+        explains.
+
+        Leave out anything personal, such as names, messages, photos, addresses, passwords, keys and recovery words.
+  - type: dropdown
+    id: application
+    attributes:
+      label: Which application?
+      options:
+        - The Astrana application
+        - Astrana Owner Tools
+        - Both, or not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The version of the Astrana application or Astrana Owner Tools you are running.
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: The steps, one per line, from a known starting point.
+      placeholder: |
+        1. Open the settings page.
+        2. Choose ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Where it happened
+      description: |
+        The operating system and its version, the browser and its version, and how the instance is hosted, such as
+        your own computer, a home server or shared hosting.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error messages or logs
+      description: Check them first for anything personal or secret, and remove it.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: This is not a security vulnerability.
+          required: true
+        - label: I have searched the existing issues and this has not been reported.
+          required: true

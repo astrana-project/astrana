@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Astrana.OwnerTools/Astrana.OwnerTools.csproj" />
+  </Folder>
+  <Folder Name="/shared/">
+    <Project Path="../shared/src/Astrana.Shared/Astrana.Shared.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Astrana.OwnerTools.Tests/Astrana.OwnerTools.Tests.csproj" />
+  </Folder>
+</Solution>

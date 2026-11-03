@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <!-- Every package version, transitive ones included, is pinned in each project's packages.lock.json. -->
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <!-- Continuous integration and release builds fail rather than resolve anything the lock files do not pin. -->
+    <RestoreLockedMode Condition="'$(ContinuousIntegrationBuild)' == 'true'">true</RestoreLockedMode>
+    <!-- They also fail on a package with a known high or critical vulnerability. Low and moderate stay warnings. -->
+    <WarningsAsErrors Condition="'$(ContinuousIntegrationBuild)' == 'true'">
+      $(WarningsAsErrors);NU1903;NU1904
+    </WarningsAsErrors>
+  </PropertyGroup>
+</Project>
