@@ -1,5 +1,6 @@
 # Sends the repository to SonarQube Cloud for analysis, building the three .NET solutions so that the scanner can
-# analyse them. Pull requests from forks are skipped, because they cannot read the token.
+# analyse them. The job waits for the quality gate and fails when the gate fails. Pull requests from forks are skipped,
+# because they cannot read the token.
 name: SonarQube
 
 on:
@@ -41,12 +42,20 @@ jobs:
           key: ${{ runner.os }}-sonar-${{ hashFiles('dotnet-tools.json') }}
       - run: dotnet tool restore
       - run: npm ci --ignore-scripts --prefix application/frontend
+      - run: npm run test:coverage --prefix application/frontend
       - name: Build and analyse
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          # Start-up code, build configuration and tests are left out of the coverage figure. Every other source file
+          # counts.
+          COVERAGE_EXCLUSIONS: >-
+            **/Program.cs, application/frontend/src/main.tsx, application/frontend/vite.config.ts,
+            application/frontend/test/**, application/frontend/packages/*/test/**
         run: |
           dotnet tool run dotnet-sonarscanner begin /k:astrana-project_astrana /o:astrana \
-            /d:sonar.host.url=https://sonarcloud.io /d:sonar.token="$SONAR_TOKEN"
+            /d:sonar.host.url=https://sonarcloud.io /d:sonar.token="$SONAR_TOKEN" /d:sonar.qualitygate.wait=true \
+            /d:sonar.javascript.lcov.reportPaths=application/frontend/coverage/lcov.info \
+            /d:sonar.coverage.exclusions="${COVERAGE_EXCLUSIONS// /}"
           for solution in application/backend/Astrana.slnx owner-tools/Astrana.OwnerTools.slnx \
             shared/Astrana.Shared.slnx; do
             dotnet build "$solution" --configuration Release

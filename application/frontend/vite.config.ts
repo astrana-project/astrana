@@ -10,5 +10,11 @@ export default defineConfig({
   },
   test: {
     include: ["test/**/*.test.{ts,tsx}", "packages/*/test/**/*.test.{ts,tsx}"],
+    coverage: {
+      provider: "v8",
+      include: ["src/**/*.{ts,tsx}", "packages/*/src/**/*.{ts,tsx}"],
+      exclude: ["src/main.tsx"],
+      reporter: ["text", ["lcov", { projectRoot: "../.." }]],
+    },
   },
 });

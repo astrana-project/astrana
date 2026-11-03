@@ -1,6 +1,7 @@
 # Node
 node_modules/
 application/frontend/dist/
+application/frontend/coverage/
 application/frontend/storybook-static/
 application/frontend/packages/*/dist/
 npm-debug.log*
