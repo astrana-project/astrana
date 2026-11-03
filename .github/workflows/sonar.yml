@@ -1,0 +1,63 @@
+# Sends the repository to SonarQube Cloud for analysis, building the three .NET solutions so that the scanner can
+# analyse them. The job waits for the quality gate and fails when the gate fails. Pull requests from forks are skipped,
+# because they cannot read the token.
+name: SonarQube
+
+on:
+  pull_request:
+  push:
+    branches: [develop, master, "support/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  analyse:
+    name: Analyse
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      ContinuousIntegrationBuild: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+      TESTINGPLATFORM_TELEMETRY_OPTOUT: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          java-version: 21
+          distribution: temurin
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar-${{ hashFiles('dotnet-tools.json') }}
+      - run: dotnet tool restore
+      - run: npm ci --ignore-scripts --prefix application/frontend
+      - run: npm run test:coverage --prefix application/frontend
+      - name: Build and analyse
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          # Start-up code, build configuration, the repository's PowerShell tools and tests are left out of the coverage
+          # figure. Every other source file counts.
+          COVERAGE_EXCLUSIONS: >-
+            **/Program.cs, application/frontend/src/main.tsx, application/frontend/vite.config.ts,
+            application/frontend/test/**, application/frontend/packages/*/test/**, tools/**
+        run: |
+          dotnet tool run dotnet-sonarscanner begin /k:astrana-project_astrana /o:astrana \
+            /d:sonar.host.url=https://sonarcloud.io /d:sonar.token="$SONAR_TOKEN" /d:sonar.qualitygate.wait=true \
+            /d:sonar.javascript.lcov.reportPaths=application/frontend/coverage/lcov.info \
+            /d:sonar.coverage.exclusions="${COVERAGE_EXCLUSIONS// /}"
+          for solution in application/backend/Astrana.slnx owner-tools/Astrana.OwnerTools.slnx \
+            shared/Astrana.Shared.slnx; do
+            dotnet build "$solution" --configuration Release
+          done
+          dotnet tool run dotnet-sonarscanner end /d:sonar.token="$SONAR_TOKEN"

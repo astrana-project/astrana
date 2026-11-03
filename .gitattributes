@@ -1,0 +1,15 @@
+# Normalise line endings to LF in the repository and on checkout, on every platform, so that formatters and builds see
+# identical bytes everywhere.
+* text=auto eol=lf
+
+# Windows batch files need CRLF to run reliably under cmd.exe.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.ico binary
+*.pfx binary
+*.woff binary
+*.woff2 binary

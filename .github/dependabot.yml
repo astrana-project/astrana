@@ -1,0 +1,55 @@
+# Weekly version updates into develop, each waiting seven days after a release so that a broken or malicious release
+# has time to be found and pulled. Minor and patch updates for each folder arrive in one pull request, and a new major
+# version gets a pull request of its own. Security updates are switched off, because Dependabot opens them only against
+# the default branch, master, which accepts only release and housekeeping branches. A vulnerability alert is fixed by
+# hand, through a release branch for a released version.
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    target-branch: develop
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      repository-tooling:
+        patterns: ["*"]
+        update-types: [minor, patch]
+
+  - package-ecosystem: npm
+    directory: /application/frontend
+    target-branch: develop
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      web-app:
+        patterns: ["*"]
+        update-types: [minor, patch]
+
+  - package-ecosystem: nuget
+    directories: [/, /application/backend, /owner-tools, /shared]
+    target-branch: develop
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      dotnet:
+        patterns: ["*"]
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: develop
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
+        update-types: [minor, patch]

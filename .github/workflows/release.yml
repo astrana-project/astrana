@@ -1,0 +1,137 @@
+# Checks that the release tag matches the version its application states, then builds the release from the tag twice,
+# in different directories, and stops unless the two builds match byte for byte. Then it lists what the release ships in
+# software bills of materials. Each bill records the time it was made, so the workflow makes them once and leaves them
+# out of the comparison. The workflow never signs or publishes anything. The maintainer downloads the unsigned
+# artefacts, their checksums and the bills of materials, signs them locally and publishes them. A 0.x release skips the
+# Windows and macOS code signing, and is otherwise signed as usual.
+name: Release
+
+on:
+  push:
+    tags: ["astrana-v*", "astrana-owner-tools-v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  version:
+    name: Check the version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - shell: pwsh
+        run: ./tools/scripts/Test-ReleaseVersion.ps1 -Tag $env:GITHUB_REF_NAME
+
+  build:
+    name: Build ${{ matrix.copy }}
+    needs: version
+    runs-on: ubuntu-latest
+    environment: release
+    strategy:
+      matrix:
+        copy: [first, second]
+    env:
+      SOURCE: ${{ matrix.copy == 'first' && 'astrana' || 'build/elsewhere/astrana' }}
+      ContinuousIntegrationBuild: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: ${{ env.SOURCE }}
+          persist-credentials: false
+      - name: Choose what the tag releases
+        id: target
+        run: |
+          case "$GITHUB_REF_NAME" in
+            astrana-owner-tools-v*) echo "application=owner-tools" >> "$GITHUB_OUTPUT" ;;
+            astrana-v*) echo "application=application" >> "$GITHUB_OUTPUT" ;;
+          esac
+      - name: Take the build time from the commit
+        working-directory: ${{ env.SOURCE }}
+        run: echo "SOURCE_DATE_EPOCH=$(git log -1 --format=%ct)" >> "$GITHUB_ENV"
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          global-json-file: ${{ env.SOURCE }}/global.json
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        if: steps.target.outputs.application == 'application'
+        with:
+          node-version-file: ${{ env.SOURCE }}/.nvmrc
+      - name: Build the Astrana application
+        if: steps.target.outputs.application == 'application'
+        working-directory: ${{ env.SOURCE }}
+        run: |
+          npm ci --ignore-scripts --prefix application/frontend
+          npm run build --prefix application/frontend
+          dotnet publish application/backend/src/Astrana.Server --configuration Release \
+            --output "$RUNNER_TEMP/out/server"
+          cp -r application/frontend/dist "$RUNNER_TEMP/out/web"
+      - name: Build Astrana Owner Tools
+        if: steps.target.outputs.application == 'owner-tools'
+        working-directory: ${{ env.SOURCE }}
+        run: |
+          dotnet publish owner-tools/src/Astrana.OwnerTools --configuration Release \
+            --output "$RUNNER_TEMP/out/owner-tools"
+      - name: List the checksum of every file
+        working-directory: ${{ runner.temp }}/out
+        run: find . -type f -print0 | sort -z | xargs -0 sha256sum > "$RUNNER_TEMP/SHA256SUMS"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: unsigned-${{ matrix.copy }}
+          path: |
+            ${{ runner.temp }}/out
+            ${{ runner.temp }}/SHA256SUMS
+          if-no-files-found: error
+
+  compare:
+    name: Compare the two builds
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: unsigned-*
+      - run: diff unsigned-first/SHA256SUMS unsigned-second/SHA256SUMS
+
+  sbom:
+    name: Software bills of materials
+    needs: compare
+    runs-on: ubuntu-latest
+    env:
+      ContinuousIntegrationBuild: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+      - run: dotnet tool restore
+      - name: List what the Astrana application ships
+        if: startsWith(github.ref_name, 'astrana-v')
+        run: |
+          version="${GITHUB_REF_NAME#astrana-v}"
+          dotnet tool run dotnet-CycloneDX -- application/backend/Astrana.slnx --output sbom \
+            --filename astrana-server.cdx.json --exclude-test-projects --no-serial-number --spec-version 1.5 \
+            --set-version "$version" --output-format Json
+          npm ci --ignore-scripts --prefix application/frontend
+          (cd application/frontend && npm sbom --sbom-format cyclonedx --omit dev) > sbom/astrana-web.cdx.json
+      - name: List what Astrana Owner Tools ships
+        if: startsWith(github.ref_name, 'astrana-owner-tools-v')
+        run: |
+          version="${GITHUB_REF_NAME#astrana-owner-tools-v}"
+          dotnet tool run dotnet-CycloneDX -- owner-tools/Astrana.OwnerTools.slnx --output sbom \
+            --filename astrana-owner-tools.cdx.json --exclude-test-projects --no-serial-number --spec-version 1.5 \
+            --set-version "$version" --output-format Json
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: sbom
+          path: sbom
+          if-no-files-found: error
