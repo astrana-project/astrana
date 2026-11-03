@@ -46,11 +46,11 @@ jobs:
       - name: Build and analyse
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          # Start-up code, build configuration and tests are left out of the coverage figure. Every other source file
-          # counts.
+          # Start-up code, build configuration, the repository's PowerShell tools and tests are left out of the coverage
+          # figure. Every other source file counts.
           COVERAGE_EXCLUSIONS: >-
             **/Program.cs, application/frontend/src/main.tsx, application/frontend/vite.config.ts,
-            application/frontend/test/**, application/frontend/packages/*/test/**
+            application/frontend/test/**, application/frontend/packages/*/test/**, tools/**
         run: |
           dotnet tool run dotnet-sonarscanner begin /k:astrana-project_astrana /o:astrana \
             /d:sonar.host.url=https://sonarcloud.io /d:sonar.token="$SONAR_TOKEN" /d:sonar.qualitygate.wait=true \
