@@ -57,6 +57,7 @@ back up, restore and manage their instances.
   requests.
 - A vulnerability in a browser, database, reverse proxy or operating system that Astrana runs on. Report it to whoever
   makes that software.
+- Problems in a modified copy that do not exist in the code in this repository or in its releases.
 
 ## Where to test
 

@@ -53,6 +53,8 @@ Except where a file states otherwise, the source code and documentation in this 
 The Astrana name, logos and other branding are trademarks of Darin Morris and are not covered by the Mozilla Public
 License 2.0. [TRADEMARKS.md](TRADEMARKS.md) explains how they may be used.
 
+Anyone who runs a modified copy of Astrana does so at their own risk.
+
 ## Learn more and get help
 
 - [RELEASING.md](RELEASING.md) explains how releases are built, checked and signed.
